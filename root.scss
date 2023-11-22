@@ -1,0 +1,47 @@
+:root {
+  --primary-color-pure-dark: #04002d;
+  --primary-color-deep-dark: #070052;
+  --primary-color-dark: #1d10b6;
+  --primary-color-cosmic-blue: #555bfb;
+  --primary-color-dreamy-periwinkle: #b3bafb;
+  --primary-color-celestial-lavender: #dbdeff;
+  --primary-color-ethereal-white: #f7f6ff;
+
+  --secondary-color-dark: #bcf178;
+  --secondary-color-normal: #deffb5;
+  --secondary-color-light: #f6ffea;
+
+  --neutral-color-dark: #1a1928;
+  --neutral-color-normal: #1a1928b2;
+  --neutral-color-light: #5f5e6966;
+
+  --active-color-dark: #006ae3;
+  --active-color-normal: #248aff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: var(--primary-color-pure-dark);
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: SharpGroteskSemiBold25;
+  font-size: 78px;
+  font-weight: 600;
+  color: var(--secondary-color-dark);
+}
+
+h5 {
+  color: var(--primary-color-cosmic-blue);
+  font-family: SharpGroteskMedium20;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px;
+}
