@@ -127,6 +127,7 @@ header {
   justify-content: flex-start;
   align-items: center;
   padding: 225px 295px 185px 295px;
+  margin-bottom: 185px;
   height: calc(100vh - 91px);
 
   .greeting {
@@ -592,6 +593,277 @@ header {
 
       .values-description-first-line {
         color: var(--secondary-color-dark);
+      }
+    }
+  }
+}
+
+#our-portfolio-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #fff;
+  padding: 100px 0 100px 295px;
+
+  .our-portfolio-section-main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 25px;
+
+    .our-portfolio-section-main-title {
+      color: var(--primary-color-cosmic-blue);
+      font-family: SharpGroteskSemiBold25;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 21px;
+      border-radius: 48px;
+      border: 1px solid var(--primary-color-dark);
+
+      .code-symbol {
+        font-family: SharpGroteskBook20;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+      }
+    }
+
+    .our-portfolio-section-main-text {
+      color: var(--primary-color-deep-dark);
+      font-family: SharpGroteskSemiBold25;
+      font-size: 54px;
+      font-weight: 600;
+      width: 650px;
+    }
+
+    .our-portfolio-section-main-subText {
+      color: var(--primary-color-cosmic-blue);
+      font-family: SharpGroteskMedium20;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 32px;
+      width: 650px;
+    }
+
+    .our-portfolio-section-main-view-all-cases-btn {
+      margin-top: 25px;
+      padding: 15px 25px;
+      border-radius: 8px;
+      background: var(--secondary-color-dark);
+      outline: none;
+      border: none;
+      color: var(--primary-color-dark);
+      font-family: SharpGroteskMedium25;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 21px;
+
+      .view-all-btn-icon {
+        margin-left: 10px;
+      }
+    }
+
+    .case-category {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+
+      .case-category-form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .form-check {
+          display: flex;
+          align-items: flex-start;
+          border-radius: 8px;
+          background: var(--primary-color-ethereal-white);
+          padding: 8px;
+          min-width: 245px;
+          gap: 10px;
+
+          &:hover {
+            background: var(--primary-color-dreamy-periwinkle);
+          }
+
+          .form-check-input {
+          }
+
+          .form-check-label {
+            color: var(--primary-color-deep-dark);
+            font-family: SharpGroteskMedium20;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 22px;
+          }
+        }
+      }
+
+      .card-box {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        max-width: 358px;
+        max-height: 468px;
+
+        .card-box-image {
+          position: relative;
+        }
+
+        .card-box-circle {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          align-self: end;
+          width: 34px;
+          height: 34px;
+          border-radius: 50%;
+          background: white;
+          top: 3%;
+          right: 3%;
+        }
+
+        .card-box-description {
+          color: var(--texts-text-brand-secondary, #555bfb);
+          font-family: SharpGroteskBook20;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 21px;
+
+          .brand-name {
+            color: var(--primary-color-dark);
+            font-family: SharpGroteskSemiBold25;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 22px;
+          }
+
+          .ui-design {
+            color: var(--primary-color-dark);
+            font-family: SharpGroteskBook20;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+          }
+        }
+      }
+    }
+  }
+}
+
+#media-center-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 100px 295px;
+
+  .media-center-cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+    .media-center-title {
+      font-family: SharpGroteskSemiBold25;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 21px;
+      border-radius: 48px;
+      border: 1px solid var(--primary-color-dark);
+      color: var(--primary-color-cosmic-blue);
+
+      .code-symbol {
+        font-family: SharpGroteskBook20;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+      }
+    }
+
+    .media-center-main-text {
+      text-align: center;
+      color: var(--primary-color-deep-dark);
+      font-family: SharpGroteskSemiBold25;
+      font-size: 54px;
+      font-weight: 600;
+      width: 650px;
+    }
+
+    .media-center-main-subText {
+      text-align: center;
+      color: var(--primary-color-cosmic-blue);
+      font-family: SharpGroteskMedium20;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 32px;
+      width: 650px;
+    }
+
+    .media-center-cta-btn {
+      margin-top: 25px;
+      padding: 15px 25px;
+      border-radius: 8px;
+      background: var(--secondary-color-dark);
+      outline: none;
+      border: none;
+      color: var(--primary-color-dark);
+      font-family: SharpGroteskMedium25;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 21px;
+
+      .view-all-btn-icon {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  #carouselExample {
+    .carousel-inner {
+      padding: 1rem;
+
+      .carousel-item {
+        width: 358px;
+        .card {
+          width: 358px;
+          margin: 0 0.5em;
+          border: none;
+
+          .img-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+          }
+        }
+      }
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 6vh;
+      height: 6vh;
+      background-color: #e1e1e1;
+      border-radius: 50%;
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: 0.5;
+    }
+
+    @media screen and (min-width: 576px) {
+      .carousel-inner {
+        display: flex;
+
+        .carousel-item {
+          display: block;
+          margin-right: 0;
+          flex: 0 0 calc(100% / 3);
+        }
       }
     }
   }

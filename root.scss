@@ -27,7 +27,7 @@
 
 body {
   height: 100vh;
-  background: var(--primary-color-pure-dark);
+  background: var(--primary-color-pure-dark) !important;
   overflow-x: hidden;
 }
 

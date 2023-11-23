@@ -24,7 +24,7 @@
 
 body {
   height: 100vh;
-  background: var(--primary-color-pure-dark);
+  background: var(--primary-color-pure-dark) !important;
   overflow-x: hidden;
 }
 
@@ -172,6 +172,7 @@ header {
   justify-content: flex-start;
   align-items: center;
   padding: 225px 295px 185px 295px;
+  margin-bottom: 185px;
   height: calc(100vh - 91px);
 }
 #greeting-section .greeting {
@@ -594,6 +595,241 @@ header {
 }
 #values-list .company-value .values-description .values-description-first-line {
   color: var(--secondary-color-dark);
+}
+
+#our-portfolio-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #fff;
+  padding: 100px 0 100px 295px;
+}
+#our-portfolio-section .our-portfolio-section-main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 25px;
+}
+#our-portfolio-section .our-portfolio-section-main .our-portfolio-section-main-title {
+  color: var(--primary-color-cosmic-blue);
+  font-family: SharpGroteskSemiBold25;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  border-radius: 48px;
+  border: 1px solid var(--primary-color-dark);
+}
+#our-portfolio-section .our-portfolio-section-main .our-portfolio-section-main-title .code-symbol {
+  font-family: SharpGroteskBook20;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+#our-portfolio-section .our-portfolio-section-main .our-portfolio-section-main-text {
+  color: var(--primary-color-deep-dark);
+  font-family: SharpGroteskSemiBold25;
+  font-size: 54px;
+  font-weight: 600;
+  width: 650px;
+}
+#our-portfolio-section .our-portfolio-section-main .our-portfolio-section-main-subText {
+  color: var(--primary-color-cosmic-blue);
+  font-family: SharpGroteskMedium20;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  width: 650px;
+}
+#our-portfolio-section .our-portfolio-section-main .our-portfolio-section-main-view-all-cases-btn {
+  margin-top: 25px;
+  padding: 15px 25px;
+  border-radius: 8px;
+  background: var(--secondary-color-dark);
+  outline: none;
+  border: none;
+  color: var(--primary-color-dark);
+  font-family: SharpGroteskMedium25;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+}
+#our-portfolio-section .our-portfolio-section-main .our-portfolio-section-main-view-all-cases-btn .view-all-btn-icon {
+  margin-left: 10px;
+}
+#our-portfolio-section .our-portfolio-section-main .case-category {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+#our-portfolio-section .our-portfolio-section-main .case-category .case-category-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#our-portfolio-section .our-portfolio-section-main .case-category .case-category-form .form-check {
+  display: flex;
+  align-items: flex-start;
+  border-radius: 8px;
+  background: var(--primary-color-ethereal-white);
+  padding: 8px;
+  min-width: 245px;
+  gap: 10px;
+}
+#our-portfolio-section .our-portfolio-section-main .case-category .case-category-form .form-check:hover {
+  background: var(--primary-color-dreamy-periwinkle);
+}
+#our-portfolio-section .our-portfolio-section-main .case-category .case-category-form .form-check .form-check-label {
+  color: var(--primary-color-deep-dark);
+  font-family: SharpGroteskMedium20;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+}
+#our-portfolio-section .our-portfolio-section-main .case-category .card-box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 358px;
+  max-height: 468px;
+}
+#our-portfolio-section .our-portfolio-section-main .case-category .card-box .card-box-image {
+  position: relative;
+}
+#our-portfolio-section .our-portfolio-section-main .case-category .card-box .card-box-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  align-self: end;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: white;
+  top: 3%;
+  right: 3%;
+}
+#our-portfolio-section .our-portfolio-section-main .case-category .card-box .card-box-description {
+  color: var(--texts-text-brand-secondary, #555bfb);
+  font-family: SharpGroteskBook20;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+}
+#our-portfolio-section .our-portfolio-section-main .case-category .card-box .card-box-description .brand-name {
+  color: var(--primary-color-dark);
+  font-family: SharpGroteskSemiBold25;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+}
+#our-portfolio-section .our-portfolio-section-main .case-category .card-box .card-box-description .ui-design {
+  color: var(--primary-color-dark);
+  font-family: SharpGroteskBook20;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+#media-center-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 100px 295px;
+}
+#media-center-section .media-center-cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+#media-center-section .media-center-cta .media-center-title {
+  font-family: SharpGroteskSemiBold25;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  border-radius: 48px;
+  border: 1px solid var(--primary-color-dark);
+  color: var(--primary-color-cosmic-blue);
+}
+#media-center-section .media-center-cta .media-center-title .code-symbol {
+  font-family: SharpGroteskBook20;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+#media-center-section .media-center-cta .media-center-main-text {
+  text-align: center;
+  color: var(--primary-color-deep-dark);
+  font-family: SharpGroteskSemiBold25;
+  font-size: 54px;
+  font-weight: 600;
+  width: 650px;
+}
+#media-center-section .media-center-cta .media-center-main-subText {
+  text-align: center;
+  color: var(--primary-color-cosmic-blue);
+  font-family: SharpGroteskMedium20;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  width: 650px;
+}
+#media-center-section .media-center-cta .media-center-cta-btn {
+  margin-top: 25px;
+  padding: 15px 25px;
+  border-radius: 8px;
+  background: var(--secondary-color-dark);
+  outline: none;
+  border: none;
+  color: var(--primary-color-dark);
+  font-family: SharpGroteskMedium25;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+}
+#media-center-section .media-center-cta .media-center-cta-btn .view-all-btn-icon {
+  margin-left: 10px;
+}
+#media-center-section #carouselExample .carousel-inner {
+  padding: 1rem;
+}
+#media-center-section #carouselExample .carousel-inner .carousel-item {
+  width: 358px;
+}
+#media-center-section #carouselExample .carousel-inner .carousel-item .card {
+  width: 358px;
+  margin: 0 0.5em;
+  border: none;
+}
+#media-center-section #carouselExample .carousel-inner .carousel-item .card .img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+#media-center-section #carouselExample .carousel-control-prev,
+#media-center-section #carouselExample .carousel-control-next {
+  width: 6vh;
+  height: 6vh;
+  background-color: #e1e1e1;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.5;
+}
+@media screen and (min-width: 576px) {
+  #media-center-section #carouselExample .carousel-inner {
+    display: flex;
+  }
+  #media-center-section #carouselExample .carousel-inner .carousel-item {
+    display: block;
+    margin-right: 0;
+    flex: 0 0 33.3333333333%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
