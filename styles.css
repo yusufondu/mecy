@@ -795,7 +795,11 @@ header {
 #media-center-section .media-center-cta .media-center-cta-btn .view-all-btn-icon {
   margin-left: 10px;
 }
+#media-center-section #carouselExample {
+  margin-top: 60px;
+}
 #media-center-section #carouselExample .carousel-inner {
+  max-width: 1286px;
   padding: 1rem;
 }
 #media-center-section #carouselExample .carousel-inner .carousel-item {
@@ -803,6 +807,7 @@ header {
 }
 #media-center-section #carouselExample .carousel-inner .carousel-item .card {
   width: 358px;
+  height: 610px;
   margin: 0 0.5em;
   border: none;
 }
@@ -811,10 +816,45 @@ header {
   justify-content: center;
   align-items: flex-start;
 }
+#media-center-section #carouselExample .carousel-inner .carousel-item .card .card-body {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 358px;
+  padding: 25px 15px;
+  gap: 25px;
+  border-radius: 0px 0px 24px 24px;
+  background: var(--primary-color-ethereal-white);
+}
+#media-center-section #carouselExample .carousel-inner .carousel-item .card .card-body .card-title {
+  color: var(--primary-color-dark);
+  font-family: SharpGroteskSemiBold25;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+}
+#media-center-section #carouselExample .carousel-inner .carousel-item .card .card-body .card-text {
+  overflow: hidden;
+  color: var(--primary-color-cosmic-blue);
+  text-overflow: ellipsis;
+  font-family: SharpGroteskBook20;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+}
+#media-center-section #carouselExample .carousel-inner .carousel-item .card .card-body .card-btn {
+  color: var(--primary-color-dark);
+  font-family: SharpGroteskMedium25;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  align-self: flex-end;
+}
 #media-center-section #carouselExample .carousel-control-prev,
 #media-center-section #carouselExample .carousel-control-next {
-  width: 6vh;
-  height: 6vh;
+  width: 34px;
+  height: 34px;
   background-color: #e1e1e1;
   border-radius: 50%;
   top: 50%;
@@ -827,7 +867,7 @@ header {
   }
   #media-center-section #carouselExample .carousel-inner .carousel-item {
     display: block;
-    margin-right: 0;
+    margin-right: 5px;
     flex: 0 0 33.3333333333%;
   }
 }
