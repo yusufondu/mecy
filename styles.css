@@ -800,7 +800,7 @@ header {
 }
 #media-center-section #carouselExample .carousel-inner {
   max-width: 1286px;
-  padding: 1rem;
+  padding: 3rem;
 }
 #media-center-section #carouselExample .carousel-inner .carousel-item {
   width: 358px;
@@ -855,11 +855,18 @@ header {
 #media-center-section #carouselExample .carousel-control-next {
   width: 34px;
   height: 34px;
-  background-color: #e1e1e1;
+  background-color: var(--primary-color-dark);
   border-radius: 50%;
   top: 50%;
+  opacity: 1;
   transform: translateY(-50%);
-  opacity: 0.5;
+}
+#media-center-section #carouselExample .carousel-control-prev carousel-control-prev-icon,
+#media-center-section #carouselExample .carousel-control-prev carousel-control-next-icon,
+#media-center-section #carouselExample .carousel-control-next carousel-control-prev-icon,
+#media-center-section #carouselExample .carousel-control-next carousel-control-next-icon {
+  width: 12px;
+  height: 17px;
 }
 @media screen and (min-width: 576px) {
   #media-center-section #carouselExample .carousel-inner {
@@ -867,9 +874,117 @@ header {
   }
   #media-center-section #carouselExample .carousel-inner .carousel-item {
     display: block;
-    margin-right: 5px;
+    margin-right: 15px;
     flex: 0 0 33.3333333333%;
   }
+}
+
+#busters-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 100px 295px;
+}
+#busters-section .busters-cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+#busters-section .busters-cta .busters-title {
+  font-family: SharpGroteskSemiBold25;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  border-radius: 48px;
+  border: 1px solid var(--primary-color-dark);
+  color: var(--primary-color-cosmic-blue);
+}
+#busters-section .busters-cta .busters-title .code-symbol {
+  font-family: SharpGroteskBook20;
+  font-size: 14px;
+  font-weight: 400;
+}
+#busters-section .busters-cta .busters-mainText {
+  text-align: center;
+  color: var(--primary-color-deep-dark);
+  font-family: SharpGroteskSemiBold25;
+  font-size: 54px;
+  font-weight: 600;
+  width: 650px;
+}
+#busters-section .busters-cta .busters-answer {
+  display: flex;
+  color: var(--secondary-color-dark);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  text-decoration: none;
+  font-family: SharpGroteskMedium25;
+}
+#busters-section .busters-cta .busters-answer .busters-answer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 4px 4px 15px;
+  background: var(--primary-color-dark);
+  border-radius: 40px;
+}
+#busters-section .busters-cta .busters-answer .busters-answer-header .busters-answer-text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  margin-right: 28px;
+}
+#busters-section .busters-cta .busters-answer .busters-answer-header .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--secondary-color-dark);
+}
+#busters-section .accordionPart {
+  width: 100%;
+  margin-top: 60px;
+}
+#busters-section .accordionPart .accordion {
+  border-radius: 24px;
+}
+#busters-section .accordionPart .accordion .accordion-item {
+  margin-top: 10px;
+  border-radius: 24px;
+}
+#busters-section .accordionPart .accordion .accordion-item .accordion-header {
+  border-radius: 24px;
+}
+#busters-section .accordionPart .accordion .accordion-item .accordion-header .accordion-button {
+  color: var(--primary-color-cosmic-blue);
+  font-family: SharpGroteskMedium20;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  border: 1px solid var(--primary-color-dreamy-periwinkle);
+  background: var(--primary-color-ethereal-white);
+}
+#busters-section .accordionPart .accordion .accordion-item .accordion-header .accordion-button:focus {
+  box-shadow: none;
+}
+#busters-section .accordionPart .accordion .accordion-item .accordion-line .accordion-body {
+  color: var(--primary-color-cosmic-blue);
+  font-family: SharpGroteskBook20;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  background: var(--primary-color-ethereal-white);
 }
 
 /*# sourceMappingURL=styles.css.map */
