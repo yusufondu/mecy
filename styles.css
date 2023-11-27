@@ -885,7 +885,7 @@ header {
   justify-content: center;
   align-items: center;
   background: #fff;
-  padding: 100px 295px;
+  padding: 100px 295px 170px 295px;
 }
 #busters-section .busters-cta {
   display: flex;
@@ -985,6 +985,88 @@ header {
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
   background: var(--primary-color-ethereal-white);
+}
+
+#form-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: var(--primary-color-pure-dark);
+  padding: 100px 295px;
+}
+#form-section .form-main .form-title {
+  width: fit-content;
+  font-family: SharpGroteskSemiBold25;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  border-radius: 48px;
+  border: 1px solid var(--primary-color-dark);
+  color: var(--primary-color-cosmic-blue);
+}
+#form-section .form-main .form-title .code-symbol {
+  font-family: SharpGroteskBook20;
+  font-size: 14px;
+  font-weight: 400;
+}
+#form-section .form-main .form-question {
+  margin-top: 25px;
+  color: var(--secondary-color-dark);
+  font-family: SharpGroteskSemiBold25;
+  font-size: 43px;
+  font-weight: 600;
+}
+#form-section .form-main form {
+  width: 456px;
+  margin-top: 60px;
+}
+#form-section .form-main form input,
+#form-section .form-main form select,
+#form-section .form-main form textarea {
+  border: 2px solid var(--secondary-color-dark);
+  border-radius: 20px;
+  color: var(--secondary-color-dark);
+  background: var(--primary-color-pure-dark);
+  box-shadow: none;
+}
+#form-section .form-main form label {
+  color: var(--secondary-color-dark);
+}
+#form-section .form-main form label::after {
+  background: none;
+  background-color: none;
+}
+#form-section .form-main form .form-switch .form-check-input {
+  background-image: url(./assets/checkbox_round.svg);
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+}
+#form-section .form-main form .form-switch .form-check-input:checked {
+  background-image: url(./assets/checkbox_round.svg);
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+#form-section .form-main form .btnformsubmit {
+  display: flex;
+  justify-content: flex-end;
+}
+#form-section .form-main form .btnformsubmit .formsubmitBtn {
+  margin-top: 25px;
+  padding: 15px 25px;
+  border-radius: 8px;
+  background: var(--secondary-color-dark);
+  outline: none;
+  border: none;
+  color: var(--primary-color-dark);
+  font-family: SharpGroteskMedium25;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+}
+#form-section .form-main form .btnformsubmit .formsubmitBtn .btnIcon {
+  margin-left: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
