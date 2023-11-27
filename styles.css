@@ -1070,10 +1070,6 @@ header {
 }
 
 footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
   background: var(--primary-color-pure-dark);
   padding: 100px 295px;
 }
@@ -1093,9 +1089,10 @@ footer .footer-main .footer-first .footer-statement .footer-statement-text {
 }
 footer .footer-main .footer-second {
   margin-top: 80px;
+  margin-bottom: 80px;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
 }
 footer .footer-main .footer-second .footer-address {
   margin-right: 185px;
@@ -1181,6 +1178,54 @@ footer .footer-main .footer-second .footer-sidemap .footer-sidemap-list {
 }
 footer .footer-main .footer-second .footer-sidemap .footer-sidemap-list .footer-sidemap-list-arrow-right {
   margin-left: 8px;
+}
+footer .footer-main .footer-third {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+footer .footer-main .footer-third .copyright {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  color: var(--secondary-color-dark);
+  font-size: 16px;
+  font-family: SharpGroteskMedium25;
+  font-weight: 400;
+  line-height: 21px;
+}
+footer .footer-main .footer-third .privacy {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  color: var(--secondary-color-dark);
+  font-size: 16px;
+  font-family: SharpGroteskMedium25;
+  font-weight: 400;
+  line-height: 21px;
+}
+footer .footer-main .footer-third .privacy .privacy-arrow-right {
+  margin-left: 8px;
+}
+footer .footer-main .footer-third .cookie {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  color: var(--secondary-color-dark);
+  font-size: 16px;
+  font-family: SharpGroteskMedium25;
+  font-weight: 400;
+  line-height: 21px;
+}
+footer .footer-main .footer-third .cookie .cookie-arrow-right {
+  margin-left: 8px;
+}
+footer .footer-main .footer-third .social-media {
+  margin-top: 40px;
+}
+footer .footer-main .footer-third .social-media .social-media-logo {
+  align-self: flex-end;
 }
 
 /*# sourceMappingURL=styles.css.map */
