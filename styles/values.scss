@@ -1,0 +1,61 @@
+#our-values-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 165px 0 165px;
+
+  .our-values {
+    font-size: 16px;
+    font-family: SharpGroteskSemiBold25;
+    font-weight: 600;
+    line-height: 21px;
+    color: var(--primary-color-dreamy-periwinkle);
+    border-radius: 48px;
+    padding: 4px 8px;
+    border: 1px solid var(--primary-color-dark);
+
+    .code-symbol {
+      font-family: SharpGroteskBook20;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+
+  .choose-mecy {
+    font-size: 54px;
+    font-family: SharpGroteskSemiBold25;
+    font-weight: 600;
+    margin-top: 25px;
+    color: var(--secondary-color-dark);
+    text-align: center;
+  }
+
+  .crafting {
+    margin-top: 25px;
+    color: var(--primary-color-cosmic-blue);
+    text-align: center;
+    font-size: 24px;
+    font-family: SharpGroteskMedium20;
+    font-weight: 500;
+    line-height: 32px;
+  }
+
+  .view-all-btn {
+    margin-top: 25px;
+    padding: 15px 25px;
+    border-radius: 8px;
+    background: var(--secondary-color-dark);
+    outline: none;
+    border: none;
+    color: var(--primary-color-dark);
+    font-family: SharpGroteskMedium25;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+
+    .view-all-btn-icon {
+      margin-left: 10px;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+#digital-echos-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 165px 100px 165px;
+  margin-top: 30px;
+
+  .digital-echos-main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 16px;
+    width: 1401px;
+    height: fit-content;
+    background: var(--active-color-normal);
+    padding: 40px;
+
+    .digital-echos-list {
+      margin-bottom: 25px;
+      color: var(--secondary-color-dark);
+      font-size: 32px;
+      font-family: SharpGroteskSemiBold25;
+      font-weight: 600;
+      max-width: 650px;
+    }
+
+    .digital-echos-text {
+      max-width: 650px;
+      margin-bottom: 25px;
+      color: var(--primary-color-celestial-lavender);
+      font-size: 18px;
+      font-family: SharpGroteskMedium25;
+      font-weight: 500;
+      line-height: 22px;
+    }
+
+    .digital-echos-email {
+      color: var(--secondary-color-dark);
+      font-size: 16px;
+      font-family: SharpGroteskMedium25;
+      font-weight: 500;
+      line-height: 21px;
+      margin-bottom: 65px;
+    }
+  }
+}

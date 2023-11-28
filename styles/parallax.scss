@@ -1,0 +1,59 @@
+#parallax-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--secondary-color-dark);
+  padding: 55px 0;
+
+  .parallax-text-left,
+  .parallax-text-right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    white-space: nowrap;
+    width: 100vw;
+
+    .parallax-text-branches {
+      color: var(--primary-color-pure-dark);
+      font-size: 78px;
+      font-weight: 400;
+      margin-right: 40px;
+
+      .parallax-text-branches-symbol {
+        color: var(--primary-color-cosmic-blue);
+        text-align: center;
+        font-size: 78px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  @keyframes slide-left {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes slide-right {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+
+  .parallax-text-left {
+    animation: slide-left 8s linear infinite;
+  }
+
+  .parallax-text-right {
+    animation: slide-right 8s linear infinite;
+  }
+}

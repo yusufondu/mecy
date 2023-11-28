@@ -1,0 +1,108 @@
+#greeting-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 225px 295px 185px 295px;
+  margin-bottom: 185px;
+  height: calc(100vh - 91px);
+
+  .greeting {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .greeting-msg-welcome {
+      display: flex;
+      align-items: center;
+      color: var(--primary-color-dreamy-periwinkle);
+      padding: 4px 8px;
+      border-radius: 48px;
+      border: 1px solid var(--primary-color-dark);
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 21px;
+      margin-bottom: 25px;
+      font-family: SharpGroteskSemiBold25;
+
+      .code-symbol {
+        font-family: SharpGroteskBook20;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+
+    .greeting-msg-cta {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 40px;
+
+      .contact-us-btn {
+        padding: 15px 25px;
+        border-radius: 8px;
+        background: var(--secondary-color-dark);
+        color: var(--primary-color-dark);
+        font-size: 16px;
+        font-family: SharpGroteskMedium25;
+        font-weight: 500;
+        line-height: 21px;
+
+        .contact-us-btn-arrow {
+          margin-left: 10px;
+        }
+      }
+
+      .custom-search {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        width: 456px;
+        height: 50px;
+        border: 2px solid var(--secondary-color-dark);
+        border-radius: 8px;
+        margin-left: 25px;
+        padding: 17px 25px;
+
+        .custom-search-input {
+          border: none;
+          outline: none;
+          background: inherit;
+          color: var(--secondary-color-dark);
+          font-size: 14px;
+          font-family: SharpGroteskMedium25;
+          font-weight: 500;
+          line-height: 21px;
+        }
+        .custom-search-button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 15px 25px;
+          font-size: 14px;
+          font-family: SharpGroteskMedium25;
+          font-weight: 500;
+          line-height: 21px;
+          color: var(--primary-color-dark);
+          background: var(--secondary-color-dark);
+          border-radius: 8px;
+          outline: none;
+          border: none;
+          position: absolute;
+          right: 3px;
+          top: 3px;
+          bottom: 3px;
+
+          .subscribe-bell {
+            margin-right: 5px;
+          }
+        }
+
+        ::placeholder {
+          color: var(--secondary-color-dark);
+        }
+      }
+    }
+  }
+}

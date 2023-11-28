@@ -1,0 +1,120 @@
+#busters-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 100px 295px 170px 295px;
+
+  .busters-cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+    .busters-title {
+      font-family: SharpGroteskSemiBold25;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 21px;
+      border-radius: 48px;
+      border: 1px solid var(--primary-color-dark);
+      color: var(--primary-color-cosmic-blue);
+
+      .code-symbol {
+        font-family: SharpGroteskBook20;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+
+    .busters-mainText {
+      text-align: center;
+      color: var(--primary-color-deep-dark);
+      font-family: SharpGroteskSemiBold25;
+      font-size: 54px;
+      font-weight: 600;
+      width: 650px;
+    }
+
+    .busters-answer {
+      display: flex;
+      color: var(--secondary-color-dark);
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 21px;
+      text-decoration: none;
+      font-family: SharpGroteskMedium25;
+
+      .busters-answer-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4px 4px 4px 15px;
+        background: var(--primary-color-dark);
+        border-radius: 40px;
+
+        .busters-answer-text {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 21px;
+          margin-right: 28px;
+        }
+
+        .circle {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 34px;
+          height: 34px;
+          border-radius: 50%;
+          background: var(--secondary-color-dark);
+        }
+      }
+    }
+  }
+
+  .accordionPart {
+    width: 100%;
+    margin-top: 60px;
+
+    .accordion {
+      border-radius: 24px;
+      .accordion-item {
+        margin-top: 10px;
+        border-radius: 24px;
+        .accordion-header {
+          border-radius: 24px;
+          .accordion-button {
+            color: var(--primary-color-cosmic-blue);
+            font-family: SharpGroteskMedium20;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 32px;
+            border-top-left-radius: 24px;
+            border-top-right-radius: 24px;
+            border: 1px solid var(--primary-color-dreamy-periwinkle);
+            background: var(--primary-color-ethereal-white);
+
+            &:focus {
+              box-shadow: none;
+            }
+          }
+        }
+        .accordion-line {
+          .accordion-body {
+            color: var(--primary-color-cosmic-blue);
+            font-family: SharpGroteskBook20;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 21px;
+            border-bottom-left-radius: 24px;
+            border-bottom-right-radius: 24px;
+            background: var(--primary-color-ethereal-white);
+          }
+        }
+      }
+    }
+  }
+}

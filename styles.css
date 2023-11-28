@@ -59,114 +59,6 @@ h5 {
   font-family: "SharpGroteskBook20";
   src: url("./assets/fonts/SharpGrotesk-Book20.otf");
 }
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px 40px;
-  background: var(--primary-color-pure-dark);
-}
-
-.header-titles {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  margin: 0;
-}
-.header-titles .header-title {
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.header-titles .header-title:hover {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  border-radius: 8px;
-  background: var(--primary-color-dark);
-}
-.header-titles .header-title:hover .header-title-arrow {
-  transition: transform 0.3s ease;
-  transform: rotate(180deg);
-}
-.header-titles .header-title .header-title-text {
-  display: flex;
-  color: var(--secondary-color-dark);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 21px;
-  text-decoration: none;
-  font-family: SharpGroteskMedium25;
-}
-.header-titles .header-title .header-title-text .header-title-arrow {
-  width: 16px;
-  height: 16px;
-  margin-left: 5px;
-}
-.header-titles .header-title .dropdown-who-we-are {
-  display: none;
-  position: absolute;
-  background-color: #333;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-.header-titles .header-title .dropdown-services {
-  display: none;
-  position: absolute;
-  background-color: #333;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-.header-titles .header-title-contact-us {
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.header-titles .header-title-contact-us .header-title-contact-us-text {
-  display: flex;
-  color: var(--secondary-color-dark);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 21px;
-  text-decoration: none;
-  font-family: SharpGroteskMedium25;
-}
-.header-titles .header-title-contact-us .header-title-contact-us-text .contact-us-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 4px 4px 4px 15px;
-  background: var(--primary-color-dark);
-  border-radius: 40px;
-}
-.header-titles .header-title-contact-us .header-title-contact-us-text .contact-us-text {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 21px;
-  margin-right: 28px;
-}
-.header-titles .header-title-contact-us .header-title-contact-us-text .circle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  background: var(--secondary-color-dark);
-}
-
-.header-titles li:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown-content a {
-  display: block;
-  padding: 10px;
-}
-
 #greeting-section {
   display: flex;
   justify-content: flex-start;
@@ -1226,6 +1118,104 @@ footer .footer-main .footer-third .social-media {
 }
 footer .footer-main .footer-third .social-media .social-media-logo {
   align-self: flex-end;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 40px;
+  background: var(--primary-color-pure-dark);
+}
+header .header-titles {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+header .header-titles .header-title {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header-titles .header-title:hover {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  background: var(--primary-color-dark);
+}
+header .header-titles .header-title:hover .header-title-arrow {
+  transition: transform 0.3s ease;
+  transform: rotate(180deg);
+}
+header .header-titles .header-title .header-title-text {
+  display: flex;
+  color: var(--secondary-color-dark);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  text-decoration: none;
+  font-family: SharpGroteskMedium25;
+}
+header .header-titles .header-title .header-title-text .header-title-arrow {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+header .header-titles .header-title .dropdown-who-we-are {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+header .header-titles .header-title .dropdown-services {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+header .header-titles .header-title-contact-us {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header-titles .header-title-contact-us .header-title-contact-us-text {
+  display: flex;
+  color: var(--secondary-color-dark);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  text-decoration: none;
+  font-family: SharpGroteskMedium25;
+}
+header .header-titles .header-title-contact-us .header-title-contact-us-text .contact-us-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 4px 4px 15px;
+  background: var(--primary-color-dark);
+  border-radius: 40px;
+}
+header .header-titles .header-title-contact-us .header-title-contact-us-text .contact-us-text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  margin-right: 28px;
+}
+header .header-titles .header-title-contact-us .header-title-contact-us-text .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--secondary-color-dark);
 }
 
 /*# sourceMappingURL=styles.css.map */

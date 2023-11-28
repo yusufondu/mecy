@@ -1,0 +1,59 @@
+#our-services-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0 30px 0;
+
+  .our-services-main-codetext {
+    color: var(--primary-color-dreamy-periwinkle);
+    border-radius: 48px;
+    padding: 4px 8px;
+    border: 1px solid var(--primary-color-dark);
+    font-size: 16px;
+    font-family: SharpGroteskSemiBold25;
+    font-weight: 600;
+    line-height: 21px;
+
+    .code-symbol {
+      font-family: SharpGroteskBook20;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+
+  .our-services-main-text {
+    margin-top: 30px;
+    color: var(--secondary-color-dark);
+    text-align: center;
+    font-size: 54px;
+    font-family: SharpGroteskSemiBold25;
+    font-weight: 600;
+  }
+
+  .our-services-main-subtext {
+    max-width: 651px;
+    margin-top: 25px;
+    color: var(--primary-color-cosmic-blue);
+    text-align: center;
+    font-size: 24px;
+    font-family: SharpGroteskMedium20;
+    font-weight: 500;
+    line-height: 32px;
+  }
+
+  .explore-mecy {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    color: var(--secondary-color-dark);
+    font-size: 16px;
+    font-family: SharpGroteskMedium25;
+    font-weight: 400;
+    line-height: 21px;
+
+    .explore-mecy-arrow-right {
+      margin-left: 8px;
+    }
+  }
+}
