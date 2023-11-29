@@ -13,83 +13,205 @@
     <title>Mency</title>
   </head>
   <body>
-    <header>
-      <div>
-        <a href="#">
-          <img class="mecy-logo" src="./assets/mecy_logo.svg" />
-        </a>
-      </div>
-      <div>
-        <ul class="header-titles">
-          <li class="header-title">
-            <a class="header-title-text" href="#">
-              Who We Are
-              <img
-                class="header-title-arrow"
-                src="./assets/interactive_arrow.svg"
-              />
-            </a>
+    <div id="nav">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              style="margin-top: 10px"
+              src="./assets/mecy_logo.svg"
+              alt="Mecy Logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            style="justify-content: flex-end; margin-top: 10px"
+            class="collapse navbar-collapse"
+            id="navbarSupportedContent"
+          >
+            <ul
+              style="margin-right: 8px"
+              class="navbar-nav mb-2 mb-lg-0 header-titles"
+            >
+              <li class="nav-item dropdown header-title">
+                <a
+                  class="nav-link dropdown-toggle header-title-text"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Who We Are
+                  <img
+                    class="header-title-arrow"
+                    src="./assets/interactive_arrow.svg"
+                  />
+                </a>
+                <ul
+                  style="padding: 0; border-radius: 20px"
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <div style="display: flex">
+                    <div>
+                      <img
+                        class="dropdown-image"
+                        src="./assets/dropdown.png"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        padding: 10px;
+                      "
+                    >
+                      <div style="display: flex; flex-direction: column">
+                        <div style="padding: 8px">
+                          <div class="dropdown-title">Consulting</div>
+                          <div class="dropdown-description">
+                            Beyond Consultation, We Ignite Digital
+                            Metamorphosis.
+                          </div>
+                        </div>
 
-            <div class="dropdown-who-we-are">
-              <div>
-                <img src="./assets/dropdown_image.svg" />
-              </div>
-              <div>asdasd</div>
-            </div>
-          </li>
-          <li class="header-title">
-            <a class="header-title-text" href="#">
-              Services
-              <img
-                class="header-title-arrow"
-                src="./assets/interactive_arrow.svg"
-              />
-            </a>
-            <div class="dropdown-services">
-              <a href="#">Web Design</a>
-              <a href="#">Graphic Design</a>
-            </div>
-          </li>
-          <li class="header-title">
-            <a class="header-title-text" href="#"> Portfolio </a>
-          </li>
-          <li class="header-title">
-            <a class="header-title-text" href="#">Media Center</a>
-          </li>
-          <li class="header-title-contact-us" style="margin-left: 5px">
-            <a class="header-title-contact-us-text" href="#">
-              <div class="contact-us-header">
-                <div class="contact-us-text">Contact Us</div>
-                <div class="circle">
-                  <img src="./assets/contact-us-arrow.svg" />
-                </div>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </header>
+                        <div style="padding: 8px">
+                          <div class="dropdown-title">Development</div>
+                          <div class="dropdown-description">
+                            Unlock the potential, and integrate it with the
+                            essence of cutting-edge technology. 
+                          </div>
+                        </div>
 
-    <section id="greeting-section">
+                        <div style="padding: 8px">
+                          <div class="dropdown-title">Digital Design</div>
+                          <div class="dropdown-description">
+                            In our vibrant design realm, we transcend the
+                            ordinary.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+              <li class="nav-item dropdown header-title">
+                <a
+                  class="nav-link dropdown-toggle header-title-text"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                  <img
+                    class="header-title-arrow"
+                    src="./assets/interactive_arrow.svg"
+                  />
+                </a>
+                <ul
+                  style="padding: 0; border-radius: 20px"
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <div style="display: flex">
+                    <div>
+                      <img
+                        class="dropdown-image"
+                        src="./assets/dropdown.png"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        padding: 10px;
+                      "
+                    >
+                      <div style="display: flex; flex-direction: column">
+                        <div style="padding: 8px">
+                          <div class="dropdown-title">About us</div>
+                          <div class="dropdown-description">
+                            Empower Your Next Product Launch with End-to-End
+                            Digital Mastery.
+                          </div>
+                        </div>
+
+                        <div style="padding: 8px">
+                          <div class="dropdown-title">Our team</div>
+                          <div class="dropdown-description">
+                            Get to know our dedicated team.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li> -->
+                </ul>
+              </li>
+              <li class="nav-item header-title">
+                <a
+                  class="nav-link active header-title-text"
+                  aria-current="page"
+                  href="#"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="nav-item header-title">
+                <a class="nav-link header-title-text" href="#">Media Center</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <li class="header-title-contact-us" style="margin-left: 5px">
+                <a class="header-title-contact-us-text" href="#">
+                  <div class="contact-us-header">
+                    <div class="contact-us-text">Contact Us</div>
+                    <div class="circle">
+                      <img src="./assets/contact-us-arrow.svg" />
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <section id="greeting">
       <div class="greeting">
         <div class="greeting-msg-welcome">
           <span class="code-symbol">&lt;</span>
           Welcome to the Nexus of Tech with Mecy®
           <span class="code-symbol">&gt;</span>
         </div>
+
         <div>
-          <h1>
-            Where ideas <br />
-            ascend and <br />
-            solutions <br />
-            unfold.
-          </h1>
+          <h1>Where ideas ascend and solutions unfold.</h1>
         </div>
 
         <div style="margin-top: 25px">
           <h5>
-            Empower Your Next Product Launch <br />
-            with End-to-End Digital Mastery.
+            Empower Your Next Product Launch with End-to-End Digital Mastery.
           </h5>
         </div>
 
@@ -192,13 +314,12 @@
       <div class="big-triple">
         <div class="triple-title">Consulting</div>
         <div class="triple-description">
-          Beyond Consultation, We Ignite Digital Metamorphosis.
-          <br /><br />In the heart of the development labyrinth, Mecy is your
-          guiding beacon. <br /><br />Why us? We're not just consultants: we are
-          architects of transformation in the digital dystopia.<br /><br />Steer
-          through uncertainty with confidence and expertise.<br /><br />We
-          listen, understand, and guide. Through our consultation, every idea
-          finds its path.
+          Beyond Consultation, We Ignite Digital Metamorphosis. In the heart of
+          the development labyrinth, Mecy is your guiding beacon. Why us? We're
+          not just consultants: we are architects of transformation in the
+          digital dystopia. Steer through uncertainty with confidence and
+          expertise. We listen, understand, and guide. Through our consultation,
+          every idea finds its path.
         </div>
         <div class="triple-btn">
           Explore more
@@ -230,14 +351,10 @@
     <section id="digital-echos-section">
       <div class="digital-echos-main">
         <div class="digital-echos-list">
-          Whether fine-tuning your existing software or birthing a digital
-          creation from the void.
+          Can’t wait to see how is your next project will be?
         </div>
         <div class="digital-echos-text">
-          It doesn't have to be a spooky night drive. <br />
-          <br />
-          We're your guides at every junction, ensuring you don't lose your way
-          in the neon-lit city of innovation.
+          Digital transformation starting from vision and creativity.
         </div>
         <div class="digital-echos-email">
           info@mecytech.com <img src="./assets/interactive_arrow_right.svg" />
@@ -473,7 +590,7 @@
           <div class="carousel-item">
             <div class="card">
               <div class="img-wrapper">
-                <img src="./assets/media-center.png" alt="..." />
+                <img src="./assets/media-center.png" />
               </div>
 
               <div class="card-body">
@@ -499,7 +616,7 @@
           <div class="carousel-item">
             <div class="card">
               <div class="img-wrapper">
-                <img src="./assets/media-center.png" alt="..." />
+                <img src="./assets/media-center.png" />
               </div>
 
               <div class="card-body">
@@ -805,7 +922,6 @@
               I accept your Privacy Policy.
             </label>
           </div>
-          <!-- <button type="submit" class="btn btn-primary">Send</button> -->
           <div class="btnformsubmit">
             <button type="submit" class="formsubmitBtn">
               Send
@@ -826,12 +942,13 @@
             <img src="./assets/mecy_logo_footer.svg" />
           </div>
           <div class="footer-statement">
-            <img style="height: 30px" src="./assets/quotes-top.svg" alt="" />
+            <img class="quotes" src="./assets/quotes-top.svg" alt="" />
             <div class="footer-statement-text">
               Where Ideas Ascend and Solutions Unfold.
             </div>
             <img
-              style="height: 30px; display: flex; align-self: flex-end"
+              class="quotes"
+              style="display: flex; align-self: flex-end"
               src="./assets/quotes-bottom.svg"
               alt=""
             />
@@ -955,7 +1072,7 @@
           </div>
         </div>
         <div class="footer-third">
-          <div style="display: flex; gap: 25px">
+          <div class="footer-third-first">
             <div class="copyright">Copyright © 2023</div>
             <div class="privacy">
               Privacy Policy
@@ -972,7 +1089,7 @@
               />
             </div>
           </div>
-          <div style="display: flex; gap: 25px">
+          <div class="footer-third-second">
             <div class="social-media">
               <img
                 class="social-media-logo"

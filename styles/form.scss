@@ -6,6 +6,10 @@
   background: var(--primary-color-pure-dark);
   padding: 100px 295px;
 
+  @media screen and (max-width: 320px) {
+    padding: 20px;
+  }
+
   .form-main {
     .form-title {
       width: fit-content;
@@ -33,6 +37,10 @@
     form {
       width: 456px;
       margin-top: 60px;
+
+      @media screen and (max-width: 320px) {
+        width: 280px;
+      }
 
       input,
       select,

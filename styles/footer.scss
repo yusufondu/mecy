@@ -1,11 +1,15 @@
 footer {
   background: var(--primary-color-pure-dark);
   padding: 100px 295px;
+  margin-top: 50px;
+
+  @media screen and (max-width: 320px) {
+    padding: 20px;
+  }
 
   .footer-main {
     .footer-first {
-      .footer-logo {
-      }
+      margin-bottom: 30px;
       .footer-statement {
         display: flex;
         margin-top: 45px;
@@ -16,21 +20,43 @@ footer {
         font-size: 32px;
         font-weight: 600;
 
+        @media screen and (max-width: 320px) {
+          max-width: 280px;
+          height: fit-content;
+        }
+
         .footer-statement-text {
           margin-left: 10px;
           margin-right: 10px;
         }
+
+        .quotes {
+          height: 30px;
+
+          @media screen and (max-width: 320px) {
+            height: 15px;
+          }
+        }
       }
     }
     .footer-second {
-      margin-top: 80px;
+      margin-top: 40px;
       margin-bottom: 80px;
       display: flex;
       justify-content: flex-start;
       align-items: flex-start;
 
+      @media screen and (max-width: 320px) {
+        flex-direction: column;
+        margin-bottom: 10px;
+      }
+
       .footer-address {
         margin-right: 185px;
+
+        @media screen and (max-width: 320px) {
+          margin: 50px 0 0 0;
+        }
 
         .footer-address-title {
           width: fit-content;
@@ -96,6 +122,9 @@ footer {
       }
 
       .footer-sidemap {
+        @media screen and (max-width: 320px) {
+          margin-top: 50px;
+        }
         .footer-sidemap-title {
           width: fit-content;
           font-family: SharpGroteskSemiBold25;
@@ -134,49 +163,72 @@ footer {
       align-items: center;
       gap: 25px;
 
-      .copyright {
-        margin-top: 40px;
-        display: flex;
-        align-items: center;
-        color: var(--secondary-color-dark);
-        font-size: 16px;
-        font-family: SharpGroteskMedium25;
-        font-weight: 400;
-        line-height: 21px;
+      @media screen and (max-width: 320px) {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 0px;
       }
-      .privacy {
-        margin-top: 40px;
-        display: flex;
-        align-items: center;
-        color: var(--secondary-color-dark);
-        font-size: 16px;
-        font-family: SharpGroteskMedium25;
-        font-weight: 400;
-        line-height: 21px;
 
-        .privacy-arrow-right {
-          margin-left: 8px;
+      .footer-third-first {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        @media screen and (max-width: 320px) {
+          gap: 0px;
+        }
+
+        .copyright {
+          margin-top: 40px;
+          display: flex;
+          align-items: center;
+          color: var(--secondary-color-dark);
+          font-size: 16px;
+          font-family: SharpGroteskMedium25;
+          font-weight: 400;
+          line-height: 21px;
+        }
+        .privacy {
+          margin-top: 40px;
+          display: flex;
+          align-items: center;
+          color: var(--secondary-color-dark);
+          font-size: 16px;
+          font-family: SharpGroteskMedium25;
+          font-weight: 400;
+          line-height: 21px;
+
+          .privacy-arrow-right {
+            margin-left: 8px;
+          }
+        }
+        .cookie {
+          margin-top: 40px;
+          display: flex;
+          align-items: center;
+          color: var(--secondary-color-dark);
+          font-size: 16px;
+          font-family: SharpGroteskMedium25;
+          font-weight: 400;
+          line-height: 21px;
+
+          .cookie-arrow-right {
+            margin-left: 8px;
+          }
         }
       }
-      .cookie {
-        margin-top: 40px;
+
+      .footer-third-second {
         display: flex;
-        align-items: center;
-        color: var(--secondary-color-dark);
-        font-size: 16px;
-        font-family: SharpGroteskMedium25;
-        font-weight: 400;
-        line-height: 21px;
+        gap: 25px;
 
-        .cookie-arrow-right {
-          margin-left: 8px;
-        }
-      }
-      .social-media {
-        margin-top: 40px;
+        .social-media {
+          margin-top: 40px;
 
-        .social-media-logo {
-          align-self: flex-end;
+          .social-media-logo {
+            align-self: flex-end;
+          }
         }
       }
     }

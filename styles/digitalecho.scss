@@ -5,6 +5,10 @@
   padding: 0 165px 100px 165px;
   margin-top: 30px;
 
+  @media screen and (max-width: 320px) {
+    padding: 20px;
+  }
+
   .digital-echos-main {
     display: flex;
     flex-direction: column;
@@ -22,6 +26,10 @@
       font-family: SharpGroteskSemiBold25;
       font-weight: 600;
       max-width: 650px;
+
+      @media screen and (max-width: 320px) {
+        font-size: 24px;
+      }
     }
 
     .digital-echos-text {
@@ -32,6 +40,10 @@
       font-family: SharpGroteskMedium25;
       font-weight: 500;
       line-height: 22px;
+
+      @media screen and (max-width: 320px) {
+        font-size: 16px;
+      }
     }
 
     .digital-echos-email {
@@ -41,6 +53,10 @@
       font-weight: 500;
       line-height: 21px;
       margin-bottom: 65px;
+
+      @media screen and (max-width: 320px) {
+        font-size: 13px;
+      }
     }
   }
 }

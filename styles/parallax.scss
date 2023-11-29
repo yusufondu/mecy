@@ -12,9 +12,12 @@
     justify-content: space-around;
     align-items: center;
     color: white;
-    font-size: 24px;
     white-space: nowrap;
     width: 100vw;
+
+    @media screen and (max-width: 320px) {
+      width: 320px;
+    }
 
     .parallax-text-branches {
       color: var(--primary-color-pure-dark);
@@ -22,11 +25,19 @@
       font-weight: 400;
       margin-right: 40px;
 
+      @media screen and (max-width: 320px) {
+        font-size: 42px;
+      }
+
       .parallax-text-branches-symbol {
         color: var(--primary-color-cosmic-blue);
         text-align: center;
         font-size: 78px;
         font-weight: 400;
+
+        @media screen and (max-width: 320px) {
+          font-size: 42px;
+        }
       }
     }
   }

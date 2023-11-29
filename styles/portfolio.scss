@@ -5,6 +5,10 @@
   background: #fff;
   padding: 100px 0 100px 295px;
 
+  @media screen and (max-width: 320px) {
+    padding: 20px;
+  }
+
   .our-portfolio-section-main {
     display: flex;
     flex-direction: column;
@@ -35,6 +39,12 @@
       font-size: 54px;
       font-weight: 600;
       width: 650px;
+
+      @media screen and (max-width: 320px) {
+        width: 280px;
+        font-size: 32px;
+        padding: 20px;
+      }
     }
 
     .our-portfolio-section-main-subText {
@@ -44,6 +54,12 @@
       font-weight: 500;
       line-height: 32px;
       width: 650px;
+
+      @media screen and (max-width: 320px) {
+        width: 280px;
+        font-size: 24px;
+        padding: 20px;
+      }
     }
 
     .our-portfolio-section-main-view-all-cases-btn {
@@ -70,10 +86,18 @@
       align-items: flex-start;
       gap: 20px;
 
+      @media screen and (max-width: 320px) {
+        flex-direction: column;
+      }
+
       .case-category-form {
         display: flex;
         flex-direction: column;
         gap: 15px;
+
+        @media screen and (max-width: 320px) {
+          margin-left: 15px;
+        }
 
         .form-check {
           display: flex;
@@ -86,9 +110,6 @@
 
           &:hover {
             background: var(--primary-color-dreamy-periwinkle);
-          }
-
-          .form-check-input {
           }
 
           .form-check-label {
@@ -107,6 +128,10 @@
         position: relative;
         max-width: 358px;
         max-height: 468px;
+
+        @media screen and (max-width: 320px) {
+          max-width: 280px;
+        }
 
         .card-box-image {
           position: relative;
@@ -132,6 +157,10 @@
           font-size: 16px;
           font-weight: 400;
           line-height: 21px;
+
+          @media screen and (max-width: 320px) {
+            margin-top: 10px;
+          }
 
           .brand-name {
             color: var(--primary-color-dark);

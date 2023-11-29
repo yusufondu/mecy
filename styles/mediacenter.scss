@@ -6,6 +6,10 @@
   background: #fff;
   padding: 100px 295px;
 
+  @media screen and (max-width: 320px) {
+    padding: 20px;
+  }
+
   .media-center-cta {
     display: flex;
     flex-direction: column;
@@ -37,6 +41,11 @@
       font-size: 54px;
       font-weight: 600;
       width: 650px;
+
+      @media screen and (max-width: 320px) {
+        width: 280px;
+        font-size: 32px;
+      }
     }
 
     .media-center-main-subText {
@@ -47,6 +56,10 @@
       font-weight: 500;
       line-height: 32px;
       width: 650px;
+
+      @media screen and (max-width: 320px) {
+        width: 280px;
+      }
     }
 
     .media-center-cta-btn {
@@ -74,18 +87,38 @@
       max-width: 1286px;
       padding: 3rem;
 
+      @media screen and (max-width: 320px) {
+        padding: 1.2rem;
+      }
+
       .carousel-item {
         width: 358px;
+
+        @media screen and (max-width: 320px) {
+          width: 280px;
+        }
         .card {
           width: 358px;
           height: 610px;
           margin: 0 0.5em;
           border: none;
 
+          @media screen and (max-width: 320px) {
+            width: 280px;
+          }
+
           .img-wrapper {
             display: flex;
             justify-content: center;
             align-items: flex-start;
+
+            img {
+              width: 358px;
+
+              @media screen and (max-width: 320px) {
+                width: 280px;
+              }
+            }
           }
 
           .card-body {
@@ -98,6 +131,10 @@
             gap: 25px;
             border-radius: 0px 0px 24px 24px;
             background: var(--primary-color-ethereal-white);
+
+            @media screen and (max-width: 320px) {
+              width: 280px;
+            }
 
             .card-title {
               color: var(--primary-color-dark);

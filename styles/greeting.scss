@@ -1,16 +1,27 @@
-#greeting-section {
+#greeting {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 225px 295px 185px 295px;
-  margin-bottom: 185px;
+  padding: 0 295px;
+  margin: 185px 0;
   height: calc(100vh - 91px);
+
+  @media screen and (max-width: 320px) {
+    padding: 20px;
+    margin: 140px 0;
+  }
 
   .greeting {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    max-width: 684px;
+
+    @media screen and (max-width: 320px) {
+      max-width: 280px;
+      text-align: left;
+    }
 
     .greeting-msg-welcome {
       display: flex;
@@ -25,6 +36,11 @@
       margin-bottom: 25px;
       font-family: SharpGroteskSemiBold25;
 
+      @media screen and (max-width: 320px) {
+        width: 280px;
+        text-align: center;
+      }
+
       .code-symbol {
         font-family: SharpGroteskBook20;
         font-size: 14px;
@@ -37,6 +53,10 @@
       justify-content: flex-start;
       align-items: center;
       margin-top: 40px;
+
+      @media screen and (max-width: 320px) {
+        align-items: flex-start;
+      }
 
       .contact-us-btn {
         padding: 15px 25px;
@@ -64,6 +84,10 @@
         border-radius: 8px;
         margin-left: 25px;
         padding: 17px 25px;
+
+        @media screen and (max-width: 320px) {
+          display: none;
+        }
 
         .custom-search-input {
           border: none;

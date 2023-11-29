@@ -4,6 +4,12 @@
   align-items: flex-start;
   padding: 100px 0;
 
+  @media screen and (max-width: 320px) {
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px;
+  }
+
   .company-value {
     display: flex;
     justify-content: space-between;
