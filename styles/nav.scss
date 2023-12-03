@@ -184,6 +184,10 @@
   border-left: 7px solid transparent;
   border-bottom: 10px solid #fff;
   border-right: 7px solid transparent;
+
+  @media screen and (max-width: 320px) {
+    display: none;
+  }
 }
 
 .dropdown-image {
