@@ -36,6 +36,11 @@ h1 {
   font-size: 78px;
   font-weight: 600;
   color: var(--secondary-color-dark);
+  margin: 0;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 54px;
+  }
 
   @media screen and (max-width: 320px) {
     font-size: 45px;
