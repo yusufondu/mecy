@@ -26,12 +26,15 @@
   }
 
   .our-services-main-text {
+    max-width: 651px;
     margin-top: 30px;
     color: var(--secondary-color-dark);
     text-align: center;
     font-size: 54px;
     font-family: SharpGroteskSemiBold25;
     font-weight: 600;
+    font-style: normal;
+    line-height: normal;
 
     @media screen and (max-width: 320px) {
       font-size: 32px;

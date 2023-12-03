@@ -1,9 +1,10 @@
 #triple-component {
   display: flex;
   justify-content: center;
-  padding: 30px 165px 100px 165px;
+  padding: 30px 165px 0 165px;
   background: var(--primary-color-pure-dark);
   height: fit-content;
+  position: relative;
 
   @media screen and (max-width: 320px) {
     flex-direction: column;
@@ -13,8 +14,9 @@
   .big-triple {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: flex-start;
-
+    z-index: 2;
     border-radius: 24px;
     background: var(--primary-color-dark);
     box-shadow: 0px 3px 4px 0px var(--primary-color-cosmic-blue) inset;
@@ -43,10 +45,18 @@
 
     .triple-description {
       color: var(--texts-text-invert, #b3bafb);
-      font-family: SharpGroteskMedium20;
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      p {
+        margin: 0;
+        padding: 0;
+        font-family: SharpGroteskMedium20;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 22px; /* 122.222% */
+      }
     }
 
     .triple-btn {
@@ -61,6 +71,18 @@
         margin-left: 8px;
       }
     }
+  }
+
+  .big-triple-bg {
+    border-radius: var(506px);
+    background: var(--primary-color-cosmic-blue);
+    filter: blur(200px);
+    position: absolute;
+    left: 211px;
+    top: -57px;
+    width: 506px;
+    height: 506px;
+    z-index: 1;
   }
 
   .right-side-triple {

@@ -183,7 +183,7 @@
             <form class="d-flex">
               <li class="header-title-contact-us" style="margin-left: 5px">
                 <a class="header-title-contact-us-text" href="#">
-                  <div class="contact-us-header">
+                  <div id="scrollToFormFromHeader" class="contact-us-header">
                     <div class="contact-us-text">Say Hello</div>
                     <div class="circle">
                       <img
@@ -209,7 +209,7 @@
         </div>
 
         <div>
-          <h1>Where ideas ascend and solutions unfold.</h1>
+          <h1>Where ideas arise and solutions unfold.</h1>
         </div>
 
         <div style="margin-top: 25px">
@@ -296,9 +296,7 @@
         >
       </div>
       <div class="our-services-main-text">
-        Let’s start <br />
-        developing your <br />
-        next project.
+        Create tomorrow from today - together.
       </div>
       <div class="our-services-main-subtext">
         We embrace your goals, utilize the latest technology to develop
@@ -317,14 +315,20 @@
       <div class="big-triple">
         <div class="triple-title">Consulting</div>
         <div class="triple-description">
-          Beyond Consultation, We Ignite Digital Metamorphosis.<br />
-          In the heart of the development labyrinth, Mecy is your guiding
-          beacon.<br />
-          Why us? We're not just consultants: we are architects of
-          transformation in the digital dystopia.<br />
-          Steer through uncertainty with confidence and expertise.<br />
-          We listen, understand, and guide. Through our consultation, every idea
-          finds its path.
+          <p>Beyond Consultation, We Ignite Digital Metamorphosis.</p>
+          <p>
+            In the heart of the development labyrinth, Mecy is your guiding
+            beacon.
+          </p>
+          <p>
+            Why us? We're not just consultants: we are architects of
+            transformation in the digital dystopia.
+          </p>
+          <p>Steer through uncertainty with confidence and expertise.</p>
+          <p>
+            We listen, understand, and guide. Through our consultation, every
+            idea finds its path.
+          </p>
         </div>
         <div class="triple-btn">
           Explore more
@@ -334,6 +338,7 @@
           />
         </div>
       </div>
+      <div class="big-triple-bg"></div>
       <div class="right-side-triple">
         <div class="small-triple">
           <div class="triple-title">Development</div>
@@ -367,7 +372,7 @@
         <div class="digital-echos-email">
           info@mecytech.com <img src="./assets/interactive_arrow_right.svg" />
         </div>
-        <div class="big-arrow">
+        <div id="scrollToFormBigArrow" class="big-arrow">
           <img src="./assets/interactive_arrow_big.svg" />
         </div>
       </div>
@@ -397,52 +402,54 @@
       </button>
     </section>
 
-    <section id="values-list">
-      <div class="company-value">
-        <div class="values-img-background">
-          <img src="./assets/two_way_arrow.svg" />
+    <div class="valueslistmain">
+      <section id="values-list">
+        <div class="company-value">
+          <div class="values-img-background">
+            <img src="./assets/two_way_arrow.svg" />
+          </div>
+          <div class="values-title">Customer-Friendly Prowess</div>
+          <div class="values-description">
+            <span class="values-description-first-line"
+              >We don't just serve, we connect.</span
+            >
+            <br />
+            Our customer-friendly approach transforms collaborations into <br />
+            conversations, ensuring your needs resonate at the heart of every
+            solution.
+          </div>
         </div>
-        <div class="values-title">Customer-Friendly Prowess</div>
-        <div class="values-description">
-          <span class="values-description-first-line"
-            >We don't just serve, we connect.</span
-          >
-          <br />
-          Our customer-friendly approach transforms collaborations into <br />
-          conversations, ensuring your needs resonate at the heart of every
-          solution.
+        <div class="company-value">
+          <div class="values-img-background">
+            <img src="./assets/two_way_arrow.svg" />
+          </div>
+          <div class="values-title">Innovation Beyond Boundaries</div>
+          <div class="values-description">
+            <span class="values-description-first-line">
+              Innovation is the very path we tread. </span
+            > 
+            <br />
+            We push the boundaries of what's possible, staying at the forefront
+            of technological evolution to infuse your projects with
+            groundbreaking ideas and futuristic flair.
+          </div>
         </div>
-      </div>
-      <div class="company-value">
-        <div class="values-img-background">
-          <img src="./assets/two_way_arrow.svg" />
+        <div class="company-value">
+          <div class="values-img-background">
+            <img src="./assets/two_way_arrow.svg" />
+          </div>
+          <div class="values-title">Visioner's Strategic Touch</div>
+          <div class="values-description">
+            <span class="values-description-first-line"
+              >We don't just see, we envision.</span
+            >
+            <br />  Mecy is your partner in turning complex visions into simple,
+            impactful realities, building stable systems that echo your dreams
+            and strategies.
+          </div>
         </div>
-        <div class="values-title">Innovation Beyond Boundaries</div>
-        <div class="values-description">
-          <span class="values-description-first-line">
-            Innovation is the very path we tread. </span
-          > 
-          <br />
-          We push the boundaries of what's possible, staying at the forefront of
-          technological evolution to infuse your projects with groundbreaking
-          ideas and futuristic flair.
-        </div>
-      </div>
-      <div class="company-value">
-        <div class="values-img-background">
-          <img src="./assets/two_way_arrow.svg" />
-        </div>
-        <div class="values-title">Visioner's Strategic Touch</div>
-        <div class="values-description">
-          <span class="values-description-first-line"
-            >We don't just see, we envision.</span
-          >
-          <br />  Mecy is your partner in turning complex visions into simple,
-          impactful realities, building stable systems that echo your dreams and
-          strategies.
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <section style="display: none" id="our-portfolio-section">
       <div class="our-portfolio-section-main">
@@ -721,8 +728,8 @@
           >
         </div>
         <div class="busters-mainText">Frequently Asked Questions.</div>
-        <a class="busters-answer" href="#">
-          <div class="busters-answer-header">
+        <a class="busters-answer">
+          <div id="scrollToForm" class="busters-answer-header">
             <div class="busters-answer-text">
               Didn’t find your answer? Drop us a line
             </div>
@@ -749,7 +756,7 @@
             </h2>
             <div
               id="collapseOne"
-              class="accordion-line accordion-collapse collapse show"
+              class="accordion-line accordion-collapse collapse"
               aria-labelledby="headingOne"
               data-bs-parent="#accordionExample"
             >
@@ -779,7 +786,7 @@
             </h2>
             <div
               id="collapseTwo"
-              class="accordion-line accordion-collapse collapse show"
+              class="accordion-line accordion-collapse collapse"
               aria-labelledby="headingTwo"
               data-bs-parent="#accordionExample"
             >
@@ -810,7 +817,7 @@
             </h2>
             <div
               id="collapseThree"
-              class="accordion-line accordion-collapse collapse show"
+              class="accordion-line accordion-collapse collapse"
               aria-labelledby="headingThree"
               data-bs-parent="#accordionExample"
             >
@@ -839,7 +846,7 @@
             </h2>
             <div
               id="collapseFour"
-              class="accordion-line accordion-collapse collapse show"
+              class="accordion-line accordion-collapse collapse"
               aria-labelledby="headingFour"
               data-bs-parent="#accordionExample"
             >
@@ -858,105 +865,107 @@
       </div>
     </section>
 
-    <section id="form-section">
-      <div class="form-main">
-        <div class="form-title">
-          <span class="code-symbol">&lt;</span>Say Hello<span
-            class="code-symbol"
-            >&gt;</span
-          >
-        </div>
-        <div class="form-question">Have a project in mind?</div>
-        <form>
-          <div class="form-floating mb-3">
-            <input
-              type="text"
-              class="form-control"
-              id="floatingInput"
-              placeholder="Name*"
-            />
-            <label for="floatingInput">Name*</label>
-          </div>
-          <div class="form-floating mb-3">
-            <input
-              type="text"
-              class="form-control"
-              id="floatingInput"
-              placeholder="Surname*"
-            />
-            <label for="floatingInput">Surname*</label>
-          </div>
-          <div class="form-floating mb-3">
-            <input
-              type="email"
-              class="form-control"
-              id="floatingInput"
-              placeholder="E-mail*"
-            />
-            <label for="floatingInput">Email*</label>
-          </div>
-          <div class="form-floating mb-3">
-            <select
-              class="form-select"
-              id="floatingSelect"
-              aria-label="Floating label select example"
+    <div class="formMainBg">
+      <section id="formSection">
+        <div class="form-main">
+          <div class="form-title">
+            <span class="code-symbol">&lt;</span>Say Hello<span
+              class="code-symbol"
+              >&gt;</span
             >
-              <option selected>Open this select menu</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-            <label for="floatingSelect">Your Country</label>
           </div>
-          <div class="form-floating mb-3">
-            <select
-              class="form-select"
-              id="floatingSelect"
-              aria-label="Floating label select example"
-            >
-              <option selected>Open this select menu</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-            <label for="floatingSelect">What do you need?</label>
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">
-              Share your vision with us*
-            </label>
-            <textarea
-              class="form-control"
-              id="exampleFormControlTextarea1"
-              rows="3"
-            ></textarea>
-          </div>
-          <div class="mb-3">
-            <label for="formFile" class="form-label">Drag your file</label>
-            <input class="form-control" type="file" id="formFile" />
-          </div>
-          <div class="form-check form-switch">
-            <input
-              class="checkBtn form-check-input"
-              type="checkbox"
-              id="flexSwitchCheckDefault"
-            />
-            <label class="form-check-label" for="flexSwitchCheckDefault">
-              I accept your Privacy Policy.
-            </label>
-          </div>
-          <div class="btnformsubmit">
-            <button type="submit" class="formsubmitBtn">
-              Send
-              <img
-                class="btnIcon"
-                src="./assets/interactive_arrow_right_blue.svg"
+          <div class="form-question">Have a project in mind?</div>
+          <form>
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingInput"
+                placeholder="Name*"
               />
-            </button>
-          </div>
-        </form>
-      </div>
-    </section>
+              <label for="floatingInput">Name*</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingInput"
+                placeholder="Surname*"
+              />
+              <label for="floatingInput">Surname*</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="floatingInput"
+                placeholder="E-mail*"
+              />
+              <label for="floatingInput">Email*</label>
+            </div>
+            <div class="form-floating mb-3">
+              <select
+                class="form-select"
+                id="floatingSelect"
+                aria-label="Floating label select example"
+              >
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <label for="floatingSelect">Your Country</label>
+            </div>
+            <div class="form-floating mb-3">
+              <select
+                class="form-select"
+                id="floatingSelect"
+                aria-label="Floating label select example"
+              >
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <label for="floatingSelect">What do you need?</label>
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">
+                Share your vision with us*
+              </label>
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="formFile" class="form-label">Drag your file</label>
+              <input class="form-control" type="file" id="formFile" />
+            </div>
+            <div class="form-check form-switch">
+              <input
+                class="checkBtn form-check-input"
+                type="checkbox"
+                id="flexSwitchCheckDefault"
+              />
+              <label class="form-check-label" for="flexSwitchCheckDefault">
+                I accept your Privacy Policy.
+              </label>
+            </div>
+            <div class="btnformsubmit">
+              <button type="submit" class="formsubmitBtn">
+                Send
+                <img
+                  class="btnIcon"
+                  src="./assets/interactive_arrow_right_blue.svg"
+                />
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
 
     <footer>
       <div class="footer-main">
@@ -967,7 +976,7 @@
           <div class="footer-statement">
             <img class="quotes" src="./assets/quotes-top.svg" alt="" />
             <div class="footer-statement-text">
-              Where Ideas Ascend and Solutions Unfold.
+              Where Ideas Arise and Solutions Unfold.
             </div>
             <img
               class="quotes"

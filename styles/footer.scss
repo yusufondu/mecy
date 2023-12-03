@@ -9,12 +9,12 @@ footer {
 
   .footer-main {
     .footer-first {
-      margin-bottom: 30px;
+      margin-bottom: 80px;
       .footer-statement {
         display: flex;
         margin-top: 45px;
         max-width: 557px;
-        height: 70px;
+        height: fit-content;
         color: var(--primary-color-cosmic-blue);
         font-family: SharpGroteskSemiBold25;
         font-size: 32px;
@@ -40,7 +40,6 @@ footer {
       }
     }
     .footer-second {
-      margin-top: 40px;
       margin-bottom: 80px;
       display: flex;
       justify-content: flex-start;
@@ -65,8 +64,9 @@ footer {
           font-weight: 600;
           line-height: 21px;
           border-radius: 48px;
-          border: 1px solid var(--primary-color-dark);
-          color: var(--primary-color-cosmic-blue);
+          border: 1px solid var(--primary-color-cosmic-blue);
+          color: var(--primary-color-dreamy-periwinkle);
+          padding: 8px 15px;
 
           .code-symbol {
             font-family: SharpGroteskBook20;
@@ -132,8 +132,10 @@ footer {
           font-weight: 600;
           line-height: 21px;
           border-radius: 48px;
-          border: 1px solid var(--primary-color-dark);
-          color: var(--primary-color-cosmic-blue);
+          border: 1px solid var(--primary-color-cosmic-blue);
+          color: var(--primary-color-dreamy-periwinkle);
+          padding: 8px 15px;
+          margin-bottom: 40px;
 
           .code-symbol {
             font-family: SharpGroteskBook20;
@@ -142,7 +144,7 @@ footer {
           }
         }
         .footer-sidemap-list {
-          margin-top: 40px;
+          margin-top: 18px;
           display: flex;
           align-items: center;
           color: var(--secondary-color-dark);
@@ -172,7 +174,7 @@ footer {
 
       .footer-third-first {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         gap: 25px;
 
         @media screen and (max-width: 320px) {

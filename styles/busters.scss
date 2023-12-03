@@ -64,6 +64,10 @@
         background: var(--primary-color-dark);
         border-radius: 40px;
 
+        &:hover {
+          cursor: pointer;
+        }
+
         @media screen and (max-width: 320px) {
           padding: 15px;
         }
@@ -104,6 +108,7 @@
     .accordion {
       border-radius: 24px;
       .accordion-item {
+        background: var(--primary-color-ethereal-white);
         margin-top: 10px;
         border-radius: 24px;
         .accordion-header {
@@ -116,6 +121,8 @@
             line-height: 32px;
             border-top-left-radius: 24px;
             border-top-right-radius: 24px;
+            border-bottom-left-radius: 24px;
+            border-bottom-right-radius: 24px;
             border: 1px solid var(--primary-color-dreamy-periwinkle);
             background: var(--primary-color-ethereal-white);
 

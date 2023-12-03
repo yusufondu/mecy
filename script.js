@@ -27,3 +27,51 @@ if (window.matchMedia("(min-width: 576px)").matches) {
 } else {
   $(multipleItemCarousel).addClass("slide");
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Button elementini seç
+  var scrollButton = document.getElementById("scrollToForm");
+
+  // Scroll işlemini yapacak fonksiyon
+  function scrollToSection() {
+    var targetSection = document.getElementById("formSection");
+
+    // targetSection'a animasyonlu bir şekilde kaydırma işlemi
+    formSection.scrollIntoView({ behavior: "smooth" });
+  }
+
+  // Button'a tıklandığında scrollToSection fonksiyonunu çağır
+  scrollToForm.addEventListener("click", scrollToSection);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Button elementini seç
+  var scrollButton = document.getElementById("scrollToFormBigArrow");
+
+  // Scroll işlemini yapacak fonksiyon
+  function scrollToSection() {
+    var targetSection = document.getElementById("formSection");
+
+    // targetSection'a animasyonlu bir şekilde kaydırma işlemi
+    formSection.scrollIntoView({ behavior: "smooth" });
+  }
+
+  // Button'a tıklandığında scrollToSection fonksiyonunu çağır
+  scrollToFormBigArrow.addEventListener("click", scrollToSection);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Button elementini seç
+  var scrollButton = document.getElementById("scrollToFormFromHeader");
+
+  // Scroll işlemini yapacak fonksiyon
+  function scrollToSection() {
+    var targetSection = document.getElementById("formSection");
+
+    // targetSection'a animasyonlu bir şekilde kaydırma işlemi
+    formSection.scrollIntoView({ behavior: "smooth" });
+  }
+
+  // Button'a tıklandığında scrollToSection fonksiyonunu çağır
+  scrollToFormFromHeader.addEventListener("click", scrollToSection);
+});
