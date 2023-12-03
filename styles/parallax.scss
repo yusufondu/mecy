@@ -5,6 +5,7 @@
   justify-content: center;
   background: var(--secondary-color-dark);
   padding: 55px 0;
+  overflow: hidden;
 
   .parallax-text-left,
   .parallax-text-right {
@@ -24,6 +25,7 @@
       font-size: 78px;
       font-weight: 400;
       margin-right: 40px;
+      font-family: SharpGroteskBook25;
 
       @media screen and (max-width: 320px) {
         font-size: 42px;
@@ -61,10 +63,18 @@
   }
 
   .parallax-text-left {
-    animation: slide-left 8s linear infinite;
+    animation: slide-left 25s linear infinite;
+
+    @media screen and (max-width: 320px) {
+      animation: slide-left 10s linear infinite;
+    }
   }
 
   .parallax-text-right {
-    animation: slide-right 8s linear infinite;
+    animation: slide-right 25s linear infinite;
+
+    @media screen and (max-width: 320px) {
+      animation: slide-right 10s linear infinite;
+    }
   }
 }
