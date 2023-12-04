@@ -1,9 +1,9 @@
 #greeting {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   padding: 0 295px;
-  // margin: 185px 0;
+  margin: 80px 0 0 0;
   height: calc(100vh - 138px);
 
   @media screen and (max-width: 320px) {

@@ -38,8 +38,8 @@ h1 {
   color: var(--secondary-color-dark);
   margin: 0;
 
-  @media screen and (max-width: 1024px) {
-    font-size: 54px;
+  @media screen and (max-width: 1440px) {
+    font-size: 42px;
   }
 
   @media screen and (max-width: 320px) {
@@ -60,6 +60,7 @@ h5 {
   display: flex;
   list-style: none;
   padding: 0;
+  margin-bottom: 0 !important;
 
   @media screen and (max-width: 320px) {
     flex-direction: column;
@@ -70,7 +71,7 @@ h5 {
     display: flex;
     justify-content: center;
     align-items: baseline;
-    margin-right: 2rem;
+    margin-right: 25px;
 
     @media screen and (max-width: 320px) {
       margin: 18px 0 0 0;
@@ -87,7 +88,7 @@ h5 {
       line-height: 21px;
       list-style: none;
 
-      margin: 40px 0 0 0;
+      margin: 32px 0 0 0;
       padding: 0;
 
       @media screen and (max-width: 320px) {

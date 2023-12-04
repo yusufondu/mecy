@@ -1,6 +1,6 @@
 footer {
   background: var(--primary-color-pure-dark);
-  padding: 100px 295px;
+  padding: 100px 295px 40px 295px;
   margin-top: 50px;
 
   @media screen and (max-width: 320px) {
@@ -162,24 +162,19 @@ footer {
     .footer-third {
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      gap: 25px;
+      align-items: baseline;
 
       @media screen and (max-width: 320px) {
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
-        gap: 0px;
       }
 
       .footer-third-first {
         display: flex;
-        flex-direction: row;
-        gap: 25px;
 
         @media screen and (max-width: 320px) {
           flex-direction: column;
-          gap: 0px;
         }
       }
 
