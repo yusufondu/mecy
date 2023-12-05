@@ -1,7 +1,7 @@
 footer {
   background: var(--primary-color-pure-dark);
   padding: 100px 295px 40px 295px;
-  margin-top: 50px;
+  margin-top: 40px;
 
   @media screen and (max-width: 480px) {
     padding: 20px;
@@ -10,9 +10,12 @@ footer {
   .footer-main {
     .footer-first {
       margin-bottom: 80px;
+      @media screen and (max-width: 480px) {
+        margin-bottom: 0;
+      }
       .footer-statement {
         display: flex;
-        margin-top: 45px;
+        margin-top: 40px;
         max-width: 557px;
         height: fit-content;
         color: var(--primary-color-cosmic-blue);
@@ -21,8 +24,8 @@ footer {
         font-weight: 600;
 
         @media screen and (max-width: 480px) {
-          max-width: 280px;
           height: fit-content;
+          font-size: 25px;
         }
 
         .footer-statement-text {
@@ -40,14 +43,14 @@ footer {
       }
     }
     .footer-second {
-      margin-bottom: 80px;
+      margin-bottom: 87px;
       display: flex;
       justify-content: flex-start;
       align-items: flex-start;
 
       @media screen and (max-width: 480px) {
         flex-direction: column;
-        margin-bottom: 10px;
+        margin-bottom: 50px;
       }
 
       .footer-address {
@@ -67,6 +70,7 @@ footer {
           border: 1px solid var(--primary-color-cosmic-blue);
           color: var(--primary-color-dreamy-periwinkle);
           padding: 8px 15px;
+          margin-bottom: 40px;
 
           .code-symbol {
             font-family: SharpGroteskBook20;
@@ -75,10 +79,10 @@ footer {
           }
         }
         .footer-address-box {
-          margin-top: 40px;
+          margin-top: 25px;
           display: flex;
-          justify-content: center;
-          align-items: flex-start;
+          justify-content: flex-start;
+          align-items: center;
 
           .footer-address-box-locationIcon {
             display: flex;
@@ -103,7 +107,7 @@ footer {
               line-height: 21px;
             }
 
-            .footer-address-box-locationContent-email {
+            .email {
               margin-top: 15px;
               display: flex;
               align-items: center;
@@ -112,6 +116,10 @@ footer {
               font-family: SharpGroteskMedium25;
               font-weight: 400;
               line-height: 21px;
+
+              @media screen and (max-width: 480px) {
+                font-size: 12px;
+              }
 
               .footer-address-box-locationContent-arrow-right {
                 margin-left: 8px;
@@ -144,7 +152,7 @@ footer {
           }
         }
         .footer-sidemap-list {
-          margin-top: 18px;
+          margin-top: 20px;
           display: flex;
           align-items: center;
           color: var(--secondary-color-dark);
@@ -172,6 +180,7 @@ footer {
 
       .footer-third-first {
         display: flex;
+        margin: 32px 0 0 0;
 
         @media screen and (max-width: 480px) {
           flex-direction: column;
@@ -183,6 +192,7 @@ footer {
         justify-content: center !important;
         align-items: center;
         gap: 25px;
+        margin: 32px 0 0 0;
       }
     }
   }

@@ -29,6 +29,7 @@ body {
   height: 100vh;
   background: var(--primary-color-pure-dark) !important;
   overflow-x: hidden;
+  line-height: normal;
 }
 
 h1 {
@@ -87,8 +88,6 @@ h5 {
       font-weight: 400;
       line-height: 21px;
       list-style: none;
-
-      margin: 32px 0 0 0;
       padding: 0;
 
       @media screen and (max-width: 480px) {
