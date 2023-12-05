@@ -16,7 +16,7 @@
     white-space: nowrap;
     width: 100vw;
 
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 480px) {
       width: 320px;
     }
 
@@ -27,7 +27,7 @@
       margin-right: 40px;
       font-family: SharpGroteskBook25;
 
-      @media screen and (max-width: 320px) {
+      @media screen and (max-width: 480px) {
         font-size: 42px;
       }
 
@@ -37,7 +37,7 @@
         font-size: 78px;
         font-weight: 400;
 
-        @media screen and (max-width: 320px) {
+        @media screen and (max-width: 480px) {
           font-size: 42px;
         }
       }
@@ -65,7 +65,7 @@
   .parallax-text-left {
     animation: slide-left 25s linear infinite;
 
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 480px) {
       animation: slide-left 10s linear infinite;
     }
   }
@@ -73,7 +73,7 @@
   .parallax-text-right {
     animation: slide-right 25s linear infinite;
 
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 480px) {
       animation: slide-right 10s linear infinite;
     }
   }

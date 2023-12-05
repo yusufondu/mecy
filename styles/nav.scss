@@ -1,7 +1,7 @@
 #nav {
   padding: 25px 28px;
 
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 480px) {
     padding: 0;
   }
 
@@ -27,7 +27,7 @@
         border-radius: 8px;
         background: var(--primary-color-dark);
 
-        @media screen and (max-width: 320px) {
+        @media screen and (max-width: 480px) {
           background: inherit;
         }
 
@@ -169,7 +169,7 @@
   margin-top: 25px !important;
   position: relative;
 
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 480px) {
     width: auto;
   }
 }
@@ -185,13 +185,13 @@
   border-bottom: 10px solid #fff;
   border-right: 7px solid transparent;
 
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 480px) {
     display: none;
   }
 }
 
 .dropdown-image {
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 480px) {
     display: none;
   }
 }

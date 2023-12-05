@@ -6,7 +6,7 @@
   background: #fff;
   padding: 100px 295px;
 
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 480px) {
     padding: 20px;
   }
 
@@ -42,7 +42,7 @@
       font-weight: 600;
       width: 650px;
 
-      @media screen and (max-width: 320px) {
+      @media screen and (max-width: 480px) {
         width: 280px;
         font-size: 32px;
       }
@@ -57,7 +57,7 @@
       line-height: 32px;
       width: 650px;
 
-      @media screen and (max-width: 320px) {
+      @media screen and (max-width: 480px) {
         width: 280px;
       }
     }
@@ -87,14 +87,14 @@
       max-width: 1286px;
       padding: 3rem;
 
-      @media screen and (max-width: 320px) {
+      @media screen and (max-width: 480px) {
         padding: 1.2rem;
       }
 
       .carousel-item {
         width: 358px;
 
-        @media screen and (max-width: 320px) {
+        @media screen and (max-width: 480px) {
           width: 280px;
         }
         .card {
@@ -103,7 +103,7 @@
           margin: 0 0.5em;
           border: none;
 
-          @media screen and (max-width: 320px) {
+          @media screen and (max-width: 480px) {
             width: 280px;
           }
 
@@ -115,7 +115,7 @@
             img {
               width: 358px;
 
-              @media screen and (max-width: 320px) {
+              @media screen and (max-width: 480px) {
                 width: 280px;
               }
             }
@@ -132,7 +132,7 @@
             border-radius: 0px 0px 24px 24px;
             background: var(--primary-color-ethereal-white);
 
-            @media screen and (max-width: 320px) {
+            @media screen and (max-width: 480px) {
               width: 280px;
             }
 

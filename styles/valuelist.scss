@@ -10,7 +10,7 @@
     border-bottom-left-radius: 48px;
     background: var(--primary-color-pure-dark) !important;
 
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 480px) {
       flex-direction: column;
       gap: 25px;
       padding: 20px;

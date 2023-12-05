@@ -6,7 +6,7 @@
   background: #fff;
   padding: 100px 295px 170px 295px;
 
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 480px) {
     padding: 20px;
   }
 
@@ -41,7 +41,7 @@
       font-weight: 600;
       width: 650px;
 
-      @media screen and (max-width: 320px) {
+      @media screen and (max-width: 480px) {
         font-size: 32px;
         width: 280px;
       }
@@ -68,7 +68,7 @@
           cursor: pointer;
         }
 
-        @media screen and (max-width: 320px) {
+        @media screen and (max-width: 480px) {
           padding: 15px;
         }
 
@@ -78,7 +78,7 @@
           line-height: 21px;
           margin-right: 28px;
 
-          @media screen and (max-width: 320px) {
+          @media screen and (max-width: 480px) {
             font-size: 14px;
             margin-right: 10px;
           }
@@ -93,7 +93,7 @@
           border-radius: 50%;
           background: var(--secondary-color-dark);
 
-          @media screen and (max-width: 320px) {
+          @media screen and (max-width: 480px) {
             height: 25px;
           }
         }
@@ -130,7 +130,7 @@
               box-shadow: none;
             }
 
-            @media screen and (max-width: 320px) {
+            @media screen and (max-width: 480px) {
               font-size: 18px;
             }
           }
@@ -146,7 +146,7 @@
             border-bottom-right-radius: 24px;
             background: var(--primary-color-ethereal-white);
 
-            @media screen and (max-width: 320px) {
+            @media screen and (max-width: 480px) {
               font-size: 14px;
             }
           }
