@@ -19,6 +19,11 @@
   --active-color-normal: #248aff;
 }
 
+$label-focus-top: -0.4rem;
+$label-not-focus-top: 1rem;
+$label-focus-font-size: 0.8rem;
+$label-focus-color: var(--secondary-color-dark);
+
 * {
   margin: 0;
   padding: 0;
@@ -38,6 +43,7 @@ h1 {
   font-weight: 600;
   color: var(--secondary-color-dark);
   margin: 0;
+  line-height: normal;
 
   @media screen and (max-width: 1440px) {
     font-size: 42px;
@@ -55,6 +61,11 @@ h5 {
   font-size: 32px;
   font-weight: 500;
   line-height: 40px;
+
+  @media screen and (max-width: 480px) {
+    font-size: 26px;
+    text-align: left;
+  }
 }
 
 .underlineList {
@@ -120,4 +131,62 @@ h5 {
       margin-left: 8px;
     }
   }
+}
+
+.textareaBox {
+  position: relative;
+
+  textarea {
+    border: 2px solid var(--secondary-color-dark);
+    border-radius: 20px;
+    color: var(--secondary-color-dark);
+    background: var(--primary-color-pure-dark);
+    box-shadow: none;
+  }
+
+  label {
+    color: var(--secondary-color-dark);
+    font-family: SharpGroteskMedium20;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+
+    position: absolute;
+    top: 20px;
+
+    &::after {
+      background: none;
+      background-color: none;
+    }
+  }
+}
+
+// ----------------------------------------
+
+.form-m {
+  position: relative;
+}
+
+.form-m input {
+  width: 100%;
+  padding: 1rem; /* Bu değeri ihtiyacınıza göre ayarlayabilirsiniz */
+}
+
+.form-m label {
+  position: absolute;
+  // top: -1rem; /* Label'ın yukarıda olacak kadar */
+  // left: 0;
+  height: auto;
+  transition: top 0.3s ease-out; /* Animasyonlu geçiş ekleyebilirsiniz */
+}
+
+.form-m input:focus + label,
+.form-m input:not(:placeholder-shown) + label {
+  top: $label-focus-top;
+  left: 1rem;
+  font-size: $label-focus-font-size;
+  color: $label-focus-color;
+  background: var(--primary-color-pure-dark);
+  padding: 5px;
+  border-radius: 16px;
 }

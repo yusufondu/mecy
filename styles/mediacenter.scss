@@ -15,7 +15,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    width: 100%;
 
     .media-center-title {
       font-family: SharpGroteskSemiBold25;
@@ -25,6 +25,7 @@
       border-radius: 48px;
       border: 1px solid var(--primary-color-dark);
       color: var(--primary-color-cosmic-blue);
+      padding: 4px 8px;
 
       .code-symbol {
         font-family: SharpGroteskBook20;
@@ -40,11 +41,16 @@
       font-family: SharpGroteskSemiBold25;
       font-size: 54px;
       font-weight: 600;
-      width: 650px;
+      max-width: 650px;
+      line-height: normal;
+      margin-top: 25px;
 
       @media screen and (max-width: 480px) {
-        width: 280px;
         font-size: 32px;
+      }
+
+      .r {
+        font-weight: 400;
       }
     }
 
@@ -55,15 +61,12 @@
       font-size: 24px;
       font-weight: 500;
       line-height: 32px;
-      width: 650px;
-
-      @media screen and (max-width: 480px) {
-        width: 280px;
-      }
+      max-width: 650px;
+      margin-top: 25px;
     }
 
     .media-center-cta-btn {
-      margin-top: 25px;
+      margin-top: 40px;
       padding: 15px 25px;
       border-radius: 8px;
       background: var(--secondary-color-dark);
@@ -81,31 +84,34 @@
     }
   }
 
+  // .card-slider {
+  //   width: 100%;
+  //   background: yellow;
+  //   max-width: 850px;
+  //   min-height: 610px;
+  //   margin-top: 60px;
+  // }
+
   #carouselExample {
+    width: 100%;
+    max-width: 850px;
+    min-height: 610px;
     margin-top: 60px;
+
     .carousel-inner {
-      max-width: 1286px;
-      padding: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       @media screen and (max-width: 480px) {
-        padding: 1.2rem;
+        display: grid;
       }
 
       .carousel-item {
-        width: 358px;
-
-        @media screen and (max-width: 480px) {
-          width: 280px;
-        }
+        max-width: 240px;
         .card {
-          width: 358px;
-          height: 610px;
-          margin: 0 0.5em;
+          max-width: 240px;
           border: none;
-
-          @media screen and (max-width: 480px) {
-            width: 280px;
-          }
 
           .img-wrapper {
             display: flex;
@@ -113,35 +119,36 @@
             align-items: flex-start;
 
             img {
-              width: 358px;
-
-              @media screen and (max-width: 480px) {
-                width: 280px;
-              }
+              max-width: 240px;
             }
           }
 
           .card-body {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             flex-direction: column;
             align-items: flex-start;
-            width: 358px;
+            max-width: 240px;
             padding: 25px 15px;
-            gap: 25px;
             border-radius: 0px 0px 24px 24px;
             background: var(--primary-color-ethereal-white);
 
-            @media screen and (max-width: 480px) {
-              width: 280px;
+            .calendar {
+              margin-bottom: 25px;
+              color: var(--primary-color-cosmic-blue);
+              font-family: SharpGroteskMedium20;
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 21px;
             }
 
             .card-title {
               color: var(--primary-color-dark);
               font-family: SharpGroteskSemiBold25;
-              font-size: 18px;
+              font-size: 16px;
               font-weight: 600;
               line-height: 22px;
+              min-height: 132px;
             }
 
             .card-text {
@@ -149,15 +156,17 @@
               color: var(--primary-color-cosmic-blue);
               text-overflow: ellipsis;
               font-family: SharpGroteskBook20;
-              font-size: 16px;
+              font-size: 14px;
               font-weight: 400;
               line-height: 21px;
+              margin-bottom: 25px !important;
+              min-height: 147px;
             }
 
             .card-btn {
               color: var(--primary-color-dark);
               font-family: SharpGroteskMedium25;
-              font-size: 16px;
+              font-size: 14px;
               font-weight: 500;
               line-height: 21px;
               align-self: flex-end;
@@ -186,8 +195,6 @@
 
     @media screen and (min-width: 576px) {
       .carousel-inner {
-        display: flex;
-
         .carousel-item {
           display: block;
           margin-right: 15px;

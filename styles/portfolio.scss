@@ -24,6 +24,7 @@
       line-height: 21px;
       border-radius: 48px;
       border: 1px solid var(--primary-color-dark);
+      padding: 4px 8px;
 
       .code-symbol {
         font-family: SharpGroteskBook20;
@@ -39,6 +40,7 @@
       font-size: 54px;
       font-weight: 600;
       width: 650px;
+      line-height: normal;
 
       @media screen and (max-width: 480px) {
         width: 280px;

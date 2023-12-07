@@ -1,3 +1,27 @@
+$form-group-margin: 1.5rem;
+$label-transition: 0.2s ease-out;
+
+$textarea-transition: border-color 0.2s ease-out;
+$textarea-height: 140px;
+$textarea-padding: 1rem;
+$textarea-font-size: 16px;
+$textarea-border: 2px solid var(--secondary-color-dark);
+$textarea-border-radius: 16px;
+$textarea-focus-color: var(--secondary-color-dark);
+
+$select-transition: border-color 0.2s ease-out;
+$select-height: 50px;
+$select-padding: 1rem;
+$select-font-size: 16px;
+$select-border: 2px solid var(--secondary-color-dark);
+$select-border-radius: 16px;
+$select-focus-color: var(--secondary-color-dark);
+
+$label-focus-top: -0.8rem;
+$label-not-focus-top: 1rem;
+$label-focus-font-size: 0.8rem;
+$label-focus-color: var(--secondary-color-dark);
+
 .formMainBg {
   background: white;
 
@@ -7,12 +31,12 @@
     justify-content: center;
     align-items: flex-start;
     background: var(--primary-color-pure-dark);
-    padding: 100px 295px;
+    padding: 100px 295px 50px 295px;
     border-top-left-radius: 48px;
     border-top-right-radius: 48px;
 
     @media screen and (max-width: 480px) {
-      padding: 20px;
+      padding: 80px 20px 20px 20px;
     }
 
     .form-main {
@@ -39,26 +63,51 @@
         font-family: SharpGroteskSemiBold25;
         font-size: 43px;
         font-weight: 600;
+        line-height: normal;
       }
       form {
         width: 456px;
         margin-top: 60px;
 
+        .form-m {
+          margin: 25px 0;
+        }
+
         @media screen and (max-width: 480px) {
-          width: 280px;
+          width: auto;
+        }
+
+        .input-file {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          border-radius: 16px;
+          border: 2px dashed var(--secondary-color-dark);
+
+          padding: 60px 0;
+          margin: 25px 0;
+
+          input {
+            display: none;
+          }
         }
 
         input,
         select,
         textarea {
           border: 2px solid var(--secondary-color-dark);
-          border-radius: 20px;
+          border-radius: 16px;
           color: var(--secondary-color-dark);
           background: var(--primary-color-pure-dark);
           box-shadow: none;
         }
         label {
           color: var(--secondary-color-dark);
+          font-family: SharpGroteskMedium20;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 21px;
 
           &::after {
             background: none;
@@ -66,15 +115,26 @@
           }
         }
 
+        .form-check {
+          display: flex !important;
+          justify-content: flex-start !important;
+          align-items: flex-end !important;
+        }
+
         .form-switch .form-check-input {
+          margin-right: 15px;
+          min-width: 43px;
+          min-height: 23px;
           background-image: url(./assets/checkbox_round.svg);
-          background-size: 12px 12px;
+          background-size: 20px 20px;
           background-repeat: no-repeat;
         }
 
         .form-switch .form-check-input:checked {
+          min-width: 43px;
+          min-height: 23px;
           background-image: url(./assets/checkbox_round.svg);
-          background-size: 12px 12px;
+          background-size: 20px 20px;
           background-repeat: no-repeat;
           background-position: right center;
         }
@@ -84,7 +144,7 @@
           justify-content: flex-end;
 
           .formsubmitBtn {
-            margin-top: 25px;
+            margin-top: 40px;
             padding: 15px 25px;
             border-radius: 8px;
             background: var(--secondary-color-dark);
@@ -101,7 +161,185 @@
             }
           }
         }
+
+        .select-group {
+          position: relative;
+          margin: $form-group-margin 0;
+
+          label {
+            position: absolute;
+            top: 1.2rem;
+            left: 1rem;
+            pointer-events: none;
+            transition: $label-transition;
+
+            color: var(--secondary-color-dark);
+            font-family: SharpGroteskMedium20;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 21px;
+          }
+
+          select {
+            width: 100%;
+            min-height: $select-height;
+            padding: $select-padding;
+            font-size: $select-font-size;
+            border: $select-border;
+            border-radius: $select-border-radius;
+            transition: $select-transition;
+            outline: none;
+
+            &:focus {
+              border-color: $select-focus-color;
+
+              + label {
+                top: $label-focus-top;
+                font-size: $label-focus-font-size;
+                color: $label-focus-color;
+                background: var(--primary-color-pure-dark);
+                padding: 5px;
+                border-radius: 6px;
+              }
+            }
+
+            &:not(:focus) {
+              &:valid {
+                + label {
+                  top: $label-focus-top;
+                  font-size: $label-focus-font-size;
+                  color: $label-focus-color;
+                  background: var(--primary-color-pure-dark);
+                  padding: 5px;
+                  border-radius: 6px;
+                }
+              }
+
+              + label {
+                top: $label-not-focus-top;
+                font-size: $select-font-size;
+                color: var(--secondary-color-dark); // Varsayılan renk
+                background: none;
+                padding: 0;
+                border-radius: 0;
+              }
+            }
+          }
+        }
+
+        .form-group {
+          position: relative;
+          margin: $form-group-margin 0;
+
+          label {
+            position: absolute;
+            top: 0.5rem;
+            left: 1rem;
+            pointer-events: none;
+            transition: $label-transition;
+
+            color: var(--secondary-color-dark);
+            font-family: SharpGroteskMedium20;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 21px;
+          }
+
+          textarea {
+            width: 100%;
+            min-height: $textarea-height;
+            padding: $textarea-padding;
+            font-size: $textarea-font-size;
+            border: $textarea-border;
+            border-radius: $textarea-border-radius;
+            transition: $textarea-transition;
+            outline: none;
+
+            &:focus,
+            &:not(:placeholder-shown) {
+              border-color: $textarea-focus-color;
+            }
+
+            &:not(:placeholder-shown) + label,
+            &:focus + label {
+              top: $label-focus-top;
+              font-size: $label-focus-font-size;
+              color: $label-focus-color;
+              background: var(--primary-color-pure-dark);
+              padding: 5px;
+              border-radius: 6px;
+            }
+          }
+        }
       }
     }
   }
+}
+
+.select-group {
+  position: relative;
+  margin: 50px;
+}
+
+.form-control-placeholder {
+  pointer-events: none;
+  display: inline-block;
+  color: #1d3147;
+  font-size: 17px;
+  position: absolute;
+  top: 0;
+  left: 2.2em;
+  line-height: 2.2em;
+  white-space: nowrap;
+  background-image: linear-gradient(to bottom, #fff, #fff);
+  background-size: 100% 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.3s;
+}
+
+.bootstrap-select.show > .btn-light.dropdown-toggle,
+.bootstrap-select .dropdown-menu.show {
+  border-color: #da3338 !important;
+  color: #da3338 !important;
+}
+
+.bootstrap-select.show > .btn-light.dropdown-toggle {
+  background-color: #fff;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.bootstrap-select > .btn,
+.bootstrap-select > .btn-light {
+  padding-left: 1.5rem;
+  font-size: 15px;
+  height: 43px;
+  border-radius: 2px;
+  background-color: #fff !important;
+  border: 1px solid #1d3147 !important;
+}
+
+.bootstrap-select > .btn-light:focus,
+.bootstrap-select .dropdown-toggle:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.bootstrap-select > .dropdown-menu {
+  border: 1px solid #1d3147;
+}
+
+/* :active works but when replace with :focus, it doesn't work */
+
+.float {
+  color: #da3338 !important;
+  transform: translate(0, -1.1em);
+  font-size: 75%;
+  transition: 0.2s ease-in-out;
+}
+
+.changefloat {
+  transform: translate(0, -1.1em);
+  font-size: 75%;
 }
