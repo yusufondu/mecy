@@ -71,6 +71,7 @@
   }
 
   .parallax-text-right {
+    margin-top: 50px;
     animation: slide-right 25s linear infinite;
 
     @media screen and (max-width: 480px) {
