@@ -469,71 +469,190 @@
         </button>
         <div class="case-category">
           <div class="case-category-form">
-            <div class="form-check">
+            <div class="form-check" onclick="filterProjects('consulting')">
               <input
                 class="form-check-input"
                 type="radio"
                 name="flexRadioDefault"
                 id="flexRadioDefault1"
+                checked
               />
               <label class="form-check-label" for="flexRadioDefault1">
                 Consulting
               </label>
             </div>
-            <div class="form-check">
+            <div class="form-check" onclick="filterProjects('development')">
               <input
                 class="form-check-input"
                 type="radio"
                 name="flexRadioDefault"
-                id="flexRadioDefault1"
+                id="flexRadioDefault2"
               />
-              <label class="form-check-label" for="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault2">
                 Development
               </label>
             </div>
-            <div class="form-check">
+            <div class="form-check" onclick="filterProjects('design')">
               <input
                 class="form-check-input"
                 type="radio"
                 name="flexRadioDefault"
-                id="flexRadioDefault1"
+                id="flexRadioDefault3"
               />
-              <label class="form-check-label" for="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault3">
                 Design
               </label>
             </div>
           </div>
-          <div style="display: flex">
-            <div class="card-box">
-              <img class="card-box-image" src="./assets/ui-design.png" />
+          <div class="card-boxes">
+            <div class="card-box consulting">
+              <img
+                style="width: 280px; height: 280px"
+                class="card-box-image"
+                src="./assets/sporistanbul.png"
+              />
               <div class="card-box-circle">
                 <img src="./assets/arrow_north_east.svg" />
               </div>
               <div class="card-box-description">
-                <span class="brand-name">Brand Name</span>
-                <span class="ui-design">&lt;UI Design&gt;</span>
+                <span class="brand-name">Spor Istanbul</span>
+                <span class="ui-design">&lt;Transformation&gt;</span>
+                <br />
+                <br />
+                I am a short description of the project. I should be in max.
+                lines.
+              </div>
+            </div>
+            <div class="card-box consulting">
+              <img
+                style="width: 280px; height: 280px"
+                class="card-box-image"
+                src="./assets/ui-design.png"
+              />
+              <div class="card-box-circle">
+                <img src="./assets/arrow_north_east.svg" />
+              </div>
+              <div class="card-box-description">
+                <span class="brand-name">Snapchat</span>
+                <span class="ui-design">&lt;App Dev.&gt;</span>
+                <br />
+                <br />
+                I am a short description of the project. I should be in max.
+              </div>
+            </div>
+            <div class="card-box consulting">
+              <img
+                style="width: 280px; height: 280px"
+                class="card-box-image"
+                src="./assets/ui-design.png"
+              />
+              <div class="card-box-circle">
+                <img src="./assets/arrow_north_east.svg" />
+              </div>
+              <div class="card-box-description">
+                <span class="brand-name">Materially</span>
+                <span class="ui-design">&lt;App Dev.&gt;</span>
+                <br />
+                <br />
+                I am a short description of the project. I should be in max.
+              </div>
+            </div>
+            <div class="card-box development">
+              <img
+                style="border-radius: 24px; width: 280px; height: 280px"
+                class="card-box-image"
+                src="./assets/asd.png"
+              />
+              <div class="card-box-circle">
+                <img src="./assets/arrow_north_east.svg" />
+              </div>
+              <div class="card-box-description">
+                <span class="brand-name">Ideal Protein</span>
+                <span class="ui-design">&lt;App Dev.&gt;</span>
                 <br />
                 <br />
                 I am a short description of the project. I should be in max. 2
                 lines.
               </div>
             </div>
-            <div class="card-box">
-              <img class="card-box-image" src="./assets/ui-design.png" />
+            <div class="card-box development">
+              <img
+                style="border-radius: 24px; width: 280px; height: 280px"
+                class="card-box-image"
+                src="./assets/asd.png"
+              />
               <div class="card-box-circle">
                 <img src="./assets/arrow_north_east.svg" />
               </div>
               <div class="card-box-description">
-                <span class="brand-name">Brand Name</span>
-                <span class="ui-design">&lt;UI Design&gt;</span>
+                <span class="brand-name">Reflexion</span>
+                <span class="ui-design">&lt;App Dev.&gt;</span>
                 <br />
                 <br />
                 I am a short description of the project. I should be in max. 2
                 lines.
               </div>
             </div>
-            <div class="card-box">
-              <img class="card-box-image" src="./assets/ui-design.png" />
+            <div class="card-box development">
+              <img
+                style="border-radius: 24px; width: 280px; height: 280px"
+                class="card-box-image"
+                src="./assets/asd.png"
+              />
+              <div class="card-box-circle">
+                <img src="./assets/arrow_north_east.svg" />
+              </div>
+              <div class="card-box-description">
+                <span class="brand-name">Dropoffer</span>
+                <span class="ui-design">&lt;Web / App Dev.&gt;</span>
+                <br />
+                <br />
+                I am a short description of the project. I should be in max. 2
+                lines.
+              </div>
+            </div>
+            <div class="card-box design">
+              <img
+                style="width: 280px; height: 280px"
+                class="card-box-image"
+                src="./assets/ui-design.png"
+              />
+              <div class="card-box-circle">
+                <img src="./assets/arrow_north_east.svg" />
+              </div>
+              <div class="card-box-description">
+                <span class="brand-name">Replicant</span>
+                <span class="ui-design">&lt;Web Design / Dev.&gt;</span>
+                <br />
+                <br />
+                I am a short description of the project. I should be in max. 2
+                lines.
+              </div>
+            </div>
+            <div class="card-box design">
+              <img
+                style="width: 280px; height: 280px"
+                class="card-box-image"
+                src="./assets/ui-design.png"
+              />
+              <div class="card-box-circle">
+                <img src="./assets/arrow_north_east.svg" />
+              </div>
+              <div class="card-box-description">
+                <span class="brand-name">Tova</span>
+                <span class="ui-design">&lt;Web Design / Dev.&gt;</span>
+                <br />
+                <br />
+                I am a short description of the project. I should be in max. 2
+                lines.
+              </div>
+            </div>
+            <div class="card-box design">
+              <img
+                style="width: 280px; height: 280px"
+                class="card-box-image"
+                src="./assets/ui-design.png"
+              />
               <div class="card-box-circle">
                 <img src="./assets/arrow_north_east.svg" />
               </div>
@@ -551,7 +670,7 @@
       </div>
     </section>
 
-    <section id="media-center-section">
+    <section style="display: none" id="media-center-section">
       <div class="media-center-cta">
         <div class="media-center-title">
           <span class="code-symbol">&lt;</span>The Digest<span

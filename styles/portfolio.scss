@@ -3,19 +3,23 @@
   justify-content: space-between;
   align-items: center;
   background: #fff;
-  padding: 100px 0 100px 295px;
+  padding: 100px 10%;
 
   @media screen and (max-width: 480px) {
+    justify-content: center;
     padding: 20px;
   }
 
   .our-portfolio-section-main {
     display: flex;
     flex-direction: column;
-    align-items: space-between;
     justify-content: center;
     gap: 25px;
     width: 100%;
+
+    @media screen and (max-width: 480px) {
+      align-items: center;
+    }
 
     .our-portfolio-section-main-title {
       color: var(--primary-color-cosmic-blue);
@@ -46,8 +50,8 @@
 
       @media screen and (max-width: 480px) {
         width: 280px;
+        text-align: center;
         font-size: 32px;
-        padding: 20px;
       }
     }
 
@@ -62,7 +66,7 @@
       @media screen and (max-width: 480px) {
         width: 280px;
         font-size: 24px;
-        padding: 20px;
+        text-align: center;
       }
     }
 
@@ -88,7 +92,7 @@
 
     .case-category {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
       align-items: flex-start;
       gap: 20px;
 
@@ -128,62 +132,75 @@
         }
       }
 
-      .card-box {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        max-width: 240px;
-        max-height: 468px;
-        margin-left: 30px;
+      .card-boxes {
+        display: flex !important;
+        flex-direction: row;
 
         @media screen and (max-width: 480px) {
-          max-width: 280px;
+          flex-direction: column;
         }
 
-        .card-box-image {
-          position: relative;
-          margin-bottom: 23px;
-        }
-
-        .card-box-circle {
+        .card-box {
           display: flex;
-          justify-content: center;
-          align-items: center;
-          position: absolute;
-          align-self: end;
-          width: 34px;
-          height: 34px;
-          border-radius: 50%;
-          background: white;
-          top: 3%;
-          right: 3%;
-        }
-
-        .card-box-description {
-          color: var(--texts-text-brand-secondary, #555bfb);
-          font-family: SharpGroteskBook20;
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 21px;
+          flex-direction: column;
+          position: relative;
+          max-width: 240px;
+          max-height: 468px;
+          margin-left: 30px;
+          margin-right: 30px;
 
           @media screen and (max-width: 480px) {
-            margin-top: 10px;
+            max-width: 280px;
+            margin-bottom: 30px;
+            margin-left: 0;
+            margin-right: 0;
           }
 
-          .brand-name {
-            color: var(--primary-color-dark);
-            font-family: SharpGroteskSemiBold25;
-            font-size: 18px;
-            font-weight: 600;
-            line-height: 22px;
+          .card-box-image {
+            position: relative;
+            margin-bottom: 23px;
           }
 
-          .ui-design {
-            color: var(--primary-color-dark);
+          .card-box-circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            align-self: end;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            background: white;
+            top: 3%;
+            right: 3%;
+          }
+
+          .card-box-description {
+            color: var(--texts-text-brand-secondary, #555bfb);
             font-family: SharpGroteskBook20;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 400;
-            line-height: 22px;
+            line-height: 21px;
+
+            @media screen and (max-width: 480px) {
+              margin-top: 10px;
+            }
+
+            .brand-name {
+              color: var(--primary-color-dark);
+              font-family: SharpGroteskSemiBold25;
+              font-size: 18px;
+              font-weight: 600;
+              line-height: 22px;
+            }
+
+            .ui-design {
+              color: var(--primary-color-dark);
+              font-family: SharpGroteskBook20;
+              font-size: 18px;
+              font-weight: 400;
+              line-height: 22px;
+            }
           }
         }
       }

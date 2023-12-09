@@ -141,3 +141,28 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+//---
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Set Consulting as default on page load
+  filterProjects("consulting");
+});
+
+function filterProjects(category) {
+  // Set the checked status of radio buttons based on the category
+  document.getElementById("flexRadioDefault1").checked =
+    category === "consulting";
+  document.getElementById("flexRadioDefault2").checked =
+    category === "development";
+  document.getElementById("flexRadioDefault3").checked = category === "design";
+
+  const cards = document.querySelectorAll(".card-box");
+  cards.forEach((card) => {
+    if (card.classList.contains(category)) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  });
+}

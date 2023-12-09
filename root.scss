@@ -306,3 +306,9 @@ h5 {
   background-color: #b3bafb;
   border-radius: 11px;
 }
+
+/////------
+
+.form-check-input {
+  margin-left: 0.5em !important; /* !important kullanarak önceliği artırabilirsiniz */
+}

@@ -282,6 +282,10 @@ h5 {
   border-radius: 11px;
 }
 
+.form-check-input {
+  margin-left: 0.5em !important; /* !important kullanarak önceliği artırabilirsiniz */
+}
+
 @font-face {
   font-family: "SharpGroteskMedium20";
   src: url("./assets/fonts/SharpGrotesk-Medium20.otf");
@@ -1114,20 +1118,25 @@ h5 {
   justify-content: space-between;
   align-items: center;
   background: #fff;
-  padding: 100px 0 100px 295px;
+  padding: 100px 10%;
 }
 @media screen and (max-width: 480px) {
   #our-portfolio-section {
+    justify-content: center;
     padding: 20px;
   }
 }
 #our-portfolio-section .our-portfolio-section-main {
   display: flex;
   flex-direction: column;
-  align-items: space-between;
   justify-content: center;
   gap: 25px;
   width: 100%;
+}
+@media screen and (max-width: 480px) {
+  #our-portfolio-section .our-portfolio-section-main {
+    align-items: center;
+  }
 }
 #our-portfolio-section .our-portfolio-section-main .our-portfolio-section-main-title {
   color: var(--primary-color-cosmic-blue);
@@ -1157,8 +1166,8 @@ h5 {
 @media screen and (max-width: 480px) {
   #our-portfolio-section .our-portfolio-section-main .our-portfolio-section-main-text {
     width: 280px;
+    text-align: center;
     font-size: 32px;
-    padding: 20px;
   }
 }
 #our-portfolio-section .our-portfolio-section-main .our-portfolio-section-main-subText {
@@ -1173,7 +1182,7 @@ h5 {
   #our-portfolio-section .our-portfolio-section-main .our-portfolio-section-main-subText {
     width: 280px;
     font-size: 24px;
-    padding: 20px;
+    text-align: center;
   }
 }
 #our-portfolio-section .our-portfolio-section-main .our-portfolio-section-main-view-all-cases-btn {
@@ -1196,7 +1205,7 @@ h5 {
 }
 #our-portfolio-section .our-portfolio-section-main .case-category {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   gap: 20px;
 }
@@ -1234,24 +1243,37 @@ h5 {
   font-weight: 500;
   line-height: 22px;
 }
-#our-portfolio-section .our-portfolio-section-main .case-category .card-box {
+#our-portfolio-section .our-portfolio-section-main .case-category .card-boxes {
+  display: flex !important;
+  flex-direction: row;
+}
+@media screen and (max-width: 480px) {
+  #our-portfolio-section .our-portfolio-section-main .case-category .card-boxes {
+    flex-direction: column;
+  }
+}
+#our-portfolio-section .our-portfolio-section-main .case-category .card-boxes .card-box {
   display: flex;
   flex-direction: column;
   position: relative;
   max-width: 240px;
   max-height: 468px;
   margin-left: 30px;
+  margin-right: 30px;
 }
 @media screen and (max-width: 480px) {
-  #our-portfolio-section .our-portfolio-section-main .case-category .card-box {
+  #our-portfolio-section .our-portfolio-section-main .case-category .card-boxes .card-box {
     max-width: 280px;
+    margin-bottom: 30px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
-#our-portfolio-section .our-portfolio-section-main .case-category .card-box .card-box-image {
+#our-portfolio-section .our-portfolio-section-main .case-category .card-boxes .card-box .card-box-image {
   position: relative;
   margin-bottom: 23px;
 }
-#our-portfolio-section .our-portfolio-section-main .case-category .card-box .card-box-circle {
+#our-portfolio-section .our-portfolio-section-main .case-category .card-boxes .card-box .card-box-circle {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1264,7 +1286,7 @@ h5 {
   top: 3%;
   right: 3%;
 }
-#our-portfolio-section .our-portfolio-section-main .case-category .card-box .card-box-description {
+#our-portfolio-section .our-portfolio-section-main .case-category .card-boxes .card-box .card-box-description {
   color: var(--texts-text-brand-secondary, #555bfb);
   font-family: SharpGroteskBook20;
   font-size: 16px;
@@ -1272,18 +1294,18 @@ h5 {
   line-height: 21px;
 }
 @media screen and (max-width: 480px) {
-  #our-portfolio-section .our-portfolio-section-main .case-category .card-box .card-box-description {
+  #our-portfolio-section .our-portfolio-section-main .case-category .card-boxes .card-box .card-box-description {
     margin-top: 10px;
   }
 }
-#our-portfolio-section .our-portfolio-section-main .case-category .card-box .card-box-description .brand-name {
+#our-portfolio-section .our-portfolio-section-main .case-category .card-boxes .card-box .card-box-description .brand-name {
   color: var(--primary-color-dark);
   font-family: SharpGroteskSemiBold25;
   font-size: 18px;
   font-weight: 600;
   line-height: 22px;
 }
-#our-portfolio-section .our-portfolio-section-main .case-category .card-box .card-box-description .ui-design {
+#our-portfolio-section .our-portfolio-section-main .case-category .card-boxes .card-box .card-box-description .ui-design {
   color: var(--primary-color-dark);
   font-family: SharpGroteskBook20;
   font-size: 18px;
