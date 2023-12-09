@@ -97,7 +97,7 @@ h5 {
   font-weight: 400;
   line-height: 21px;
   list-style: none;
-  padding: 0;
+  padding-bottom: 15px;
 }
 @media screen and (max-width: 480px) {
   .underlineList .underlineItem .underlineText {
@@ -119,12 +119,27 @@ h5 {
   transform-origin: bottom left;
   transition: transform 0.25s ease-out;
 }
-.underlineList .underlineItem .underlineText:hover:after {
+.underlineList .underlineItem .rightArrow {
+  margin-left: 8px;
+  opacity: 1;
+  display: block;
+}
+.underlineList .underlineItem .rightArrowNew {
+  margin-left: 8px;
+  display: none;
+  opacity: 0;
+}
+.underlineList .underlineItem:hover .underlineText:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-.underlineList .underlineItem .rightArrow {
-  margin-left: 8px;
+.underlineList .underlineItem:hover .rightArrow {
+  opacity: 0;
+  display: none;
+}
+.underlineList .underlineItem:hover .rightArrowNew {
+  display: block;
+  opacity: 1;
 }
 
 .textareaBox {
@@ -175,6 +190,96 @@ h5 {
   background: var(--primary-color-pure-dark);
   padding: 5px;
   border-radius: 16px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+/* @keyframes ile fade-in animasyonunu tanımla */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.modal-content {
+  background-color: #fff;
+  padding: 60px;
+  max-height: 80vh;
+  max-width: 80dvw;
+  overflow-y: auto;
+  border-radius: 52px;
+}
+
+.modal-title {
+  color: #1d10b6;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: normal;
+  font-family: SharpGroteskSemiBold25;
+}
+
+.modal-description {
+  color: #555bfb;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+/* Custom Scrollbar */
+.modal-content::-webkit-scrollbar {
+  width: 12px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background-color: #1d10b6;
+  border-radius: 10px;
+}
+
+/* Diğer tarayıcılarda da aynı görünümü sağlamak için gerekli stiller */
+.modal-content::-webkit-scrollbar-track {
+  background-color: #b3bafb;
+}
+
+.modal-content-inner {
+  overflow-y: auto;
+  max-height: calc(80vh - 20px); /* Modal yüksekliğinden biraz daha az bir içerik alanı sağlamak */
+}
+.modal-content-inner .modal-description {
+  margin-right: 55px;
+  margin-top: 50px;
+  font-family: SharpGroteskBook20;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+/* Scrollbar stilini ayarlamak için */
+.modal-content-inner::-webkit-scrollbar {
+  width: 12px;
+}
+
+.modal-content-inner::-webkit-scrollbar-thumb {
+  background-color: #1d10b6;
+  border-radius: 10px;
+}
+
+.modal-content-inner::-webkit-scrollbar-track {
+  background-color: #b3bafb;
+  border-radius: 11px;
 }
 
 @font-face {
@@ -753,6 +858,16 @@ h5 {
   height: 506px;
   z-index: 1;
 }
+@media screen and (max-width: 480px) {
+  #triple-component .big-triple-bg {
+    left: -118px;
+  }
+}
+@media screen and (max-width: 320px) {
+  #triple-component .big-triple-bg {
+    left: -189px;
+  }
+}
 #triple-component .right-side-triple {
   display: flex;
   flex-direction: column;
@@ -996,7 +1111,7 @@ h5 {
 
 #our-portfolio-section {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   background: #fff;
   padding: 100px 0 100px 295px;
@@ -1009,9 +1124,10 @@ h5 {
 #our-portfolio-section .our-portfolio-section-main {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: space-between;
   justify-content: center;
   gap: 25px;
+  width: 100%;
 }
 #our-portfolio-section .our-portfolio-section-main .our-portfolio-section-main-title {
   color: var(--primary-color-cosmic-blue);
@@ -1022,6 +1138,7 @@ h5 {
   border-radius: 48px;
   border: 1px solid var(--primary-color-dark);
   padding: 4px 8px;
+  width: fit-content;
 }
 #our-portfolio-section .our-portfolio-section-main .our-portfolio-section-main-title .code-symbol {
   font-family: SharpGroteskBook20;
@@ -1050,7 +1167,7 @@ h5 {
   font-size: 24px;
   font-weight: 500;
   line-height: 32px;
-  width: 650px;
+  max-width: 650px;
 }
 @media screen and (max-width: 480px) {
   #our-portfolio-section .our-portfolio-section-main .our-portfolio-section-main-subText {
@@ -1060,7 +1177,8 @@ h5 {
   }
 }
 #our-portfolio-section .our-portfolio-section-main .our-portfolio-section-main-view-all-cases-btn {
-  margin-top: 25px;
+  margin-top: 15px;
+  margin-bottom: 35px;
   padding: 15px 25px;
   border-radius: 8px;
   background: var(--secondary-color-dark);
@@ -1071,6 +1189,7 @@ h5 {
   font-size: 16px;
   font-weight: 500;
   line-height: 21px;
+  width: fit-content;
 }
 #our-portfolio-section .our-portfolio-section-main .our-portfolio-section-main-view-all-cases-btn .view-all-btn-icon {
   margin-left: 10px;
@@ -1119,8 +1238,9 @@ h5 {
   display: flex;
   flex-direction: column;
   position: relative;
-  max-width: 358px;
+  max-width: 240px;
   max-height: 468px;
+  margin-left: 30px;
 }
 @media screen and (max-width: 480px) {
   #our-portfolio-section .our-portfolio-section-main .case-category .card-box {
@@ -1129,6 +1249,7 @@ h5 {
 }
 #our-portfolio-section .our-portfolio-section-main .case-category .card-box .card-box-image {
   position: relative;
+  margin-bottom: 23px;
 }
 #our-portfolio-section .our-portfolio-section-main .case-category .card-box .card-box-circle {
   display: flex;
@@ -1936,7 +2057,7 @@ footer .footer-main .footer-second .footer-address .footer-address-box .footer-a
 footer .footer-main .footer-second .footer-address .footer-address-box .footer-address-box-locationContent .email {
   margin-top: 15px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   color: var(--secondary-color-dark);
   font-size: 16px;
   font-family: SharpGroteskMedium25;
@@ -1982,9 +2103,19 @@ footer .footer-main .footer-second .footer-sidemap .footer-sidemap-list {
   font-family: SharpGroteskMedium25;
   font-weight: 400;
   line-height: 21px;
+  position: relative;
 }
-footer .footer-main .footer-second .footer-sidemap .footer-sidemap-list .footer-sidemap-list-arrow-right {
-  margin-left: 8px;
+footer .footer-main .footer-second .footer-sidemap .footer-sidemap-list .footer-sidemap-list:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--secondary-color-dark);
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
 }
 footer .footer-main .footer-third {
   display: flex;
@@ -1998,21 +2129,44 @@ footer .footer-main .footer-third {
     justify-content: flex-start;
   }
 }
-footer .footer-main .footer-third .footer-third-first {
+footer .footer-main .footer-third .privacyCookie {
   display: flex;
   margin: 32px 0 0 0;
 }
 @media screen and (max-width: 480px) {
-  footer .footer-main .footer-third .footer-third-first {
+  footer .footer-main .footer-third .privacyCookie {
     flex-direction: column;
   }
 }
 footer .footer-main .footer-third .social-media-section {
   display: flex;
-  justify-content: center !important;
+  justify-content: space-between;
   align-items: center;
-  gap: 25px;
-  margin: 32px 0 0 0;
+}
+footer .footer-main .footer-third .social-media-section .social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 83px;
+  height: 85px;
+}
+footer .footer-main .footer-third .social-media-section .social-media .social-media-icon {
+  display: block;
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+}
+footer .footer-main .footer-third .social-media-section .social-media .social-media-icon-hover {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  display: none;
+}
+footer .footer-main .footer-third .social-media-section .social-media:hover .social-media-icon {
+  display: none;
+}
+footer .footer-main .footer-third .social-media-section .social-media:hover .social-media-icon-hover {
+  display: block;
 }
 
 /*# sourceMappingURL=styles.css.map */

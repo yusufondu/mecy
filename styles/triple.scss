@@ -82,6 +82,14 @@
     width: 506px;
     height: 506px;
     z-index: 1;
+
+    @media screen and (max-width: 480px) {
+      left: -118px;
+    }
+
+    @media screen and (max-width: 320px) {
+      left: -189px;
+    }
   }
 
   .right-side-triple {
