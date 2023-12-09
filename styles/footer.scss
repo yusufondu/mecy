@@ -1,6 +1,6 @@
 footer {
   background: var(--primary-color-pure-dark);
-  padding: 50px 295px 40px 295px;
+  padding: 50px 265px 40px 265px;
   margin-top: 40px;
 
   @media screen and (max-width: 480px) {
@@ -174,35 +174,6 @@ footer {
             transform-origin: bottom left;
             transition: transform 0.25s ease-out;
           }
-
-          // .rightArrow {
-          //   margin-left: 8px;
-          //   opacity: 1;
-          //   display: block;
-          // }
-
-          // .rightArrowNew {
-          //   margin-left: 8px;
-          //   display: none;
-          //   opacity: 0;
-          // }
-
-          // &:hover {
-          //   .footer-sidemap-list:after {
-          //     transform: scaleX(1);
-          //     transform-origin: bottom left;
-          //   }
-
-          //   .rightArrow {
-          //     opacity: 0;
-          //     display: none;
-          //   }
-
-          //   .rightArrowNew {
-          //     display: block;
-          //     opacity: 1;
-          //   }
-          // }
         }
       }
     }

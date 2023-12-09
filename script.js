@@ -166,3 +166,18 @@ function filterProjects(category) {
     }
   });
 }
+
+// ---------
+
+document.getElementById("file").addEventListener("change", handleFileSelect);
+
+function handleFileSelect(event) {
+  const fileList = event.target.files;
+
+  if (fileList.length > 0) {
+    const fileName = fileList[0].name;
+    alert("File added: " + fileName);
+  } else {
+    alert("No file selected.");
+  }
+}

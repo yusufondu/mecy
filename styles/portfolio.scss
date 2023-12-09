@@ -172,7 +172,11 @@
             border-radius: 50%;
             background: white;
             top: 3%;
-            right: 3%;
+            right: -10%;
+
+            @media screen and (max-width: 480px) {
+              right: 4%;
+            }
           }
 
           .card-box-description {

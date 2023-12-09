@@ -91,6 +91,10 @@ $label-focus-color: var(--secondary-color-dark);
           input {
             display: none;
           }
+
+          &:hover {
+            background: rgba(179, 186, 251, 0.15);
+          }
         }
 
         input,

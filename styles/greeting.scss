@@ -59,6 +59,9 @@
       }
 
       .contact-us-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding: 15px 25px;
         border-radius: 8px;
         background: var(--secondary-color-dark);
@@ -67,9 +70,31 @@
         font-family: SharpGroteskMedium25;
         font-weight: 500;
         line-height: 21px;
+        border: none;
 
         .contact-us-btn-arrow {
           margin-left: 10px;
+          display: block;
+        }
+
+        .contact-us-btn-arrow-2 {
+          margin-left: 10px;
+          display: none;
+        }
+
+        &:hover {
+          border: 2px solid var(--secondary-color-dark);
+          background: var(--secondary-color-normal);
+
+          .contact-us-btn-arrow {
+            margin-left: 10px;
+            display: none;
+          }
+
+          .contact-us-btn-arrow-2 {
+            margin-left: 10px;
+            display: block;
+          }
         }
       }
 
@@ -117,6 +142,11 @@
           right: 3px;
           top: 3px;
           bottom: 3px;
+
+          &:hover {
+            border: 2px solid var(--secondary-color-dark);
+            background: var(--secondary-color-normal);
+          }
 
           .subscribe-bell {
             margin-right: 5px;

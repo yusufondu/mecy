@@ -553,6 +553,9 @@ h5 {
   }
 }
 #greeting .greeting .greeting-msg-cta .contact-us-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 15px 25px;
   border-radius: 8px;
   background: var(--secondary-color-dark);
@@ -561,9 +564,27 @@ h5 {
   font-family: SharpGroteskMedium25;
   font-weight: 500;
   line-height: 21px;
+  border: none;
 }
 #greeting .greeting .greeting-msg-cta .contact-us-btn .contact-us-btn-arrow {
   margin-left: 10px;
+  display: block;
+}
+#greeting .greeting .greeting-msg-cta .contact-us-btn .contact-us-btn-arrow-2 {
+  margin-left: 10px;
+  display: none;
+}
+#greeting .greeting .greeting-msg-cta .contact-us-btn:hover {
+  border: 2px solid var(--secondary-color-dark);
+  background: var(--secondary-color-normal);
+}
+#greeting .greeting .greeting-msg-cta .contact-us-btn:hover .contact-us-btn-arrow {
+  margin-left: 10px;
+  display: none;
+}
+#greeting .greeting .greeting-msg-cta .contact-us-btn:hover .contact-us-btn-arrow-2 {
+  margin-left: 10px;
+  display: block;
 }
 #greeting .greeting .greeting-msg-cta .custom-search {
   display: flex;
@@ -610,6 +631,10 @@ h5 {
   right: 3px;
   top: 3px;
   bottom: 3px;
+}
+#greeting .greeting .greeting-msg-cta .custom-search .custom-search-button:hover {
+  border: 2px solid var(--secondary-color-dark);
+  background: var(--secondary-color-normal);
 }
 #greeting .greeting .greeting-msg-cta .custom-search .custom-search-button .subscribe-bell {
   margin-right: 5px;
@@ -763,12 +788,17 @@ h5 {
 #our-services-section .explore-mecy {
   margin-top: 40px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   color: var(--secondary-color-dark);
   font-size: 16px;
   font-family: SharpGroteskMedium25;
   font-weight: 400;
   line-height: 21px;
+  cursor: pointer;
+}
+#our-services-section .explore-mecy .explore-mecy-text {
+  position: relative;
+  padding-bottom: 10px;
 }
 @media screen and (max-width: 480px) {
   #our-services-section .explore-mecy {
@@ -777,6 +807,33 @@ h5 {
 }
 #our-services-section .explore-mecy .explore-mecy-arrow-right {
   margin-left: 8px;
+  display: block;
+}
+#our-services-section .explore-mecy .explore-mecy-arrow-right-new {
+  margin-left: 8px;
+  display: none;
+}
+#our-services-section .explore-mecy:hover .explore-mecy-arrow-right {
+  margin-left: 8px;
+  display: none;
+}
+#our-services-section .explore-mecy:hover .explore-mecy-arrow-right-new {
+  margin-left: 8px;
+  display: block;
+}
+#our-services-section .explore-mecy-text::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  height: 2px;
+  background-color: transparent;
+  transition: right 0.2s ease, background-color 0.3s ease;
+}
+#our-services-section .explore-mecy-text:hover::after {
+  background-color: var(--secondary-color-dark);
+  right: 0;
 }
 
 #triple-component {
@@ -1035,6 +1092,9 @@ h5 {
   line-height: 32px;
 }
 #our-values-section .view-all-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 25px;
   padding: 15px 25px;
   border-radius: 8px;
@@ -1047,8 +1107,25 @@ h5 {
   font-weight: 500;
   line-height: 21px;
 }
+#our-values-section .view-all-btn:hover {
+  border: 2px solid #bcf178;
+  background: #deffb5;
+}
 #our-values-section .view-all-btn .view-all-btn-icon {
   margin-left: 10px;
+  display: block;
+}
+#our-values-section .view-all-btn .view-all-btn-icon-2 {
+  margin-left: 10px;
+  display: none;
+}
+#our-values-section .view-all-btn:hover .view-all-btn-icon {
+  margin-left: 10px;
+  display: none;
+}
+#our-values-section .view-all-btn:hover .view-all-btn-icon-2 {
+  margin-left: 10px;
+  display: block;
 }
 
 .valueslistmain {
@@ -1284,7 +1361,12 @@ h5 {
   border-radius: 50%;
   background: white;
   top: 3%;
-  right: 3%;
+  right: -10%;
+}
+@media screen and (max-width: 480px) {
+  #our-portfolio-section .our-portfolio-section-main .case-category .card-boxes .card-box .card-box-circle {
+    right: 4%;
+  }
 }
 #our-portfolio-section .our-portfolio-section-main .case-category .card-boxes .card-box .card-box-description {
   color: var(--texts-text-brand-secondary, #555bfb);
@@ -1748,6 +1830,9 @@ h5 {
 .formMainBg #formSection .form-main form .input-file input {
   display: none;
 }
+.formMainBg #formSection .form-main form .input-file:hover {
+  background: rgba(179, 186, 251, 0.15);
+}
 .formMainBg #formSection .form-main form input,
 .formMainBg #formSection .form-main form select,
 .formMainBg #formSection .form-main form textarea {
@@ -1969,7 +2054,7 @@ h5 {
 
 footer {
   background: var(--primary-color-pure-dark);
-  padding: 50px 295px 40px 295px;
+  padding: 50px 265px 40px 265px;
   margin-top: 40px;
 }
 @media screen and (max-width: 480px) {

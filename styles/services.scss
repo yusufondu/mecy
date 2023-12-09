@@ -63,12 +63,19 @@
   .explore-mecy {
     margin-top: 40px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     color: var(--secondary-color-dark);
     font-size: 16px;
     font-family: SharpGroteskMedium25;
     font-weight: 400;
     line-height: 21px;
+
+    cursor: pointer;
+
+    .explore-mecy-text {
+      position: relative;
+      padding-bottom: 10px;
+    }
 
     @media screen and (max-width: 480px) {
       font-size: 12px;
@@ -76,6 +83,40 @@
 
     .explore-mecy-arrow-right {
       margin-left: 8px;
+      display: block;
     }
+
+    .explore-mecy-arrow-right-new {
+      margin-left: 8px;
+      display: none;
+    }
+
+    &:hover {
+      .explore-mecy-arrow-right {
+        margin-left: 8px;
+        display: none;
+      }
+
+      .explore-mecy-arrow-right-new {
+        margin-left: 8px;
+        display: block;
+      }
+    }
+  }
+
+  .explore-mecy-text::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    height: 2px;
+    background-color: transparent;
+    transition: right 0.2s ease, background-color 0.3s ease;
+  }
+
+  .explore-mecy-text:hover::after {
+    background-color: var(--secondary-color-dark);
+    right: 0;
   }
 }
