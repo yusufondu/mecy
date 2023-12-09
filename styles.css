@@ -283,7 +283,7 @@ h5 {
 }
 
 .form-check-input {
-  margin-left: 0.5em !important; /* !important kullanarak önceliği artırabilirsiniz */
+  margin-left: 0.5em !important;
 }
 
 @font-face {
@@ -1338,6 +1338,9 @@ h5 {
   margin-left: 30px;
   margin-right: 30px;
 }
+#our-portfolio-section .our-portfolio-section-main .case-category .card-boxes .card-box:hover {
+  background: #dbdeff;
+}
 @media screen and (max-width: 480px) {
   #our-portfolio-section .our-portfolio-section-main .case-category .card-boxes .card-box {
     max-width: 280px;
@@ -1857,6 +1860,8 @@ h5 {
   display: flex !important;
   justify-content: flex-start !important;
   align-items: flex-end !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 .formMainBg #formSection .form-main form .form-switch .form-check-input {
   margin-right: 15px;

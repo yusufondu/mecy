@@ -123,6 +123,8 @@ $label-focus-color: var(--secondary-color-dark);
           display: flex !important;
           justify-content: flex-start !important;
           align-items: flex-end !important;
+          padding: 0 !important;
+          margin: 0 !important;
         }
 
         .form-switch .form-check-input {

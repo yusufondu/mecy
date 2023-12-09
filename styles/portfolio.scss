@@ -149,6 +149,10 @@
           margin-left: 30px;
           margin-right: 30px;
 
+          &:hover {
+            background: #dbdeff;
+          }
+
           @media screen and (max-width: 480px) {
             max-width: 280px;
             margin-bottom: 30px;
