@@ -494,7 +494,7 @@ h5 {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 0 295px;
+  padding: 0 15%;
   margin: 80px 0 0 0;
   height: calc(100vh - 138px);
 }
@@ -839,7 +839,7 @@ h5 {
 #triple-component {
   display: flex;
   justify-content: center;
-  padding: 30px 165px 0 165px;
+  padding: 30px 15% 0 15%;
   background: var(--primary-color-pure-dark);
   height: fit-content;
   position: relative;
@@ -977,7 +977,7 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 165px 100px 165px;
+  padding: 0 15% 100px 15%;
   margin-top: 30px;
 }
 @media screen and (max-width: 480px) {
@@ -1046,7 +1046,7 @@ h5 {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding: 100px 165px 0 165px;
+  padding: 100px 15% 0 15%;
 }
 @media screen and (max-width: 480px) {
   #our-values-section {
@@ -1135,7 +1135,7 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 100px 0;
+  padding: 100px 15%;
   border-bottom-right-radius: 48px;
   border-bottom-left-radius: 48px;
   background: var(--primary-color-pure-dark) !important;
@@ -1195,7 +1195,7 @@ h5 {
   justify-content: space-between;
   align-items: center;
   background: #fff;
-  padding: 100px 10%;
+  padding: 100px 15%;
 }
 @media screen and (max-width: 480px) {
   #our-portfolio-section {
@@ -1404,7 +1404,7 @@ h5 {
   justify-content: center;
   align-items: center;
   background: #fff;
-  padding: 100px 295px;
+  padding: 100px 15%;
 }
 @media screen and (max-width: 480px) {
   #media-center-section {
@@ -1585,7 +1585,7 @@ h5 {
   justify-content: center;
   align-items: center;
   background: #fff;
-  padding: 100px 295px 170px 295px;
+  padding: 100px 15% 170px 15%;
 }
 @media screen and (max-width: 480px) {
   #busters-section {
@@ -1776,7 +1776,7 @@ h5 {
   justify-content: center;
   align-items: flex-start;
   background: var(--primary-color-pure-dark);
-  padding: 100px 295px 50px 295px;
+  padding: 100px 15% 50px 15%;
   border-top-left-radius: 48px;
   border-top-right-radius: 48px;
 }
@@ -2059,7 +2059,7 @@ h5 {
 
 footer {
   background: var(--primary-color-pure-dark);
-  padding: 50px 265px 40px 265px;
+  padding: 50px 15% 40px 15%;
   margin-top: 40px;
 }
 @media screen and (max-width: 480px) {

@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   background: #fff;
-  padding: 100px 295px;
+  padding: 100px 15%;
 
   @media screen and (max-width: 480px) {
     padding: 20px;
@@ -83,14 +83,6 @@
       }
     }
   }
-
-  // .card-slider {
-  //   width: 100%;
-  //   background: yellow;
-  //   max-width: 850px;
-  //   min-height: 610px;
-  //   margin-top: 60px;
-  // }
 
   #carouselExample {
     width: 100%;
