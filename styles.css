@@ -1282,7 +1282,7 @@ h5 {
 }
 #our-portfolio-section .our-portfolio-section-main .case-category {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
   gap: 20px;
 }
