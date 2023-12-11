@@ -149,9 +149,9 @@
           margin-left: 30px;
           margin-right: 30px;
 
-          &:hover {
-            background: #dbdeff;
-          }
+          // &:hover {
+          //   background: #dbdeff;
+          // }
 
           @media screen and (max-width: 480px) {
             max-width: 280px;
@@ -184,6 +184,9 @@
           }
 
           .card-box-description {
+            display: flex;
+            flex-direction: column;
+
             color: var(--texts-text-brand-secondary, #555bfb);
             font-family: SharpGroteskBook20;
             font-size: 16px;
