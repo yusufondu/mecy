@@ -927,18 +927,32 @@ h5 {
     padding: 20px;
   }
 }
-#digital-echos-section .digital-echos-main {
+#digital-echos-section .digital-wrapper {
+  border: 2px solid #04002d;
+  border-radius: 25px;
+  width: 100%;
+}
+#digital-echos-section .digital-wrapper:hover {
+  border: 2px solid #555bfb;
+  box-shadow: 0px 6px 40px 0px #1d10b6;
+}
+#digital-echos-section .digital-wrapper .digital-echos-main {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  border-radius: 16px;
+  border-radius: 24px;
   width: 100%;
   height: fit-content;
   background: var(--active-color-normal);
   padding: 40px;
   background-image: url(./assets/bg-image-blue-mask.jpeg);
+  box-shadow: 0px 0px 4px 0px #555bfb inset;
+  position: relative;
 }
-#digital-echos-section .digital-echos-main .digital-echos-list {
+#digital-echos-section .digital-wrapper .digital-echos-main .demBtn {
+  position: relative;
+}
+#digital-echos-section .digital-wrapper .digital-echos-main .digital-echos-list {
   margin-bottom: 25px;
   color: var(--secondary-color-dark);
   font-size: 32px;
@@ -948,11 +962,11 @@ h5 {
   line-height: normal;
 }
 @media screen and (max-width: 480px) {
-  #digital-echos-section .digital-echos-main .digital-echos-list {
+  #digital-echos-section .digital-wrapper .digital-echos-main .digital-echos-list {
     font-size: 24px;
   }
 }
-#digital-echos-section .digital-echos-main .digital-echos-text {
+#digital-echos-section .digital-wrapper .digital-echos-main .digital-echos-text {
   max-width: 650px;
   margin-bottom: 25px;
   color: var(--primary-color-celestial-lavender);
@@ -962,11 +976,11 @@ h5 {
   line-height: 22px;
 }
 @media screen and (max-width: 480px) {
-  #digital-echos-section .digital-echos-main .digital-echos-text {
+  #digital-echos-section .digital-wrapper .digital-echos-main .digital-echos-text {
     font-size: 16px;
   }
 }
-#digital-echos-section .digital-echos-main .digital-echos-email {
+#digital-echos-section .digital-wrapper .digital-echos-main .digital-echos-email {
   color: var(--secondary-color-dark);
   font-size: 16px;
   font-family: SharpGroteskMedium25;
@@ -975,12 +989,15 @@ h5 {
   margin-bottom: 65px;
 }
 @media screen and (max-width: 480px) {
-  #digital-echos-section .digital-echos-main .digital-echos-email {
+  #digital-echos-section .digital-wrapper .digital-echos-main .digital-echos-email {
     font-size: 13px;
   }
 }
-#digital-echos-section .digital-echos-main .big-arrow {
+#digital-echos-section .digital-wrapper .digital-echos-main .big-arrow {
   cursor: pointer;
+}
+#digital-echos-section .digital-wrapper .digital-echos-main:hover .demBtn {
+  top: 15px;
 }
 
 #our-values-section {
