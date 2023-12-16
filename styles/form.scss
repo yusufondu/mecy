@@ -304,6 +304,14 @@ $label-focus-color: var(--secondary-color-dark);
   transition: all 0.3s;
 }
 
+.form-floating > .form-control:focus {
+  padding: 22px !important;
+}
+
+.form-floating > .form-control:not(:placeholder-shown) {
+  padding: 22px !important;
+}
+
 .bootstrap-select.show > .btn-light.dropdown-toggle,
 .bootstrap-select .dropdown-menu.show {
   border-color: #da3338 !important;
