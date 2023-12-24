@@ -1284,7 +1284,7 @@ h5 {
 #our-portfolio-section .our-portfolio-section-main .case-category .card-boxes {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: flex-start;
   width: 100%;
 }
@@ -1309,6 +1309,12 @@ h5 {
 #our-portfolio-section .our-portfolio-section-main .case-category .card-boxes .card-box:hover .card-box-description {
   background: #dbdeff;
 }
+#our-portfolio-section .our-portfolio-section-main .case-category .card-boxes .card-box:hover .card-box-image {
+  opacity: 30%;
+}
+#our-portfolio-section .our-portfolio-section-main .case-category .card-boxes .card-box:hover .card-box-circle {
+  border: 1px solid var(--primary-color-dark);
+}
 @media screen and (max-width: 480px) {
   #our-portfolio-section .our-portfolio-section-main .case-category .card-boxes .card-box {
     max-width: 280px;
@@ -1317,9 +1323,13 @@ h5 {
     margin-right: 0;
   }
 }
+#our-portfolio-section .our-portfolio-section-main .case-category .card-boxes .card-box .img-background {
+  background: rgba(29, 16, 182, 0.3019607843);
+  margin-bottom: 23px;
+  border-radius: 32px;
+}
 #our-portfolio-section .our-portfolio-section-main .case-category .card-boxes .card-box .card-box-image {
   position: relative;
-  margin-bottom: 23px;
 }
 #our-portfolio-section .our-portfolio-section-main .case-category .card-boxes .card-box .card-box-circle {
   display: flex;

@@ -135,7 +135,7 @@
       .card-boxes {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: flex-start;
         width: 100%;
 
@@ -161,6 +161,14 @@
             .card-box-description {
               background: #dbdeff;
             }
+
+            .card-box-image {
+              opacity: 30%;
+            }
+
+            .card-box-circle {
+              border: 1px solid var(--primary-color-dark);
+            }
           }
 
           @media screen and (max-width: 480px) {
@@ -170,9 +178,14 @@
             margin-right: 0;
           }
 
+          .img-background {
+            background: #1d10b64d;
+            margin-bottom: 23px;
+            border-radius: 32px;
+          }
+
           .card-box-image {
             position: relative;
-            margin-bottom: 23px;
           }
 
           .card-box-circle {
