@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   background: #fff;
-  padding: 100px 15%;
+  padding: 100px 0 100px 15%;
 
   @media screen and (max-width: 480px) {
     justify-content: center;
@@ -133,11 +133,19 @@
       }
 
       .card-boxes {
-        display: flex !important;
+        display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
 
         @media screen and (max-width: 480px) {
           flex-direction: column;
+        }
+
+        img {
+          width: 100%;
+          border-radius: 32px;
         }
 
         .card-box {
@@ -149,9 +157,11 @@
           margin-left: 30px;
           margin-right: 30px;
 
-          // &:hover {
-          //   background: #dbdeff;
-          // }
+          &:hover {
+            .card-box-description {
+              background: #dbdeff;
+            }
+          }
 
           @media screen and (max-width: 480px) {
             max-width: 280px;
@@ -175,18 +185,23 @@
             height: 34px;
             border-radius: 50%;
             background: white;
-            top: 3%;
-            right: -10%;
+            top: 10px;
+            right: 10px;
 
             @media screen and (max-width: 480px) {
               right: 4%;
+            }
+
+            img {
+              width: 75%;
             }
           }
 
           .card-box-description {
             display: flex;
             flex-direction: column;
-
+            padding: 8px;
+            border-radius: 8px;
             color: var(--texts-text-brand-secondary, #555bfb);
             font-family: SharpGroteskBook20;
             font-size: 16px;
