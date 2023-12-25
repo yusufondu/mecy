@@ -178,10 +178,23 @@
       opacity: 1;
       transform: translateY(-50%);
 
-      carousel-control-prev-icon,
-      carousel-control-next-icon {
+      &:hover {
+        background: #555bfb;
+        border: 2px solid #1d10b6;
+      }
+
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
         width: 12px;
         height: 17px;
+      }
+
+      .carousel-control-prev-icon {
+        background-image: url(../assets/carousel_pre_icon.svg);
+      }
+
+      .carousel-control-next-icon {
+        background-image: url(../assets/carousel_next_icon.svg);
       }
     }
 
