@@ -252,3 +252,20 @@ newOptions.forEach(function (option) {
   optionElement.text = option.text;
   selectElement.add(optionElement);
 });
+
+////// TRIPLE /////
+
+const bigTriple = document.querySelector(".big-triple");
+const bigTripleTexts = document.querySelectorAll(".triple-description-text");
+
+bigTriple.addEventListener("click", () => {
+  bigTripleTexts.forEach((element) => {
+    if (element.style.display === "none" || element.style.display === "") {
+      element.style.display = "block";
+    } else {
+      element.style.display = "none";
+    }
+  });
+});
+
+// console.log("bigTripleTexts", bigTripleTexts);

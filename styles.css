@@ -324,7 +324,7 @@ h5 {
   }
 }
 #nav .header-titles .header-title:hover .header-title-arrow {
-  transition: transform 0.3s ease;
+  transition: transform 0.2s ease;
   transform: rotate(180deg);
 }
 #nav .header-titles .header-title .header-title-text {
@@ -2419,7 +2419,7 @@ footer .underlineList .underlineItem .underlineText:after {
   left: 0;
   background-color: var(--secondary-color-dark);
   transform-origin: bottom left;
-  transition: transform 1s ease-out; /* Increase the duration here */
+  transition: transform 0.2s ease-out; /* Increase the duration here */
 }
 footer .underlineList .underlineItem .rightArrow {
   margin-left: 8px;
@@ -2435,17 +2435,17 @@ footer .underlineList .underlineItem .rightArrowNew {
 footer .underlineList .underlineItem:hover .underlineText:after {
   transform: scaleX(1);
   transform-origin: bottom left;
-  transition: transform 1.2s ease; /* Increase the duration here */
+  transition: transform 0.2s ease; /* Increase the duration here */
 }
 footer .underlineList .underlineItem:hover .rightArrow {
   opacity: 0;
   display: none;
-  transition: opacity 1.2s ease; /* Increase the duration here */
+  transition: opacity 0.2s ease; /* Increase the duration here */
 }
 footer .underlineList .underlineItem:hover .rightArrowNew {
   display: block;
   opacity: 1;
-  transition: opacity 1.2s ease; /* Increase the duration here */
+  transition: opacity 0.2s ease; /* Increase the duration here */
 }
 
 /*# sourceMappingURL=styles.css.map */

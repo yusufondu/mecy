@@ -290,7 +290,7 @@ footer {
         left: 0;
         background-color: var(--secondary-color-dark);
         transform-origin: bottom left;
-        transition: transform 1s ease-out; /* Increase the duration here */
+        transition: transform 0.2s ease-out; /* Increase the duration here */
       }
 
       .rightArrow {
@@ -310,19 +310,19 @@ footer {
         .underlineText:after {
           transform: scaleX(1);
           transform-origin: bottom left;
-          transition: transform 1.2s ease; /* Increase the duration here */
+          transition: transform 0.2s ease; /* Increase the duration here */
         }
 
         .rightArrow {
           opacity: 0;
           display: none;
-          transition: opacity 1.2s ease; /* Increase the duration here */
+          transition: opacity 0.2s ease; /* Increase the duration here */
         }
 
         .rightArrowNew {
           display: block;
           opacity: 1;
-          transition: opacity 1.2s ease; /* Increase the duration here */
+          transition: opacity 0.2s ease; /* Increase the duration here */
         }
       }
     }
