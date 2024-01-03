@@ -6,8 +6,9 @@
   margin: 80px 0 0 0;
   height: calc(100vh - 138px);
 
-  @media screen and (max-width: 480px) {
-    margin: 20px 0 140px 0;
+  @media screen and (max-width: 576px) {
+    margin: 20px 0 60px 0;
+    height: fit-content;
   }
 
   .greeting {
@@ -17,7 +18,7 @@
     align-items: flex-start;
     max-width: 684px;
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 576px) {
       max-width: 100%;
       text-align: left;
     }
@@ -35,7 +36,7 @@
       margin-bottom: 25px;
       font-family: SharpGroteskSemiBold25;
 
-      @media screen and (max-width: 480px) {
+      @media screen and (max-width: 576px) {
         width: 280px;
         text-align: center;
       }
@@ -53,46 +54,51 @@
       align-items: center;
       margin-top: 40px;
 
-      @media screen and (max-width: 480px) {
+      @media screen and (max-width: 576px) {
         align-items: flex-start;
       }
 
-      .contact-us-btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 15px 25px;
-        border-radius: 8px;
-        background: var(--secondary-color-dark);
-        color: var(--primary-color-dark);
-        font-size: 16px;
-        font-family: SharpGroteskMedium25;
-        font-weight: 500;
-        line-height: 21px;
-        border: none;
+      .contact-us-btn-wrapper {
+        // &:hover {
+        //   border: 2px solid var(--secondary-color-dark);
+        // }
 
-        .contact-us-btn-arrow {
-          margin-left: 10px;
-          display: block;
-        }
-
-        .contact-us-btn-arrow-2 {
-          margin-left: 10px;
-          display: none;
-        }
-
-        &:hover {
-          border: 2px solid var(--secondary-color-dark);
-          background: var(--secondary-color-normal);
+        .contact-us-btn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 15px 25px;
+          border-radius: 8px;
+          background: var(--secondary-color-dark);
+          color: var(--primary-color-dark);
+          font-size: 16px;
+          font-family: SharpGroteskMedium25;
+          font-weight: 500;
+          line-height: 21px;
+          border: none;
 
           .contact-us-btn-arrow {
             margin-left: 10px;
-            display: none;
+            display: block;
           }
 
           .contact-us-btn-arrow-2 {
             margin-left: 10px;
-            display: block;
+            display: none;
+          }
+
+          &:hover {
+            background: var(--secondary-color-normal);
+
+            .contact-us-btn-arrow {
+              margin-left: 10px;
+              display: none;
+            }
+
+            .contact-us-btn-arrow-2 {
+              margin-left: 10px;
+              display: block;
+            }
           }
         }
       }
@@ -109,7 +115,7 @@
         margin-left: 25px;
         padding: 17px 25px;
 
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 576px) {
           display: none;
         }
 
@@ -123,32 +129,40 @@
           font-weight: 500;
           line-height: 21px;
         }
-        .custom-search-button {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          padding: 15px 25px;
-          font-size: 14px;
-          font-family: SharpGroteskMedium25;
-          font-weight: 500;
-          line-height: 21px;
-          color: var(--primary-color-dark);
-          background: var(--secondary-color-dark);
-          border-radius: 8px;
-          outline: none;
-          border: none;
-          position: absolute;
-          right: 3px;
-          top: 3px;
-          bottom: 3px;
-
+        .custom-search-button-wrapper {
           &:hover {
             border: 2px solid var(--secondary-color-dark);
-            background: var(--secondary-color-normal);
           }
 
-          .subscribe-bell {
-            margin-right: 5px;
+          .custom-search-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 15px 25px;
+            font-size: 14px;
+            font-family: SharpGroteskMedium25;
+            font-weight: 500;
+            line-height: 21px;
+
+            color: var(--primary-color-dark);
+            background: var(--secondary-color-dark);
+
+            border-radius: 8px;
+            outline: none;
+            border: none;
+            position: absolute;
+            right: 3px;
+            top: 3px;
+            bottom: 3px;
+
+            &:hover {
+              background: var(--secondary-color-normal);
+            }
+
+            .subscribe-bell {
+              margin-right: 5px;
+            }
           }
         }
 

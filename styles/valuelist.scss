@@ -10,11 +10,10 @@
     border-bottom-left-radius: 48px;
     background: var(--primary-color-pure-dark) !important;
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 576px) {
       flex-direction: column;
       gap: 25px;
-      padding: 20px;
-      margin-bottom: 40px;
+      padding: 20px 20px 40px 20px;
     }
 
     .company-value {

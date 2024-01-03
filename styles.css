@@ -43,7 +43,7 @@ h1 {
     font-size: 42px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   h1 {
     font-size: 45px;
     text-align: left;
@@ -57,7 +57,7 @@ h5 {
   font-weight: 500;
   line-height: 40px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   h5 {
     font-size: 26px;
     text-align: left;
@@ -275,7 +275,7 @@ h5 {
 #nav {
   padding: 25px 28px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #nav {
     padding: 0;
   }
@@ -302,7 +302,7 @@ h5 {
   border-radius: 8px;
   background: var(--primary-color-dark);
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #nav .header-titles .header-title:hover {
     background: inherit;
   }
@@ -395,7 +395,7 @@ h5 {
   margin-top: 25px !important;
   position: relative;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   .dropdown-menu {
     width: auto;
     display: none;
@@ -404,7 +404,7 @@ h5 {
 .dropdown-menu .dropdown-box-web-component {
   display: flex;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   .dropdown-menu .dropdown-box-web-component {
     display: none !important;
   }
@@ -421,13 +421,13 @@ h5 {
   border-bottom: 10px solid #fff;
   border-right: 7px solid transparent;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   .dropdown-menu::before {
     display: none;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   .dropdown-image {
     display: none;
   }
@@ -441,9 +441,10 @@ h5 {
   margin: 80px 0 0 0;
   height: calc(100vh - 138px);
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #greeting {
-    margin: 20px 0 140px 0;
+    margin: 20px 0 60px 0;
+    height: fit-content;
   }
 }
 #greeting .greeting {
@@ -453,7 +454,7 @@ h5 {
   align-items: flex-start;
   max-width: 684px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #greeting .greeting {
     max-width: 100%;
     text-align: left;
@@ -472,7 +473,7 @@ h5 {
   margin-bottom: 25px;
   font-family: SharpGroteskSemiBold25;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #greeting .greeting .greeting-msg-welcome {
     width: 280px;
     text-align: center;
@@ -489,12 +490,12 @@ h5 {
   align-items: center;
   margin-top: 40px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #greeting .greeting .greeting-msg-cta {
     align-items: flex-start;
   }
 }
-#greeting .greeting .greeting-msg-cta .contact-us-btn {
+#greeting .greeting .greeting-msg-cta .contact-us-btn-wrapper .contact-us-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -508,23 +509,22 @@ h5 {
   line-height: 21px;
   border: none;
 }
-#greeting .greeting .greeting-msg-cta .contact-us-btn .contact-us-btn-arrow {
+#greeting .greeting .greeting-msg-cta .contact-us-btn-wrapper .contact-us-btn .contact-us-btn-arrow {
   margin-left: 10px;
   display: block;
 }
-#greeting .greeting .greeting-msg-cta .contact-us-btn .contact-us-btn-arrow-2 {
+#greeting .greeting .greeting-msg-cta .contact-us-btn-wrapper .contact-us-btn .contact-us-btn-arrow-2 {
   margin-left: 10px;
   display: none;
 }
-#greeting .greeting .greeting-msg-cta .contact-us-btn:hover {
-  border: 2px solid var(--secondary-color-dark);
+#greeting .greeting .greeting-msg-cta .contact-us-btn-wrapper .contact-us-btn:hover {
   background: var(--secondary-color-normal);
 }
-#greeting .greeting .greeting-msg-cta .contact-us-btn:hover .contact-us-btn-arrow {
+#greeting .greeting .greeting-msg-cta .contact-us-btn-wrapper .contact-us-btn:hover .contact-us-btn-arrow {
   margin-left: 10px;
   display: none;
 }
-#greeting .greeting .greeting-msg-cta .contact-us-btn:hover .contact-us-btn-arrow-2 {
+#greeting .greeting .greeting-msg-cta .contact-us-btn-wrapper .contact-us-btn:hover .contact-us-btn-arrow-2 {
   margin-left: 10px;
   display: block;
 }
@@ -540,7 +540,7 @@ h5 {
   margin-left: 25px;
   padding: 17px 25px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #greeting .greeting .greeting-msg-cta .custom-search {
     display: none;
   }
@@ -555,7 +555,10 @@ h5 {
   font-weight: 500;
   line-height: 21px;
 }
-#greeting .greeting .greeting-msg-cta .custom-search .custom-search-button {
+#greeting .greeting .greeting-msg-cta .custom-search .custom-search-button-wrapper:hover {
+  border: 2px solid var(--secondary-color-dark);
+}
+#greeting .greeting .greeting-msg-cta .custom-search .custom-search-button-wrapper .custom-search-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -574,11 +577,10 @@ h5 {
   top: 3px;
   bottom: 3px;
 }
-#greeting .greeting .greeting-msg-cta .custom-search .custom-search-button:hover {
-  border: 2px solid var(--secondary-color-dark);
+#greeting .greeting .greeting-msg-cta .custom-search .custom-search-button-wrapper .custom-search-button:hover {
   background: var(--secondary-color-normal);
 }
-#greeting .greeting .greeting-msg-cta .custom-search .custom-search-button .subscribe-bell {
+#greeting .greeting .greeting-msg-cta .custom-search .custom-search-button-wrapper .custom-search-button .subscribe-bell {
   margin-right: 5px;
 }
 #greeting .greeting .greeting-msg-cta .custom-search ::placeholder {
@@ -603,7 +605,7 @@ h5 {
   white-space: nowrap;
   width: 100vw;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #parallax-section .parallax-text-left,
   #parallax-section .parallax-text-right {
     width: 320px;
@@ -617,7 +619,7 @@ h5 {
   margin-right: 40px;
   font-family: SharpGroteskBook25;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #parallax-section .parallax-text-left .parallax-text-branches,
   #parallax-section .parallax-text-right .parallax-text-branches {
     font-size: 42px;
@@ -630,7 +632,7 @@ h5 {
   font-size: 78px;
   font-weight: 400;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #parallax-section .parallax-text-left .parallax-text-branches .parallax-text-branches-symbol,
   #parallax-section .parallax-text-right .parallax-text-branches .parallax-text-branches-symbol {
     font-size: 42px;
@@ -655,7 +657,7 @@ h5 {
 #parallax-section .parallax-text-left {
   animation: slide-left 25s linear infinite;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #parallax-section .parallax-text-left {
     animation: slide-left 10s linear infinite;
   }
@@ -664,7 +666,7 @@ h5 {
   margin-top: 50px;
   animation: slide-right 25s linear infinite;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #parallax-section .parallax-text-right {
     animation: slide-right 10s linear infinite;
   }
@@ -703,7 +705,7 @@ h5 {
   font-style: normal;
   line-height: normal;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #our-services-section .our-services-main-text {
     font-size: 32px;
     padding-left: 10px;
@@ -720,7 +722,7 @@ h5 {
   font-weight: 500;
   line-height: 32px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #our-services-section .our-services-main-subtext {
     font-size: 18px;
     padding-left: 10px;
@@ -742,7 +744,7 @@ h5 {
   position: relative;
   padding-bottom: 10px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #our-services-section .explore-mecy {
     font-size: 12px;
   }
@@ -786,10 +788,10 @@ h5 {
   height: fit-content;
   position: relative;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #triple-component {
     flex-direction: column;
-    padding: 20px;
+    padding: 20px 20px 0 20px;
   }
 }
 #triple-component .big-triple {
@@ -804,7 +806,7 @@ h5 {
   padding: 40px 60px;
   margin-right: 30px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #triple-component .big-triple {
     padding: 25px;
     margin-bottom: 30px;
@@ -818,7 +820,7 @@ h5 {
   font-weight: 600;
   margin-bottom: 25px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #triple-component .big-triple .triple-title {
     font-size: 24px;
   }
@@ -861,7 +863,7 @@ h5 {
   height: 506px;
   z-index: 1;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #triple-component .big-triple-bg {
     left: -118px;
   }
@@ -890,7 +892,7 @@ h5 {
   gap: 25px;
   z-index: 1283712;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #triple-component .right-side-triple .small-triple {
     width: 100%;
     padding: 25px;
@@ -903,7 +905,7 @@ h5 {
   font-size: 32px;
   font-weight: 600;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #triple-component .right-side-triple .small-triple .triple-title {
     font-size: 24px;
   }
@@ -923,9 +925,10 @@ h5 {
   padding: 0 15% 100px 15%;
   margin-top: 30px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #digital-echos-section {
-    padding: 20px;
+    padding: 0 20px 20px 20px;
+    margin-top: 0 !important;
   }
 }
 #digital-echos-section .digital-wrapper {
@@ -962,7 +965,7 @@ h5 {
   max-width: 650px;
   line-height: normal;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #digital-echos-section .digital-wrapper .digital-echos-main .digital-echos-list {
     font-size: 24px;
   }
@@ -976,7 +979,7 @@ h5 {
   font-weight: 500;
   line-height: 22px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #digital-echos-section .digital-wrapper .digital-echos-main .digital-echos-text {
     font-size: 16px;
   }
@@ -989,7 +992,7 @@ h5 {
   line-height: 21px;
   margin-bottom: 65px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #digital-echos-section .digital-wrapper .digital-echos-main .digital-echos-email {
     font-size: 13px;
   }
@@ -1008,7 +1011,7 @@ h5 {
   align-items: center;
   padding: 100px 15% 0 15%;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #our-values-section {
     padding: 20px;
   }
@@ -1037,7 +1040,7 @@ h5 {
   text-align: center;
   line-height: normal;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #our-values-section .choose-mecy {
     font-size: 32px;
   }
@@ -1100,12 +1103,11 @@ h5 {
   border-bottom-left-radius: 48px;
   background: var(--primary-color-pure-dark) !important;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   .valueslistmain #values-list {
     flex-direction: column;
     gap: 25px;
-    padding: 20px;
-    margin-bottom: 40px;
+    padding: 20px 20px 40px 20px;
   }
 }
 .valueslistmain #values-list .company-value {
@@ -1158,10 +1160,10 @@ h5 {
   background: #fff;
   padding: 100px 0 100px 15%;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #our-portfolio-section {
     justify-content: center;
-    padding: 20px;
+    padding: 60px 20px 20px 20px;
   }
 }
 #our-portfolio-section .our-portfolio-section-main {
@@ -1171,7 +1173,7 @@ h5 {
   gap: 25px;
   width: 100%;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #our-portfolio-section .our-portfolio-section-main {
     align-items: center;
   }
@@ -1201,7 +1203,7 @@ h5 {
   width: 650px;
   line-height: normal;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #our-portfolio-section .our-portfolio-section-main .our-portfolio-section-main-text {
     width: 280px;
     text-align: center;
@@ -1216,7 +1218,7 @@ h5 {
   line-height: 32px;
   max-width: 650px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #our-portfolio-section .our-portfolio-section-main .our-portfolio-section-main-subText {
     width: 280px;
     font-size: 24px;
@@ -1245,9 +1247,8 @@ h5 {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 20px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #our-portfolio-section .our-portfolio-section-main .case-category {
     flex-direction: column;
   }
@@ -1257,7 +1258,7 @@ h5 {
   flex-direction: column;
   gap: 15px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #our-portfolio-section .our-portfolio-section-main .case-category .case-category-form {
     margin-left: 15px;
   }
@@ -1268,7 +1269,7 @@ h5 {
   border-radius: 8px;
   background: var(--primary-color-ethereal-white);
   padding: 8px;
-  min-width: 245px;
+  min-width: 260px;
   gap: 10px;
 }
 #our-portfolio-section .our-portfolio-section-main .case-category .case-category-form .form-check:hover {
@@ -1284,11 +1285,11 @@ h5 {
 #our-portfolio-section .our-portfolio-section-main .case-category .card-boxes {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #our-portfolio-section .our-portfolio-section-main .case-category .card-boxes {
     flex-direction: column;
   }
@@ -1301,10 +1302,9 @@ h5 {
   display: flex;
   flex-direction: column;
   position: relative;
-  max-width: 240px;
+  max-width: 358px;
   max-height: 468px;
   margin-left: 30px;
-  margin-right: 30px;
 }
 #our-portfolio-section .our-portfolio-section-main .case-category .card-boxes .card-box:hover .card-box-description {
   background: #dbdeff;
@@ -1315,7 +1315,7 @@ h5 {
 #our-portfolio-section .our-portfolio-section-main .case-category .card-boxes .card-box:hover .card-box-circle {
   border: 1px solid var(--primary-color-dark);
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #our-portfolio-section .our-portfolio-section-main .case-category .card-boxes .card-box {
     max-width: 280px;
     margin-bottom: 30px;
@@ -1344,7 +1344,7 @@ h5 {
   top: 10px;
   right: 10px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #our-portfolio-section .our-portfolio-section-main .case-category .card-boxes .card-box .card-box-circle {
     right: 4%;
   }
@@ -1363,7 +1363,7 @@ h5 {
   font-weight: 400;
   line-height: 21px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #our-portfolio-section .our-portfolio-section-main .case-category .card-boxes .card-box .card-box-description {
     margin-top: 10px;
   }
@@ -1374,6 +1374,7 @@ h5 {
   font-size: 18px;
   font-weight: 600;
   line-height: 22px;
+  margin-bottom: 8px;
 }
 #our-portfolio-section .our-portfolio-section-main .case-category .card-boxes .card-box .card-box-description .ui-design {
   color: var(--primary-color-dark);
@@ -1391,7 +1392,7 @@ h5 {
   background: #fff;
   padding: 100px 15%;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #media-center-section {
     padding: 20px;
   }
@@ -1429,7 +1430,7 @@ h5 {
   line-height: normal;
   margin-top: 25px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #media-center-section .media-center-cta .media-center-main-text {
     font-size: 32px;
   }
@@ -1465,7 +1466,7 @@ h5 {
 }
 #media-center-section #carouselExample {
   width: 100%;
-  max-width: 850px;
+  max-width: 1286px;
   min-height: 610px;
   margin-top: 60px;
 }
@@ -1474,16 +1475,16 @@ h5 {
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #media-center-section #carouselExample .carousel-inner {
     display: grid;
   }
 }
 #media-center-section #carouselExample .carousel-inner .carousel-item {
-  max-width: 240px;
+  max-width: 358px;
 }
 #media-center-section #carouselExample .carousel-inner .carousel-item .card {
-  max-width: 240px;
+  max-width: 358px;
   border: none;
 }
 #media-center-section #carouselExample .carousel-inner .carousel-item .card .img-wrapper {
@@ -1492,17 +1493,18 @@ h5 {
   align-items: flex-start;
 }
 #media-center-section #carouselExample .carousel-inner .carousel-item .card .img-wrapper img {
-  max-width: 240px;
+  max-width: 358px;
 }
 #media-center-section #carouselExample .carousel-inner .carousel-item .card .card-body {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   align-items: flex-start;
-  max-width: 240px;
+  max-width: 358px;
   padding: 25px 15px;
   border-radius: 0px 0px 24px 24px;
   background: var(--primary-color-ethereal-white);
+  min-height: 322px;
 }
 #media-center-section #carouselExample .carousel-inner .carousel-item .card .card-body .calendar {
   margin-bottom: 25px;
@@ -1518,7 +1520,6 @@ h5 {
   font-size: 16px;
   font-weight: 600;
   line-height: 22px;
-  min-height: 132px;
 }
 #media-center-section #carouselExample .carousel-inner .carousel-item .card .card-body .card-text {
   overflow: hidden;
@@ -1529,7 +1530,6 @@ h5 {
   font-weight: 400;
   line-height: 21px;
   margin-bottom: 25px !important;
-  min-height: 147px;
 }
 #media-center-section #carouselExample .carousel-inner .carousel-item .card .card-body .card-btn {
   color: var(--primary-color-dark);
@@ -1538,6 +1538,9 @@ h5 {
   font-weight: 500;
   line-height: 21px;
   align-self: flex-end;
+}
+#media-center-section #carouselExample .carousel-inner .carousel-items-wrapper {
+  max-width: 1170px;
 }
 #media-center-section #carouselExample .carousel-control-prev,
 #media-center-section #carouselExample .carousel-control-next {
@@ -1585,7 +1588,7 @@ h5 {
   background: #fff;
   padding: 100px 15% 170px 15%;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #busters-section {
     padding: 20px;
   }
@@ -1621,7 +1624,7 @@ h5 {
   width: 650px;
   line-height: normal;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #busters-section .busters-cta .busters-mainText {
     font-size: 32px;
     width: 280px;
@@ -1648,7 +1651,7 @@ h5 {
 #busters-section .busters-cta .busters-answer .busters-answer-header:hover {
   cursor: pointer;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #busters-section .busters-cta .busters-answer .busters-answer-header {
     padding: 15px;
   }
@@ -1659,7 +1662,7 @@ h5 {
   line-height: 21px;
   margin-right: 28px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #busters-section .busters-cta .busters-answer .busters-answer-header .busters-answer-text {
     font-size: 14px;
     margin-right: 10px;
@@ -1674,7 +1677,7 @@ h5 {
   border-radius: 50%;
   background: var(--secondary-color-dark);
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #busters-section .busters-cta .busters-answer .busters-answer-header .circle {
     height: 25px;
   }
@@ -1683,7 +1686,7 @@ h5 {
   width: 100%;
   margin-top: 60px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #busters-section .accordionPart {
     margin-top: 40px;
   }
@@ -1734,7 +1737,7 @@ h5 {
   background-position: center;
   transform: rotate(-180deg) !important;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #busters-section .accordionPart .accordion .accordion-item .accordion-header .accordion-button {
     font-size: 18px;
   }
@@ -1749,7 +1752,7 @@ h5 {
   border-bottom-right-radius: 24px;
   background: var(--primary-color-ethereal-white);
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   #busters-section .accordionPart .accordion .accordion-item .accordion-line .accordion-body {
     font-size: 14px;
   }
@@ -1778,7 +1781,7 @@ h5 {
   border-top-left-radius: 48px;
   border-top-right-radius: 48px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   .formMainBg #formSection {
     padding: 80px 20px 20px 20px;
   }
@@ -1814,7 +1817,7 @@ h5 {
 .formMainBg #formSection .form-main form .form-m {
   margin: 25px 0;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   .formMainBg #formSection .form-main form {
     width: auto;
   }
@@ -2068,7 +2071,7 @@ footer {
   padding: 50px 15% 40px 15%;
   margin-top: 40px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   footer {
     padding: 20px;
   }
@@ -2076,7 +2079,7 @@ footer {
 footer .footer-main .footer-first {
   margin-bottom: 80px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   footer .footer-main .footer-first {
     margin-bottom: 0;
   }
@@ -2091,7 +2094,7 @@ footer .footer-main .footer-first .footer-statement {
   font-size: 32px;
   font-weight: 600;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   footer .footer-main .footer-first .footer-statement {
     height: fit-content;
     font-size: 25px;
@@ -2104,7 +2107,7 @@ footer .footer-main .footer-first .footer-statement .footer-statement-text {
 footer .footer-main .footer-first .footer-statement .quotes {
   height: 30px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   footer .footer-main .footer-first .footer-statement .quotes {
     height: 15px;
   }
@@ -2115,7 +2118,7 @@ footer .footer-main .footer-second {
   justify-content: flex-start;
   align-items: flex-start;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   footer .footer-main .footer-second {
     flex-direction: column;
     margin-bottom: 50px;
@@ -2124,7 +2127,7 @@ footer .footer-main .footer-second {
 footer .footer-main .footer-second .footer-address {
   margin-right: 185px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   footer .footer-main .footer-second .footer-address {
     margin: 50px 0 0 0;
   }
@@ -2182,7 +2185,7 @@ footer .footer-main .footer-second .footer-address .footer-address-box .footer-a
   font-weight: 400;
   line-height: 21px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   footer .footer-main .footer-second .footer-address .footer-address-box .footer-address-box-locationContent .email {
     font-size: 12px;
   }
@@ -2190,7 +2193,7 @@ footer .footer-main .footer-second .footer-address .footer-address-box .footer-a
 footer .footer-main .footer-second .footer-address .footer-address-box .footer-address-box-locationContent .email .footer-address-box-locationContent-arrow-right {
   margin-left: 8px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   footer .footer-main .footer-second .footer-sidemap {
     margin-top: 50px;
   }
@@ -2240,7 +2243,7 @@ footer .footer-main .footer-third {
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   footer .footer-main .footer-third {
     flex-direction: column;
     align-items: flex-start;
@@ -2251,7 +2254,7 @@ footer .footer-main .footer-third .privacyCookie {
   display: flex;
   margin: 32px 0 0 0;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   footer .footer-main .footer-third .privacyCookie {
     flex-direction: column;
   }
@@ -2293,7 +2296,7 @@ footer .underlineList {
   padding: 0;
   margin-bottom: 0 !important;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   footer .underlineList {
     flex-direction: column;
     align-items: flex-start;
@@ -2304,10 +2307,12 @@ footer .underlineList .underlineItem {
   justify-content: center;
   align-items: baseline;
   margin-right: 25px;
+  padding-bottom: 25px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   footer .underlineList .underlineItem {
-    margin: 18px 0 0 0;
+    margin: 0;
+    padding-bottom: 10px;
   }
 }
 footer .underlineList .underlineItem .underlineText {
@@ -2322,7 +2327,7 @@ footer .underlineList .underlineItem .underlineText {
   list-style: none;
   padding-bottom: 15px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   footer .underlineList .underlineItem .underlineText {
     flex-direction: column;
     justify-content: flex-start;

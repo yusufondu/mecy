@@ -181,3 +181,74 @@ function handleFileSelect(event) {
     alert("No file selected.");
   }
 }
+
+////
+
+// Yeni seçenekleri eklemek için bir dizi oluştur
+var newOptions = [
+  { value: "1", text: "Turkey" },
+  { value: "2", text: "Albania" },
+  { value: "3", text: "Andorra" },
+  { value: "4", text: "Australia" },
+  { value: "5", text: "Austria" },
+  { value: "6", text: "Belarus" },
+  { value: "7", text: "Belgium" },
+  { value: "8", text: "Bulgaria" },
+  { value: "9", text: "Canada" },
+  { value: "10", text: "China" },
+  { value: "11", text: "Croatia" },
+  { value: "12", text: "Czech Republic" },
+  { value: "13", text: "Denmark" },
+  { value: "14", text: "Estonia" },
+  { value: "15", text: "Finland" },
+  { value: "16", text: "France" },
+  { value: "17", text: "Germany" },
+  { value: "18", text: "Greece" },
+  { value: "19", text: "Hong Kong" },
+  { value: "20", text: "Hungary" },
+  { value: "21", text: "Iceland" },
+  { value: "22", text: "India" },
+  { value: "23", text: "Ireland" },
+  { value: "24", text: "Italy" },
+  { value: "25", text: "Latvia" },
+  { value: "26", text: "Liechtenstein" },
+  { value: "27", text: "Lithuania" },
+  { value: "28", text: "Luxemborg" },
+  { value: "29", text: "Macedonia" },
+  { value: "30", text: "Malta" },
+  { value: "31", text: "Moldova" },
+  { value: "32", text: "Monaco" },
+  { value: "33", text: "Netherlands" },
+  { value: "34", text: "New Zealand" },
+  { value: "35", text: "Northern Ireland" },
+  { value: "36", text: "Norway" },
+  { value: "37", text: "Poland" },
+  { value: "38", text: "Portugal" },
+  { value: "39", text: "Romania" },
+  { value: "40", text: "Serbia" },
+  { value: "41", text: "Singapure" },
+  { value: "42", text: "Slovakia" },
+  { value: "43", text: "Slovenia" },
+  { value: "44", text: "Spain" },
+  { value: "45", text: "Sweden" },
+  { value: "46", text: "Switzerland" },
+  { value: "47", text: "UAE" },
+  { value: "48", text: "Ukraine" },
+  { value: "49", text: "United Kingdom" },
+  { value: "50", text: "United States" },
+  { value: "51", text: "Vatican City" },
+  { value: "52", text: "APAC - Other" },
+  { value: "53", text: "Europe - Other" },
+  { value: "54", text: "GM/EME" },
+];
+
+// Select elementini seç
+var selectElement = document.getElementById("selDepApt");
+
+// Dizideki her seçeneği döngü içinde ekleyin
+newOptions.forEach(function (option) {
+  var optionElement = document.createElement("option");
+  optionElement.value = option.value;
+  optionElement.text = option.text;
+  selectElement.add(optionElement);
+});

@@ -211,28 +211,34 @@
         </div>
 
         <div class="greeting-msg-cta">
-          <button class="contact-us-btn">
-            Contact Us
-            <img
-              class="contact-us-btn-arrow"
-              src="./assets/interactive_arrow_right_blue.svg"
-            />
-            <img
-              class="contact-us-btn-arrow-2"
-              src="./assets/interactive_arrow_right_blue_2.svg"
-            />
-          </button>
-          <div class="custom-search">
+          <div class="contact-us-btn-wrapper">
+            <button class="contact-us-btn">
+              Contact Us
+              <img
+                class="contact-us-btn-arrow"
+                src="./assets/interactive_arrow_right_blue.svg"
+              />
+              <img
+                class="contact-us-btn-arrow-2"
+                src="./assets/interactive_arrow_right_blue_2.svg"
+              />
+            </button>
+          </div>
+
+          <form class="custom-search">
             <input
               type="text"
               class="custom-search-input"
               placeholder="Enter your email"
+              required
             />
-            <button class="custom-search-button" type="submit">
-              <img class="subscribe-bell" src="./assets/subscribe_bell.svg" />
-              Subscribe now
-            </button>
-          </div>
+            <div class="custom-search-button-wrapper">
+              <button class="custom-search-button" type="submit">
+                <img class="subscribe-bell" src="./assets/subscribe_bell.svg" />
+                Subscribe now
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </section>
@@ -539,7 +545,7 @@
             <div class="card-box consulting">
               <div class="img-background">
                 <img
-                  src="./assets/empthy.jpeg"
+                  src="./assets/empthy.png"
                   style="background: #1d10b6"
                   class="card-box-image"
                 />
@@ -554,8 +560,11 @@
             </div>
             <div class="card-box consulting">
               <div class="img-background">
-                <img src="./assets/empthy.jpeg" style="background: #1d10b6""
-                class="card-box-image" />
+                <img
+                  src="./assets/empthy.png"
+                  style="background: #1d10b6"
+                  class="card-box-image"
+                />
               </div>
               <div class="card-box-circle">
                 <img src="./assets/arrow_north_east.svg" />
@@ -617,7 +626,7 @@
             </div>
             <div class="card-box design">
               <div class="img-background">
-                <img src="./assets/empthy.jpeg" style="background: #1d10b6""
+                <img src="./assets/empthy.png" style="background: #1d10b6""
                 class="card-box-image" />
               </div>
               <div class="card-box-circle">
@@ -688,89 +697,91 @@
       <!-- <div class="card-slider"></div> -->
       <div id="carouselExample" class="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="card">
-              <div class="img-wrapper">
-                <img src="./assets/media-center.png" alt="..." />
-              </div>
-
-              <div class="card-body">
-                <div class="calendar">
-                  <img src="./assets/calendar.svg" alt="" /> 29/10/2023
+          <div class="carousel-items-wrapper">
+            <div class="carousel-item active">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img src="./assets/media-center.png" alt="..." />
                 </div>
-                <h5 class="card-title">
-                  Empowering Entrepreneurs: The Core of Our Digital
-                  Transformation Services
-                </h5>
-                <p class="card-text">
-                  Empower your business with tailored digital transformation for
-                  efficiency and competitiveness, aligning with trends even
-                  without a tech background.
-                </p>
-                <div class="card-btn">
-                  Read more
-                  <img
-                    style="margin-left: 10px"
-                    src="./assets/interactive_arrow_right_blue.svg"
-                  />
+
+                <div class="card-body">
+                  <div class="calendar">
+                    <img src="./assets/calendar.svg" alt="" /> 29/10/2023
+                  </div>
+                  <h5 class="card-title">
+                    Empowering Entrepreneurs: The Core of Our Digital
+                    Transformation Services
+                  </h5>
+                  <p class="card-text">
+                    Empower your business with tailored digital transformation
+                    for efficiency and competitiveness, aligning with trends
+                    even without a tech background.
+                  </p>
+                  <div class="card-btn">
+                    Read more
+                    <img
+                      style="margin-left: 10px"
+                      src="./assets/interactive_arrow_right_blue.svg"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card">
-              <div class="img-wrapper">
-                <img src="./assets/media-center.png" />
-              </div>
-
-              <div class="card-body">
-                <div class="calendar">
-                  <img src="./assets/calendar.svg" alt="" /> 29/10/2023
+            <div class="carousel-item">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img src="./assets/media-center.png" />
                 </div>
-                <h5 class="card-title">
-                  The Intersection of Vision and Design: My Path to Elevating
-                  UI/UX in Digital Solutions
-                </h5>
-                <p class="card-text">
-                  Elevate your digital experience, fusing cutting-edge
-                  development with a strong emphasis on UI/UX design for
-                  appealing, user-friendly solutions.
-                </p>
-                <div class="card-btn">
-                  Read more
-                  <img
-                    style="margin-left: 10px"
-                    src="./assets/interactive_arrow_right_blue.svg"
-                  />
+
+                <div class="card-body">
+                  <div class="calendar">
+                    <img src="./assets/calendar.svg" alt="" /> 29/10/2023
+                  </div>
+                  <h5 class="card-title">
+                    The Intersection of Vision and Design: My Path to Elevating
+                    UI/UX in Digital Solutions
+                  </h5>
+                  <p class="card-text">
+                    Elevate your digital experience, fusing cutting-edge
+                    development with a strong emphasis on UI/UX design for
+                    appealing, user-friendly solutions.
+                  </p>
+                  <div class="card-btn">
+                    Read more
+                    <img
+                      style="margin-left: 10px"
+                      src="./assets/interactive_arrow_right_blue.svg"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card">
-              <div class="img-wrapper">
-                <img src="./assets/media-center.png" />
-              </div>
-
-              <div class="card-body">
-                <div class="calendar">
-                  <img src="./assets/calendar.svg" alt="" /> 29/10/2023
+            <div class="carousel-item">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img src="./assets/media-center.png" />
                 </div>
-                <h5 class="card-title">
-                  Empowering Business Transformation: My Journey from Tech
-                  Entrepreneur to Digital Innovator
-                </h5>
-                <p class="card-text">
-                  Strengthen your business transformation with our tech
-                  expertise, specializing in custom applications strategically
-                  aligned with your core goals
-                </p>
-                <div class="card-btn">
-                  Read more
-                  <img
-                    style="margin-left: 10px"
-                    src="./assets/interactive_arrow_right_blue.svg"
-                  />
+
+                <div class="card-body">
+                  <div class="calendar">
+                    <img src="./assets/calendar.svg" alt="" /> 29/10/2023
+                  </div>
+                  <h5 class="card-title">
+                    Empowering Business Transformation: My Journey from Tech
+                    Entrepreneur to Digital Innovator
+                  </h5>
+                  <p class="card-text">
+                    Strengthen your business transformation with our tech
+                    expertise, specializing in custom applications strategically
+                    aligned with your core goals
+                  </p>
+                  <div class="card-btn">
+                    Read more
+                    <img
+                      style="margin-left: 10px"
+                      src="./assets/interactive_arrow_right_blue.svg"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -991,14 +1002,10 @@
                 required
               >
                 <option disabled selected></option>
-                <option value="1">option 1</option>
-                <option value="2">option 2</option>
-                <option value="3">option 3</option>
-                <option value="4">option 4</option>
               </select>
-              <label class="form-control-placeholder" for="selDepApt">
-                Select your country
-              </label>
+              <label class="form-control-placeholder" for="selDepApt"
+                >Select your country</label
+              >
             </div>
 
             <div class="select-group">
@@ -1200,7 +1207,7 @@
                 "
                 class="underlineList"
               >
-                <li style="padding-bottom: 25px" class="underlineItem">
+                <li class="underlineItem">
                   <a class="underlineText" href="#">About us</a>
                   <img
                     class="rightArrow"
@@ -1211,7 +1218,7 @@
                     src="./assets/interactive_arrow_right_new.svg"
                   />
                 </li>
-                <li style="padding-bottom: 25px" class="underlineItem">
+                <li class="underlineItem">
                   <a class="underlineText" href="#">Our team</a>
                   <img
                     class="rightArrow"
@@ -1222,7 +1229,7 @@
                     src="./assets/interactive_arrow_right_new.svg"
                   />
                 </li>
-                <li style="padding-bottom: 25px" class="underlineItem">
+                <li class="underlineItem">
                   <a class="underlineText" href="#">Portfolio</a>
                   <img
                     class="rightArrow"
@@ -1233,7 +1240,7 @@
                     src="./assets/interactive_arrow_right_new.svg"
                   />
                 </li>
-                <li style="padding-bottom: 25px" class="underlineItem">
+                <li class="underlineItem">
                   <a class="underlineText" href="#">Services</a>
                   <img
                     class="rightArrow"
@@ -1244,7 +1251,7 @@
                     src="./assets/interactive_arrow_right_new.svg"
                   />
                 </li>
-                <li style="padding-bottom: 25px" class="underlineItem">
+                <li class="underlineItem">
                   <a class="underlineText" href="#">Media center</a>
                   <img
                     class="rightArrow"

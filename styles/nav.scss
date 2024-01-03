@@ -1,7 +1,7 @@
 #nav {
   padding: 25px 28px;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 576px) {
     padding: 0;
   }
 
@@ -27,7 +27,7 @@
         border-radius: 8px;
         background: var(--primary-color-dark);
 
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 576px) {
           background: inherit;
         }
 
@@ -131,7 +131,7 @@
   margin-top: 25px !important;
   position: relative;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 576px) {
     width: auto;
     display: none;
   }
@@ -139,7 +139,7 @@
   .dropdown-box-web-component {
     display: flex;
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 576px) {
       display: none !important;
     }
   }
@@ -156,13 +156,13 @@
   border-bottom: 10px solid #fff;
   border-right: 7px solid transparent;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 576px) {
     display: none;
   }
 }
 
 .dropdown-image {
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 576px) {
     display: none;
   }
 }

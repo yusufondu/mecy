@@ -6,7 +6,7 @@
   background: #fff;
   padding: 100px 15%;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 576px) {
     padding: 20px;
   }
 
@@ -45,7 +45,7 @@
       line-height: normal;
       margin-top: 25px;
 
-      @media screen and (max-width: 480px) {
+      @media screen and (max-width: 576px) {
         font-size: 32px;
       }
 
@@ -86,7 +86,7 @@
 
   #carouselExample {
     width: 100%;
-    max-width: 850px;
+    max-width: 1286px;
     min-height: 610px;
     margin-top: 60px;
 
@@ -95,14 +95,14 @@
       justify-content: center;
       align-items: center;
 
-      @media screen and (max-width: 480px) {
+      @media screen and (max-width: 576px) {
         display: grid;
       }
 
       .carousel-item {
-        max-width: 240px;
+        max-width: 358px;
         .card {
-          max-width: 240px;
+          max-width: 358px;
           border: none;
 
           .img-wrapper {
@@ -111,7 +111,7 @@
             align-items: flex-start;
 
             img {
-              max-width: 240px;
+              max-width: 358px;
             }
           }
 
@@ -120,10 +120,11 @@
             justify-content: flex-start;
             flex-direction: column;
             align-items: flex-start;
-            max-width: 240px;
+            max-width: 358px;
             padding: 25px 15px;
             border-radius: 0px 0px 24px 24px;
             background: var(--primary-color-ethereal-white);
+            min-height: 322px;
 
             .calendar {
               margin-bottom: 25px;
@@ -140,7 +141,7 @@
               font-size: 16px;
               font-weight: 600;
               line-height: 22px;
-              min-height: 132px;
+              // min-height: 132px;
             }
 
             .card-text {
@@ -152,7 +153,7 @@
               font-weight: 400;
               line-height: 21px;
               margin-bottom: 25px !important;
-              min-height: 147px;
+              // min-height: 147px;
             }
 
             .card-btn {
@@ -165,6 +166,10 @@
             }
           }
         }
+      }
+
+      .carousel-items-wrapper {
+        max-width: 1170px;
       }
     }
 

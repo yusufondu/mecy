@@ -49,7 +49,7 @@ h1 {
     font-size: 42px;
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 576px) {
     font-size: 45px;
     text-align: left;
   }
@@ -62,7 +62,7 @@ h5 {
   font-weight: 500;
   line-height: 40px;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 576px) {
     font-size: 26px;
     text-align: left;
   }

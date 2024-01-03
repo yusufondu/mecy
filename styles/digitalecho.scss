@@ -5,8 +5,9 @@
   padding: 0 15% 100px 15%;
   margin-top: 30px;
 
-  @media screen and (max-width: 480px) {
-    padding: 20px;
+  @media screen and (max-width: 576px) {
+    padding: 0 20px 20px 20px;
+    margin-top: 0 !important;
   }
 
   .digital-wrapper {
@@ -45,7 +46,7 @@
         max-width: 650px;
         line-height: normal;
 
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 576px) {
           font-size: 24px;
         }
       }
@@ -59,7 +60,7 @@
         font-weight: 500;
         line-height: 22px;
 
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 576px) {
           font-size: 16px;
         }
       }
@@ -72,7 +73,7 @@
         line-height: 21px;
         margin-bottom: 65px;
 
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 576px) {
           font-size: 13px;
         }
       }
