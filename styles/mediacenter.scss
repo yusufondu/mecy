@@ -4,10 +4,10 @@
   justify-content: center;
   align-items: center;
   background: #fff;
-  padding: 100px 15%;
+  padding: 100px 5%;
 
   @media screen and (max-width: 576px) {
-    padding: 20px;
+    padding: 30px 20px;
   }
 
   .media-center-cta {
@@ -101,9 +101,31 @@
 
       .carousel-item {
         max-width: 358px;
+        &:hover {
+          outline: 2px solid var(--primary-color-dark) !important;
+          border-radius: 24px;
+        }
         .card {
           max-width: 358px;
           border: none;
+          border-radius: 24px;
+
+          &:hover {
+            .card-body {
+              .card-btn {
+                .underline-animation::after {
+                  width: 100%;
+                }
+
+                .media-center-arrow-btn-1 {
+                  display: none;
+                }
+                .media-center-arrow-btn-2 {
+                  display: block;
+                }
+              }
+            }
+          }
 
           .img-wrapper {
             display: flex;
@@ -141,7 +163,6 @@
               font-size: 16px;
               font-weight: 600;
               line-height: 22px;
-              // min-height: 132px;
             }
 
             .card-text {
@@ -153,7 +174,6 @@
               font-weight: 400;
               line-height: 21px;
               margin-bottom: 25px !important;
-              // min-height: 147px;
             }
 
             .card-btn {
@@ -163,6 +183,34 @@
               font-weight: 500;
               line-height: 21px;
               align-self: flex-end;
+
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              .underline-animation {
+                display: inline-block;
+                position: relative;
+                margin: 0;
+                text-decoration: none;
+              }
+              .underline-animation::after {
+                content: "";
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background-color: var(--primary-color-dark);
+                transition: width 0.7s ease-in-out;
+              }
+
+              .media-center-arrow-btn-1 {
+                display: block;
+              }
+              .media-center-arrow-btn-2 {
+                display: none;
+              }
             }
           }
         }
@@ -170,6 +218,7 @@
 
       .carousel-items-wrapper {
         max-width: 1170px;
+        margin: 2px;
       }
     }
 

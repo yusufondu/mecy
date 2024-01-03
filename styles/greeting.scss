@@ -7,8 +7,9 @@
   height: calc(100vh - 138px);
 
   @media screen and (max-width: 576px) {
-    margin: 20px 0 60px 0;
+    margin: 20px 0 30px 0;
     height: fit-content;
+    padding: 30px 20px;
   }
 
   .greeting {
@@ -37,7 +38,6 @@
       font-family: SharpGroteskSemiBold25;
 
       @media screen and (max-width: 576px) {
-        width: 280px;
         text-align: center;
       }
 
@@ -56,49 +56,49 @@
 
       @media screen and (max-width: 576px) {
         align-items: flex-start;
+        width: 100%;
       }
 
-      .contact-us-btn-wrapper {
-        // &:hover {
-        //   border: 2px solid var(--secondary-color-dark);
-        // }
+      .contact-us-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 25px;
+        border-radius: 8px;
+        background: var(--secondary-color-dark);
+        color: var(--primary-color-dark);
+        font-size: 16px;
+        font-family: SharpGroteskMedium25;
+        font-weight: 500;
+        line-height: 21px;
+        border: none;
 
-        .contact-us-btn {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          padding: 15px 25px;
-          border-radius: 8px;
-          background: var(--secondary-color-dark);
-          color: var(--primary-color-dark);
-          font-size: 16px;
-          font-family: SharpGroteskMedium25;
-          font-weight: 500;
-          line-height: 21px;
-          border: none;
+        @media screen and (max-width: 576px) {
+          width: 100%;
+        }
+
+        .contact-us-btn-arrow {
+          margin-left: 10px;
+          display: block;
+        }
+
+        .contact-us-btn-arrow-2 {
+          margin-left: 10px;
+          display: none;
+        }
+
+        &:hover {
+          background: var(--secondary-color-normal);
+          outline: 2px solid var(--secondary-color-dark);
 
           .contact-us-btn-arrow {
-            margin-left: 10px;
-            display: block;
-          }
-
-          .contact-us-btn-arrow-2 {
             margin-left: 10px;
             display: none;
           }
 
-          &:hover {
-            background: var(--secondary-color-normal);
-
-            .contact-us-btn-arrow {
-              margin-left: 10px;
-              display: none;
-            }
-
-            .contact-us-btn-arrow-2 {
-              margin-left: 10px;
-              display: block;
-            }
+          .contact-us-btn-arrow-2 {
+            margin-left: 10px;
+            display: block;
           }
         }
       }
@@ -147,9 +147,8 @@
 
             color: var(--primary-color-dark);
             background: var(--secondary-color-dark);
-
-            border-radius: 8px;
             outline: none;
+            border-radius: 8px;
             border: none;
             position: absolute;
             right: 3px;
@@ -158,6 +157,7 @@
 
             &:hover {
               background: var(--secondary-color-normal);
+              outline: 2px solid var(--secondary-color-dark);
             }
 
             .subscribe-bell {

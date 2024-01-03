@@ -104,7 +104,11 @@
 }
 
 .navbar-toggler {
-  border: 1px solid var(--secondary-color-dark);
+  border: none !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
 }
 
 .dropdown-title {

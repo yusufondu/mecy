@@ -45,7 +45,7 @@ h1 {
 }
 @media screen and (max-width: 576px) {
   h1 {
-    font-size: 45px;
+    font-size: 26px;
     text-align: left;
   }
 }
@@ -59,8 +59,9 @@ h5 {
 }
 @media screen and (max-width: 576px) {
   h5 {
-    font-size: 26px;
+    font-size: 22px;
     text-align: left;
+    line-height: 32px;
   }
 }
 
@@ -383,7 +384,11 @@ h5 {
 }
 
 .navbar-toggler {
-  border: 1px solid var(--secondary-color-dark);
+  border: none !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
 }
 
 .dropdown-title {
@@ -458,8 +463,9 @@ h5 {
 }
 @media screen and (max-width: 576px) {
   #greeting {
-    margin: 20px 0 60px 0;
+    margin: 20px 0 30px 0;
     height: fit-content;
+    padding: 30px 20px;
   }
 }
 #greeting .greeting {
@@ -490,7 +496,6 @@ h5 {
 }
 @media screen and (max-width: 576px) {
   #greeting .greeting .greeting-msg-welcome {
-    width: 280px;
     text-align: center;
   }
 }
@@ -508,9 +513,10 @@ h5 {
 @media screen and (max-width: 576px) {
   #greeting .greeting .greeting-msg-cta {
     align-items: flex-start;
+    width: 100%;
   }
 }
-#greeting .greeting .greeting-msg-cta .contact-us-btn-wrapper .contact-us-btn {
+#greeting .greeting .greeting-msg-cta .contact-us-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -524,22 +530,28 @@ h5 {
   line-height: 21px;
   border: none;
 }
-#greeting .greeting .greeting-msg-cta .contact-us-btn-wrapper .contact-us-btn .contact-us-btn-arrow {
+@media screen and (max-width: 576px) {
+  #greeting .greeting .greeting-msg-cta .contact-us-btn {
+    width: 100%;
+  }
+}
+#greeting .greeting .greeting-msg-cta .contact-us-btn .contact-us-btn-arrow {
   margin-left: 10px;
   display: block;
 }
-#greeting .greeting .greeting-msg-cta .contact-us-btn-wrapper .contact-us-btn .contact-us-btn-arrow-2 {
+#greeting .greeting .greeting-msg-cta .contact-us-btn .contact-us-btn-arrow-2 {
   margin-left: 10px;
   display: none;
 }
-#greeting .greeting .greeting-msg-cta .contact-us-btn-wrapper .contact-us-btn:hover {
+#greeting .greeting .greeting-msg-cta .contact-us-btn:hover {
   background: var(--secondary-color-normal);
+  outline: 2px solid var(--secondary-color-dark);
 }
-#greeting .greeting .greeting-msg-cta .contact-us-btn-wrapper .contact-us-btn:hover .contact-us-btn-arrow {
+#greeting .greeting .greeting-msg-cta .contact-us-btn:hover .contact-us-btn-arrow {
   margin-left: 10px;
   display: none;
 }
-#greeting .greeting .greeting-msg-cta .contact-us-btn-wrapper .contact-us-btn:hover .contact-us-btn-arrow-2 {
+#greeting .greeting .greeting-msg-cta .contact-us-btn:hover .contact-us-btn-arrow-2 {
   margin-left: 10px;
   display: block;
 }
@@ -584,8 +596,8 @@ h5 {
   line-height: 21px;
   color: var(--primary-color-dark);
   background: var(--secondary-color-dark);
-  border-radius: 8px;
   outline: none;
+  border-radius: 8px;
   border: none;
   position: absolute;
   right: 3px;
@@ -594,6 +606,7 @@ h5 {
 }
 #greeting .greeting .greeting-msg-cta .custom-search .custom-search-button-wrapper .custom-search-button:hover {
   background: var(--secondary-color-normal);
+  outline: 2px solid var(--secondary-color-dark);
 }
 #greeting .greeting .greeting-msg-cta .custom-search .custom-search-button-wrapper .custom-search-button .subscribe-bell {
   margin-right: 5px;
@@ -693,6 +706,11 @@ h5 {
   justify-content: center;
   align-items: center;
   padding: 100px 0 30px 0;
+}
+@media screen and (max-width: 576px) {
+  #our-services-section {
+    padding: 60px 0 30px 0;
+  }
 }
 #our-services-section .our-services-main-codetext {
   color: var(--primary-color-dreamy-periwinkle);
@@ -806,7 +824,7 @@ h5 {
 @media screen and (max-width: 576px) {
   #triple-component {
     flex-direction: column;
-    padding: 20px 20px 0 20px;
+    padding: 30px 20px 0 20px;
   }
 }
 #triple-component .big-triple {
@@ -942,7 +960,7 @@ h5 {
 }
 @media screen and (max-width: 576px) {
   #digital-echos-section {
-    padding: 0 20px 20px 20px;
+    padding: 0 20px 30px 20px;
     margin-top: 0 !important;
   }
 }
@@ -1028,7 +1046,7 @@ h5 {
 }
 @media screen and (max-width: 576px) {
   #our-values-section {
-    padding: 20px;
+    padding: 30px 20px;
   }
 }
 #our-values-section .our-values {
@@ -1122,7 +1140,7 @@ h5 {
   .valueslistmain #values-list {
     flex-direction: column;
     gap: 25px;
-    padding: 20px 20px 40px 20px;
+    padding: 30px 20px;
   }
 }
 .valueslistmain #values-list .company-value {
@@ -1178,7 +1196,7 @@ h5 {
 @media screen and (max-width: 576px) {
   #our-portfolio-section {
     justify-content: center;
-    padding: 60px 20px 20px 20px;
+    padding: 30px 20px;
   }
 }
 #our-portfolio-section .our-portfolio-section-main {
@@ -1405,11 +1423,11 @@ h5 {
   justify-content: center;
   align-items: center;
   background: #fff;
-  padding: 100px 15%;
+  padding: 100px 5%;
 }
 @media screen and (max-width: 576px) {
   #media-center-section {
-    padding: 20px;
+    padding: 30px 20px;
   }
 }
 #media-center-section .media-center-cta {
@@ -1498,9 +1516,23 @@ h5 {
 #media-center-section #carouselExample .carousel-inner .carousel-item {
   max-width: 358px;
 }
+#media-center-section #carouselExample .carousel-inner .carousel-item:hover {
+  outline: 2px solid var(--primary-color-dark) !important;
+  border-radius: 24px;
+}
 #media-center-section #carouselExample .carousel-inner .carousel-item .card {
   max-width: 358px;
   border: none;
+  border-radius: 24px;
+}
+#media-center-section #carouselExample .carousel-inner .carousel-item .card:hover .card-body .card-btn .underline-animation::after {
+  width: 100%;
+}
+#media-center-section #carouselExample .carousel-inner .carousel-item .card:hover .card-body .card-btn .media-center-arrow-btn-1 {
+  display: none;
+}
+#media-center-section #carouselExample .carousel-inner .carousel-item .card:hover .card-body .card-btn .media-center-arrow-btn-2 {
+  display: block;
 }
 #media-center-section #carouselExample .carousel-inner .carousel-item .card .img-wrapper {
   display: flex;
@@ -1553,9 +1585,35 @@ h5 {
   font-weight: 500;
   line-height: 21px;
   align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#media-center-section #carouselExample .carousel-inner .carousel-item .card .card-body .card-btn .underline-animation {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  text-decoration: none;
+}
+#media-center-section #carouselExample .carousel-inner .carousel-item .card .card-body .card-btn .underline-animation::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-color-dark);
+  transition: width 0.7s ease-in-out;
+}
+#media-center-section #carouselExample .carousel-inner .carousel-item .card .card-body .card-btn .media-center-arrow-btn-1 {
+  display: block;
+}
+#media-center-section #carouselExample .carousel-inner .carousel-item .card .card-body .card-btn .media-center-arrow-btn-2 {
+  display: none;
 }
 #media-center-section #carouselExample .carousel-inner .carousel-items-wrapper {
   max-width: 1170px;
+  margin: 2px;
 }
 #media-center-section #carouselExample .carousel-control-prev,
 #media-center-section #carouselExample .carousel-control-next {
@@ -1605,7 +1663,7 @@ h5 {
 }
 @media screen and (max-width: 576px) {
   #busters-section {
-    padding: 20px;
+    padding: 30px 20px;
   }
 }
 #busters-section .busters-cta {
@@ -1798,7 +1856,7 @@ h5 {
 }
 @media screen and (max-width: 576px) {
   .formMainBg #formSection {
-    padding: 80px 20px 20px 20px;
+    padding: 30px 20px;
   }
 }
 .formMainBg #formSection .form-main .form-title {
@@ -2088,7 +2146,7 @@ footer {
 }
 @media screen and (max-width: 576px) {
   footer {
-    padding: 20px;
+    padding: 30px 20px;
   }
 }
 footer .footer-main .footer-first {
@@ -2136,7 +2194,7 @@ footer .footer-main .footer-second {
 @media screen and (max-width: 576px) {
   footer .footer-main .footer-second {
     flex-direction: column;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 }
 footer .footer-main .footer-second .footer-address {
@@ -2272,6 +2330,7 @@ footer .footer-main .footer-third .privacyCookie {
 @media screen and (max-width: 576px) {
   footer .footer-main .footer-third .privacyCookie {
     flex-direction: column;
+    margin: 30px 0 0 0;
   }
 }
 footer .footer-main .footer-third .social-media-section {
