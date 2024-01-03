@@ -159,6 +159,11 @@ h5 {
   max-width: 80dvw;
   overflow-y: auto;
   border-radius: 52px;
+
+  @media screen and (max-width: 576px) {
+    padding: 20px;
+    border-radius: 16px;
+  }
 }
 
 .modal-title {
@@ -167,15 +172,23 @@ h5 {
   font-weight: 600;
   line-height: normal;
   font-family: SharpGroteskSemiBold25;
+
+  @media screen and (max-width: 576px) {
+    font-size: 20px;
+  }
 }
 
 .modal-description {
   color: #555bfb;
   font-size: 16px;
   line-height: 21px;
+  overflow-wrap: break-word;
+
+  @media screen and (max-width: 576px) {
+    font-size: 14px !important;
+  }
 }
 
-/* Custom Scrollbar */
 .modal-content::-webkit-scrollbar {
   width: 12px;
 }
@@ -185,16 +198,13 @@ h5 {
   border-radius: 10px;
 }
 
-/* Diğer tarayıcılarda da aynı görünümü sağlamak için gerekli stiller */
 .modal-content::-webkit-scrollbar-track {
   background-color: #b3bafb;
 }
 
 .modal-content-inner {
   overflow-y: auto;
-  max-height: calc(
-    80vh - 20px
-  ); /* Modal yüksekliğinden biraz daha az bir içerik alanı sağlamak */
+  max-height: calc(80vh - 20px);
 
   .modal-description {
     margin-right: 55px;
