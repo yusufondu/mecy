@@ -1104,7 +1104,7 @@ h5 {
   line-height: 21px;
 }
 #our-values-section .view-all-btn:hover {
-  border: 2px solid #bcf178;
+  outline: 2px solid #bcf178;
   background: #deffb5;
 }
 #our-values-section .view-all-btn .view-all-btn-icon {
@@ -1272,9 +1272,29 @@ h5 {
   font-weight: 500;
   line-height: 21px;
   width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#our-portfolio-section .our-portfolio-section-main .our-portfolio-section-main-view-all-cases-btn:hover {
+  outline: 2px solid #bcf178;
+  background: #deffb5;
+}
+#our-portfolio-section .our-portfolio-section-main .our-portfolio-section-main-view-all-cases-btn:hover .view-all-btn-icon {
+  margin-left: 10px;
+  display: none;
+}
+#our-portfolio-section .our-portfolio-section-main .our-portfolio-section-main-view-all-cases-btn:hover .view-all-btn-icon-2 {
+  margin-left: 10px;
+  display: block;
 }
 #our-portfolio-section .our-portfolio-section-main .our-portfolio-section-main-view-all-cases-btn .view-all-btn-icon {
   margin-left: 10px;
+  display: block;
+}
+#our-portfolio-section .our-portfolio-section-main .our-portfolio-section-main-view-all-cases-btn .view-all-btn-icon-2 {
+  margin-left: 10px;
+  display: none;
 }
 #our-portfolio-section .our-portfolio-section-main .case-category {
   display: flex;
@@ -1482,6 +1502,9 @@ h5 {
   margin-top: 25px;
 }
 #media-center-section .media-center-cta .media-center-cta-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 40px;
   padding: 15px 25px;
   border-radius: 8px;
@@ -1494,8 +1517,25 @@ h5 {
   font-weight: 500;
   line-height: 21px;
 }
+#media-center-section .media-center-cta .media-center-cta-btn:hover {
+  outline: 2px solid #bcf178;
+  background: #deffb5;
+}
+#media-center-section .media-center-cta .media-center-cta-btn:hover .view-all-btn-icon {
+  margin-left: 10px;
+  display: none;
+}
+#media-center-section .media-center-cta .media-center-cta-btn:hover .view-all-btn-icon-2 {
+  margin-left: 10px;
+  display: block;
+}
 #media-center-section .media-center-cta .media-center-cta-btn .view-all-btn-icon {
   margin-left: 10px;
+  display: block;
+}
+#media-center-section .media-center-cta .media-center-cta-btn .view-all-btn-icon-2 {
+  margin-left: 10px;
+  display: none;
 }
 #media-center-section #carouselExample {
   width: 100%;
@@ -1603,7 +1643,7 @@ h5 {
   width: 0;
   height: 2px;
   background-color: var(--primary-color-dark);
-  transition: width 0.7s ease-in-out;
+  transition: width 0.2s ease-in-out;
 }
 #media-center-section #carouselExample .carousel-inner .carousel-item .card .card-body .card-btn .media-center-arrow-btn-1 {
   display: block;
@@ -1958,6 +1998,9 @@ h5 {
   justify-content: flex-end;
 }
 .formMainBg #formSection .form-main form .btnformsubmit .formsubmitBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 40px;
   padding: 15px 25px;
   border-radius: 8px;
@@ -1970,8 +2013,25 @@ h5 {
   font-weight: 500;
   line-height: 21px;
 }
-.formMainBg #formSection .form-main form .btnformsubmit .formsubmitBtn .btnIcon {
+.formMainBg #formSection .form-main form .btnformsubmit .formsubmitBtn:hover {
+  outline: 2px solid #bcf178;
+  background: #deffb5;
+}
+.formMainBg #formSection .form-main form .btnformsubmit .formsubmitBtn:hover .view-all-btn-icon {
   margin-left: 10px;
+  display: none;
+}
+.formMainBg #formSection .form-main form .btnformsubmit .formsubmitBtn:hover .view-all-btn-icon-2 {
+  margin-left: 10px;
+  display: block;
+}
+.formMainBg #formSection .form-main form .btnformsubmit .formsubmitBtn .view-all-btn-icon {
+  margin-left: 10px;
+  display: block;
+}
+.formMainBg #formSection .form-main form .btnformsubmit .formsubmitBtn .view-all-btn-icon-2 {
+  margin-left: 10px;
+  display: none;
 }
 .formMainBg #formSection .form-main form .select-group {
   position: relative;

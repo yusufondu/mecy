@@ -84,9 +84,33 @@
       font-weight: 500;
       line-height: 21px;
       width: fit-content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        outline: 2px solid #bcf178;
+        background: #deffb5;
+
+        .view-all-btn-icon {
+          margin-left: 10px;
+          display: none;
+        }
+
+        .view-all-btn-icon-2 {
+          margin-left: 10px;
+          display: block;
+        }
+      }
 
       .view-all-btn-icon {
         margin-left: 10px;
+        display: block;
+      }
+
+      .view-all-btn-icon-2 {
+        margin-left: 10px;
+        display: none;
       }
     }
 

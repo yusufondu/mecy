@@ -150,6 +150,10 @@ $label-focus-color: var(--secondary-color-dark);
           justify-content: flex-end;
 
           .formsubmitBtn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
             margin-top: 40px;
             padding: 15px 25px;
             border-radius: 8px;
@@ -162,8 +166,29 @@ $label-focus-color: var(--secondary-color-dark);
             font-weight: 500;
             line-height: 21px;
 
-            .btnIcon {
+            &:hover {
+              outline: 2px solid #bcf178;
+              background: #deffb5;
+
+              .view-all-btn-icon {
+                margin-left: 10px;
+                display: none;
+              }
+
+              .view-all-btn-icon-2 {
+                margin-left: 10px;
+                display: block;
+              }
+            }
+
+            .view-all-btn-icon {
               margin-left: 10px;
+              display: block;
+            }
+
+            .view-all-btn-icon-2 {
+              margin-left: 10px;
+              display: none;
             }
           }
         }

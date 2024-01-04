@@ -66,6 +66,10 @@
     }
 
     .media-center-cta-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
       margin-top: 40px;
       padding: 15px 25px;
       border-radius: 8px;
@@ -78,8 +82,29 @@
       font-weight: 500;
       line-height: 21px;
 
+      &:hover {
+        outline: 2px solid #bcf178;
+        background: #deffb5;
+
+        .view-all-btn-icon {
+          margin-left: 10px;
+          display: none;
+        }
+
+        .view-all-btn-icon-2 {
+          margin-left: 10px;
+          display: block;
+        }
+      }
+
       .view-all-btn-icon {
         margin-left: 10px;
+        display: block;
+      }
+
+      .view-all-btn-icon-2 {
+        margin-left: 10px;
+        display: none;
       }
     }
   }
@@ -202,7 +227,7 @@
                 width: 0;
                 height: 2px;
                 background-color: var(--primary-color-dark);
-                transition: width 0.7s ease-in-out;
+                transition: width 0.2s ease-in-out;
               }
 
               .media-center-arrow-btn-1 {
